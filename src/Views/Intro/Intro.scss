@@ -1,20 +1,29 @@
 .ps__intro {
-
+    display: flex;
 }
 .intro {
     &__title {
-
+        font-size: 110px;
     }
     &__date {
 
+    }
+    &__text {
+        width: 50%;
     }
     &__paragraph {
 
     }
     &__img {
-
+        background-image: url(/static/media/introImg__bg.dd9ecefe.png);
+        width: 50%;
+        height: calc(100vh - 140px);
+        background-size: 140%;
+        background-position-x: 100%;
+        background-position-y: 70%;
+        background-repeat: no-repeat;
     }
     &__soldier {
-        
+
     }
 }
