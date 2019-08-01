@@ -1,6 +1,5 @@
 import React from 'react';
 import './Skutki.scss';
-import Pagination from '../../Components/Pagination/Pagination';
 
 const Skutki = () => {
     return(
