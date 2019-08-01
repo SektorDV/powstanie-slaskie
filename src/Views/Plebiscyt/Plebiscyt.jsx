@@ -1,10 +1,10 @@
 import React from 'react';
-import './Intro.scss';
+import './Plebiscyt.scss';
 
-const Intro = () => {
+const Plebiscyt = () => {
     return(
-        <div className="ps__intro">INTRO</div>
+        <div className="ps__intro">Plebiscyt</div>
     )
 }
 
-export default Intro;
+export default Plebiscyt;

@@ -1,10 +1,10 @@
 import React from 'react';
-import './Intro.scss';
+import './Skutki.scss';
 
-const Intro = () => {
+const Skutki = () => {
     return(
-        <div className="ps__intro">INTRO</div>
+        <div className="ps__intro">Skutki</div>
     )
 }
 
-export default Intro;
+export default Skutki;
