@@ -10,6 +10,13 @@
         align-items: center;
         a {
             width: 100%;
+            text-decoration: none;
+            &:visited {
+                color: black;
+            }
+            &.nav_active {
+                background-color: gold;
+            }
         }
         li {
             padding: 40px 0;
