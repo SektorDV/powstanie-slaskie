@@ -1,0 +1,27 @@
+.ps_pagination {
+position: absolute;
+left: 50px;
+top: 50%;
+}
+
+.pagination {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        width: 50px;
+
+    }
+    &__link {
+        width: 8px;
+        height: 8px;
+        background-color: #899eaa;
+        border-radius: 50%;
+        margin: 7px 0;
+    }
+    a:active .pagination__link {
+        background-color: red;
+    }
+
+}
