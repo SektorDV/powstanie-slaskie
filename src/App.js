@@ -1,6 +1,7 @@
 //biblioteki
 import React from 'react';
 import './App.css';
+import './res/fonts/fonts.scss';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
 
