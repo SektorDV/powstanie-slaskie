@@ -3,7 +3,7 @@ import './IIIPowstanie.scss';
 
 const IIIPowstanie = () => {
     return(
-        <div className="ps__intro">IIIPowstanie</div>
+        <div className="ps__IIIPowstanie">IIIPowstanie</div>
     )
 }
 
