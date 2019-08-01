@@ -14,11 +14,13 @@ import IPowstanie from './Views/IPowstanie/IPowstanie';
 import Korfanty from './Views/Korfanty/Korfanty';
 import Plebiscyt from './Views/Plebiscyt/Plebiscyt';
 import Skutki from './Views/Skutki/Skutki';
+import Pagination from './Components/Pagination/Pagination';
 
 
 function App() {
   return (
     <div className="App">
+      <Pagination />
         <Route path="/" exact component = {Intro} />
         <Route path="/PoWojnie" exact component = {PoWojnie} />
         <Route path="/Korfanty" exact component = {Korfanty} />

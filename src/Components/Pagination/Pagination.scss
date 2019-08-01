@@ -2,6 +2,8 @@
     position: absolute;
     left: 25px;
     top: calc(50% - 158px);
+    z-index: 2;
+    
 }
 
 .pagination {
@@ -20,6 +22,21 @@
     margin: 7px 0;
     position: relative;
     z-index: 2;
+    transition: 0.5s;
+
+    &::after {
+        content: "";
+        top: -6px;
+        left: -6px;
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid #899eaa;
+        opacity: 0;
+        transition: 0.5s;
+
+      }
 
   }
 .pagination__link {
@@ -30,16 +47,10 @@
   &_active > .pagination__link {
     transition: 2s;
     background-color: #f25a4b;
-
     &::after {
-      content: "";
-      top: -6px;
-      left: -6px;
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      border: 1px solid #899eaa;
+        opacity: 1;
     }
+
+    
   }
 }

@@ -6,7 +6,6 @@ const Intro = () => {
     return(
         
         <div className="ps__intro">
-                    <Pagination />
 
             INTRO</div>
     )
