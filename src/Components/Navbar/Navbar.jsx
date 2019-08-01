@@ -6,14 +6,14 @@ const Navbar = () => {
     return(
         <div className="ps__navbar">
             <ul>
-                <NavLink to={`/`} exact activeClassName="nav_active"><li>Główna</li></NavLink>
-                <NavLink to={`/PoWojnie`} activeClassName="nav_active"><li>Śląsk po I&nbsp;Wojnie&nbsp;Światowej</li></NavLink>
-                <NavLink to={`/Korfanty`} activeClassName="nav_active"><li>Wojciech Korfanty</li></NavLink>
-                <NavLink to={`/IPowstanie`} activeClassName="nav_active"><li>I Powstanie Śląskie</li></NavLink>
-                <NavLink to={`/IIPowstanie`} activeClassName="nav_active"><li>II Powstanie Śląskie</li></NavLink>
-                <NavLink to={`/Plebiscyt`} activeClassName="nav_active"><li>Plebiscyt</li></NavLink>
-                <NavLink to={`/IIIPowstanie`} activeClassName="nav_active"><li>III Powstanie Śląskie</li></NavLink>
-                <NavLink to={`/Skutki`} activeClassName="nav_active"><li>Skutki i Ocena</li></NavLink>
+                <NavLink to={`/`} exact activeClassName="nav_active"><li><div className="nav_select"></div><span>Główna</span></li></NavLink>
+                <NavLink to={`/PoWojnie`} activeClassName="nav_active"><li><div className="nav_select"></div><span>Śląsk po I&nbsp;Wojnie&nbsp;Światowej</span></li></NavLink>
+                <NavLink to={`/Korfanty`} activeClassName="nav_active"><li><div className="nav_select"></div><span>Wojciech Korfanty</span></li></NavLink>
+                <NavLink to={`/IPowstanie`} activeClassName="nav_active"><li><div className="nav_select"></div><span>I Powstanie Śląskie</span></li></NavLink>
+                <NavLink to={`/IIPowstanie`} activeClassName="nav_active"><li><div className="nav_select"></div><span>II Powstanie Śląskie</span></li></NavLink>
+                <NavLink to={`/Plebiscyt`} activeClassName="nav_active"><li><div className="nav_select"></div><span>Plebiscyt</span></li></NavLink>
+                <NavLink to={`/IIIPowstanie`} activeClassName="nav_active"><li><div className="nav_select"></div><span>III Powstanie Śląskie</span></li></NavLink>
+                <NavLink to={`/Skutki`} activeClassName="nav_active"><li><div className="nav_select"></div><span>Skutki i Ocena</span></li></NavLink>
             </ul>
         </div>
     )

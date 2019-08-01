@@ -21,12 +21,29 @@
             font-family: 'poppinsregular', sans-serif;
             font-size: 17px;
             padding: 0 20px;
+            position: relative;
+            z-index: 2;
 
             &:visited {
                 color: white;
             }
-            &.nav_active {
+            &.nav_active .nav_select{
+               animation: selectSlideIn 0.5s ease-in-out forwards;
+            }
+            span {
+                position: absolute;
+                z-index: 3;
+                text-align: center;
+                transform: translate(-50%, -50%);
+            }
+            .nav_select {
+                top: 100%;
+                left: 0;
+                height: 150%;
+                width: 100%;
                 background-color: #0b5a82;
+                position: absolute;
+                z-index: 1;
             }
         }
         li {
@@ -34,5 +51,17 @@
             width: 100%;
             user-select: none;
         }
+    }
+}
+
+@keyframes selectSlideIn {
+    0% {
+        top: 100%
+    }
+    60% {
+        top: -20%
+    }
+    100% {
+        top: -5%
     }
 }
