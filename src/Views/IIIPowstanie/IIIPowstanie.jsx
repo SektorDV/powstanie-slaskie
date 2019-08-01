@@ -5,7 +5,6 @@ import Pagination from '../../Components/Pagination/Pagination';
 const IIIPowstanie = () => {
     return(
         <div className="ps__IIIPowstanie">
-            <Pagination />
             IIIPowstanie</div>
     )
 }
