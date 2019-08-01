@@ -1,25 +1,40 @@
 .ps__intro {
     display: flex;
+    background-color: #e3f2fa;
 }
 .intro {
     &__title {
         font-size: 110px;
+        font-family: 'dm_serif_displayregular', serif;
+        font-weight: 300;
+        color: #01638b;
+        margin-left: 150px;
+        margin-top: 100px;
+        line-height: 100px;
+        text-indent: -130px;
     }
     &__date {
-
+        font-size: 50px;
+        font-family: 'dm_serif_displayregular', serif;
+        font-weight: 300;
+        color: #6a8594;
+        margin-left: 300px;
     }
     &__text {
-        width: 50%;
+        width: 42%;
+        margin-left: 8%;
     }
     &__paragraph {
-
+        font-size: 14px;
+        width: 490px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
     &__img {
-        background-image: url(/static/media/introImg__bg.dd9ecefe.png);
+        background-image: url(/static/media/introImg-BG.c4402176.png);
         width: 50%;
         height: calc(100vh - 140px);
-        background-size: 140%;
-        background-position-x: 100%;
         background-position-y: 70%;
         background-repeat: no-repeat;
     }

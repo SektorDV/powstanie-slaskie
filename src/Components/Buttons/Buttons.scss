@@ -10,5 +10,11 @@
         svg:hover .cls-1{
             fill: #f25a4b;
         }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }

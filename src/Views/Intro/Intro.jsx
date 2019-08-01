@@ -7,7 +7,7 @@ const Intro = () => {
         
         <div className="ps__intro">
             <div className="intro__text">
-            <h1 className="intro__title">Powstania Śląskie</h1>
+            <h1 className="intro__title">Powstania <br /> Śląskie</h1>
             <h2 className="intro__date">1919-1921
                 <span class="intro__line"></span>
             </h2>
