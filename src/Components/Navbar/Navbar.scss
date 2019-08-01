@@ -25,8 +25,15 @@
             position: relative;
             z-index: 2;
             text-align: center;
+            transition: 0.5s;
 
+            &:hover {
+                color: #bbb;
+            }
             &:visited {
+                color: white;
+            }
+            &.nav_active:hover {
                 color: white;
             }
             &.nav_active .nav_select{
