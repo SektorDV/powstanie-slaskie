@@ -1,11 +1,16 @@
 import React from 'react';
 import './Intro.scss';
-import Buttons from '../../Components/Buttons/Buttons'
+import Buttons from '../../Components/Buttons/Buttons';
+
+
 
 const Intro = () => {
     return(
         
+  
+
         <div className="ps__intro">
+            
             <div className="intro__text">
             <h1 className="intro__title">Powstania <br /> Śląskie</h1>
             <h2 className="intro__date">1919-1921
@@ -19,6 +24,7 @@ const Intro = () => {
             </p>
             <Buttons map="1" audio="1" video="1"/>
             </div>
+            
             <div className="intro__img">
                 <div className="intro__soldier"></div>
             </div>
