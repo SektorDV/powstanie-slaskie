@@ -16,4 +16,4 @@ const Pagination = () => {
     )
 }
 
-export default IIIPowstanie;
+export default Pagination;
