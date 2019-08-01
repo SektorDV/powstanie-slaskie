@@ -6,14 +6,14 @@ const Navbar = () => {
     return(
         <div className="ps__navbar">
             <ul>
-                <li><Link to={`/`}>Główna</Link></li>
-                <li><Link to={`/PoWojnie`}>Śląsk po I Wojnie Światowej</Link></li>
-                <li><Link to={`/Korfanty`}>Wojciech Korfanty</Link></li>
-                <li><Link to={`/IPowstanie`}>I Powstanie Śląskie</Link></li>
-                <li><Link to={`/IIPowstanie`}>II Powstanie Śląskie</Link></li>
-                <li><Link to={`/Plebiscyt`}>Plebiscyt</Link></li>
-                <li><Link to={`/IIIPowstanie`}>III Powstanie Śląskie</Link></li>
-                <li><Link to={`/Skutki`}>Skutki i Ocena</Link></li>
+                <Link to={`/`}><li>Główna</li></Link>
+                <Link to={`/PoWojnie`}><li>Śląsk po I Wojnie Światowej</li></Link>
+                <Link to={`/Korfanty`}><li>Wojciech Korfanty</li></Link>
+                <Link to={`/IPowstanie`}><li>I Powstanie Śląskie</li></Link>
+                <Link to={`/IIPowstanie`}><li>II Powstanie Śląskie</li></Link>
+                <Link to={`/Plebiscyt`}><li>Plebiscyt</li></Link>
+                <Link to={`/IIIPowstanie`}><li>III Powstanie Śląskie</li></Link>
+                <Link to={`/Skutki`}><li>Skutki i Ocena</li></Link>
             </ul>
         </div>
     )
