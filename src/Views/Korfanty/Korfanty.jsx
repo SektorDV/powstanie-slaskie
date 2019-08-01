@@ -1,10 +1,10 @@
 import React from 'react';
-import './Intro.scss';
+import './Korfanty.scss';
 
-const Intro = () => {
+const Korfanty = () => {
     return(
-        <div className="ps__intro">INTRO</div>
+        <div className="ps__intro">Korfanty</div>
     )
 }
 
-export default Intro;
+export default Korfanty;
