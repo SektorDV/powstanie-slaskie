@@ -18,8 +18,8 @@ import Skutki from './Views/Skutki/Skutki';
 function App() {
   return (
     <div className="App">
-        <Route path="/" exact component = {withRouter(Intro)} />
-        <Route path="/PoWojnie" component = {PoWojnie} />
+        <Route path="/" exact component = {Intro} />
+        <Route path="/PoWojnie" exact component = {PoWojnie} />
         <Route path="/Korfanty" exact component = {Korfanty} />
         <Route path="/IPowstanie" exact component = {IPowstanie} />
         <Route path="/IIPowstanie" exact component = {IIPowstanie} />
