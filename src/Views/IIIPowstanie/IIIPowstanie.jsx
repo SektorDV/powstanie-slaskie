@@ -1,9 +1,12 @@
 import React from 'react';
 import './IIIPowstanie.scss';
+import Pagination from '../../Components/Pagination/Pagination';
 
 const IIIPowstanie = () => {
     return(
-        <div className="ps__IIIPowstanie">IIIPowstanie</div>
+        <div className="ps__IIIPowstanie">
+            <Pagination />
+            IIIPowstanie</div>
     )
 }
 

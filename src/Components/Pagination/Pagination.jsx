@@ -1,17 +1,20 @@
 import React from 'react';
+import {BrowserRouter, NavLink } from 'react-router-dom';
 import './Pagination.scss';
 
 const Pagination = () => {
     return (
-        <div class="ps__pagination">
-            <span className="pagination__dot pagination__dot--active"></span>
-            <span className="pagination__dot"></span>
-            <span className="pagination__dot"></span>
-            <span className="pagination__dot"></span>
-            <span className="pagination__dot"></span>
-            <span className="pagination__dot"></span>
-            <span className="pagination__dot"></span>
-            <span className="pagination__dot"></span>
+        <div className="ps__pagination">
+            <ul className="pagination__list">
+                <NavLink to={`/`} exact activeClassName="pagination_active" ><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/PoWojnie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/Korfanty`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/IPowstanie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/IIPowstanie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/Plebiscyt`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/IIIPowstanie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/Skutki`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+            </ul>
         </div>
     )
 }
