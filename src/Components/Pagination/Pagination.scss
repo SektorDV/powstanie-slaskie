@@ -22,7 +22,13 @@
     z-index: 2;
 
   }
+.pagination__link {
+  transition: 2s;
+
+}
+
   &_active > .pagination__link {
+    transition: 2s;
     background-color: #f25a4b;
 
     &::after {

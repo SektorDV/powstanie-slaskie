@@ -19,7 +19,7 @@
             background-color: #2c2b2f;
             text-transform: uppercase;
             font-family: 'poppinsregular', sans-serif;
-            font-size: 17px;
+            font-size: 15px;
             padding: 0 20px;
             position: relative;
             z-index: 2;
@@ -29,6 +29,10 @@
             }
             &.nav_active .nav_select{
                animation: selectSlideIn 0.5s ease-in-out forwards;
+            }
+            & .nav_select {
+             // animation: selectSlideOut 0.2s ease-in-out forwards;
+
             }
             span {
                 position: absolute;
@@ -63,5 +67,18 @@
     }
     100% {
         top: -5%
+    }
+}
+
+
+@keyframes selectSlideOut {
+    0% {
+        top: -5%
+    }
+    60% {
+        top: -20%
+    }
+    100% {
+        top: 100%
     }
 }
