@@ -39,7 +39,13 @@
       }
 
   }
+.pagination__link {
+  transition: 0.5s;
+
+}
+
   &_active > .pagination__link {
+    transition: 0.5s;
     background-color: #f25a4b;
     &::after {
         opacity: 1;
