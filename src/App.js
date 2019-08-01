@@ -20,7 +20,7 @@ import Pagination from './Components/Pagination/Pagination';
 function App() {
   return (
     <div className="App">
-      <Pagination />
+        <Pagination />
         <Route path="/" exact component = {Intro} />
         <Route path="/PoWojnie" exact component = {PoWojnie} />
         <Route path="/Korfanty" exact component = {Korfanty} />

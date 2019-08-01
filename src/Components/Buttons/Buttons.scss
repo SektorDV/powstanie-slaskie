@@ -1,0 +1,14 @@
+.ps__buttons {
+    display: flex;
+}
+
+
+.buttons {
+    &__button {
+        width: 45px;
+        margin: 0 15px;
+        svg:hover .cls-1{
+            fill: #f25a4b;
+        }
+    }
+}
