@@ -6,7 +6,10 @@ const Page = props => {
     <div className="ps__page__main">
       <div
         className="ps__page__left"
-        style={{ backgroundImage: `url(${props.content.bg})` }}
+        style={{ backgroundImage: `url(${props.content.bg})`,
+      justifyContent: props.content.titleLeft ? null : 'flex-end',
+      alignItems: props.content.titleLeft ? null : 'flex-end'
+      }}
       >
         <div className="ps__page__left__title">
           <div className="ps__page__left__title__headline">
