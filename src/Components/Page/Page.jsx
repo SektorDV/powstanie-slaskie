@@ -1,14 +1,20 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "./Page.scss";
 import Scrollbar from 'react-scrollbars-custom';
 
+
+
+
 const Page = props => {
+
   const content = [];
   props.content.menuItems.forEach(e => {
     if(e.content != '') content.push(e.content)
   });
 
   const [menuSelection, setMenuSelection] = useState(0);
+  const [textScroll, setTextScroll] = useState(0);
+  const [textHeight, setTextHeight] = useState(0);
 
   return (
     <div className="ps__page__main">
@@ -49,8 +55,14 @@ const Page = props => {
           <div className="ps__page__right__top__right" style={{backgroundImage: `url(${props.content.smallImg})`}}></div>
         </div>
         <div className="ps__page__right__bottom">
-          <div className="textfield">
-            <Scrollbar style={{width: '90%'}}>{content[menuSelection]} </Scrollbar>
+          <div className={
+            `textfield 
+            ${textScroll > 0 ? 'fadetop':''} 
+            ${textScroll < textHeight ? 'fadebottom':''}
+            `}>
+            <Scrollbar style={{width: '90%'}} onUpdate={(el) => {setTextScroll(el.scrollTop); setTextHeight(el.scrollHeight - el.clientHeight)}}>
+            {content[menuSelection]} 
+            </Scrollbar>
           </div>
         </div>
         <div className="ps__page__right__scroller">
