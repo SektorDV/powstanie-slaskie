@@ -34,6 +34,16 @@
             left: 220px;
         }
     }
+    &__line {
+        width: 80px;
+    height: 6px;
+    left: 65px;
+    position: absolute;
+    background-color: #0b5a82;
+    top: 327px;
+    z-index: 1;
+    transition: all 3s cubic-bezier(0, 0.91, 0.88, 0.93)
+}
     &__text {
         width: 42%;
         margin-left: 8%;
@@ -46,21 +56,29 @@
         margin-bottom: 40px;
     }
     &__img {
-        background-image: url(../../res/img/introImg-BG.png);
+        background-image: url(../../res/img/soliders_final.png);
         width: 50%;
         height: calc(100vh - 140px);
-        background-position-y: 70%;
+        background-position: -139px 0px;
         background-repeat: no-repeat;
         position: relative;
+        transition: all 3s cubic-bezier(0, 0.91, 0.88, 0.93)
+
     }
     &__soldier {
-        background-image: url(/static/media/01_Powstanie_śląskie_INTRO.062d117d.png);
-    background-size: contain;
-    width: 320px;
-    height: 750px;
-    top: 65px;
-    left: -133px;
-    position: absolute;
-    background-repeat: no-repeat;
-}
+        
+       
+            background-image: url(../../res/img/01_Powstanie_śląskie_INTRO.png);
+            background-size: contain;
+            width: 320px;
+            height: 750px;
+            top: 122px;
+            left: -130px;
+            position: absolute;
+            background-repeat: no-repeat;
+            z-index: 2;
+            transition: all 3s cubic-bezier(0, 0.91, 0.88, 0.93)
+
+        }
+        
 }

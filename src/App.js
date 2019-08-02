@@ -18,12 +18,19 @@ import Pagination from './Components/Pagination/Pagination';
 import Header from './Components/Header/Header';
 
 
+
 function App() {
   return (
     <div className="App">
         <Header />
         <Pagination />
-        <Route path="/" exact component = {Intro} />
+
+
+
+        <Route path="/" exact component = {Intro}/>
+
+        <Route path="/" exact render = {() => <Intro kaczka={true}/>}/>
+
         <Route path="/PoWojnie" exact component = {PoWojnie} />
         <Route path="/Korfanty" exact component = {Korfanty} />
         <Route path="/IPowstanie" exact component = {IPowstanie} />
