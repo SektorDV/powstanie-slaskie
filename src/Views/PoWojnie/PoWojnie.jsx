@@ -37,7 +37,17 @@ const content = {
             type: "data",
             content: ``
         }
-
+    ],
+    multimediaItems: [
+        {
+            type: 'audio'
+        },
+        {
+            type: 'video'
+        },
+        {
+            type: 'map'
+        }
     ]
 }
 

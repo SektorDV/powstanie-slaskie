@@ -3,6 +3,7 @@
     height: calc(100vh - 70px);
     width: 100%;
     .ps__page__left {
+        z-index: 3;
         flex: 1.1;
         background-size: cover;
         color: #e3f2fa;
@@ -75,15 +76,39 @@
                 }
                 &__icons {
                     flex: 1;
+                    margin-top: 10px;
+                    &__label {
+                        font-family: 'poppinsregular', sans-serif;
+                        font-weight: 700;
+                        position: relative;
+                        margin-bottom: 30px;
+                        
+                        &::before {
+                            content: '';
+                            z-index: 1;
+                            position: absolute;
+                            height:22px;
+                            top: -4px;
+                            right: 50%;
+                            width: 1000px;
+                            background-color: #f25a4b;
+                        }
+                        span {
+                            z-index: 2;
+                            position: absolute;
+                        }
+                    }
                 }
             }
             &__right {
-                background-size: cover;
+                background-size: 100%;
+                background-position: center center;
             }
         }
         &__bottom {
             height: 50%;
             .textfield {
+                font-size: 14px;
                 width: 80%;
                 height: 100%;
                 position: relative;
@@ -95,7 +120,7 @@
                     left: 0;
                     pointer-events: none;
                     background-image:  linear-gradient(to bottom, 
-                    RGBA(227,242,250,1), 
+                    rgba(227,242,250,1), 
                     rgba(255,255,255, 0)
                      90%);
                     width: 89%;
