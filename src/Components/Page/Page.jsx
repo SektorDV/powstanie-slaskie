@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Page.scss";
 import Scrollbar from "react-scrollbars-custom";
 import Buttons from '../Buttons/Buttons';
-
+import Scrolldownicon from '../../res/images/icons/scrolldown.png';
 
 const Page = props => {
   const content = [];
@@ -21,8 +21,26 @@ const Page = props => {
   });
 
   const [menuSelection, setMenuSelection] = useState(0);
-  const [textScroll, setTextScroll] = useState(0);
-  const [textHeight, setTextHeight] = useState(0);
+  const [textScroll, setTextScroll] = useState();
+  const [textHeight, setTextHeight] = useState();
+  const [textWindowHeight, setTextWindowHeight] = useState();
+  const [scrollInterval, setScrollInterval] = useState();
+  const [showScroller, setShowScroller] = useState(false);
+
+  const enableScroll = () => {
+    setScrollInterval(
+      setInterval(() => {
+        setTextScroll(prevTextScroll => prevTextScroll+1)
+      }, 10)
+    )
+  }
+  const disableScroll = () => {
+    clearInterval(scrollInterval)
+  }
+
+  useEffect(() => {
+    (textHeight > textWindowHeight) ? setShowScroller(true) : setShowScroller(false);
+  })
 
   return (
     <div className="ps__page__main">
@@ -42,6 +60,9 @@ const Page = props => {
           <div className="ps__page__left__title__subheadline">
             <p>{props.content.subheadline}</p>
           </div>
+        </div>
+        <div className="ps__page__left__photoAuthor">
+          {props.content.bgAuthor}
         </div>
       </div>
       <div className="ps__page__right">
@@ -76,21 +97,26 @@ const Page = props => {
           <div
             className={`textfield 
             ${textScroll > 0 ? "fadetop" : ""} 
-            ${textScroll < textHeight ? "fadebottom" : ""}
+            ${textScroll < textHeight - textWindowHeight ? "fadebottom" : ""}
             `}
           >
             <Scrollbar
+              scrollTop={textScroll}
               style={{ width: "90%" }}
               onUpdate={el => {
                 setTextScroll(el.scrollTop);
-                setTextHeight(el.scrollHeight - el.clientHeight);
+                setTextHeight(el.scrollHeight);
+                setTextWindowHeight(el.clientHeight);
               }}
             >
               {content[menuSelection]}
             </Scrollbar>
           </div>
         </div>
-        <div className="ps__page__right__scroller" />
+        {showScroller ? <div className="ps__page__right__scroller">
+             <img src={Scrolldownicon} alt="" onMouseEnter={() => enableScroll()} onMouseLeave={() => disableScroll()} /><span>PRZEWIJAJ TREŚĆ</span>
+        </div> : null}
+        
       </div>
     </div>
   );

@@ -9,6 +9,9 @@
         color: #e3f2fa;
         padding: 6%;
         display: flex;
+        padding-bottom: 4%;
+        justify-content: space-between;
+        padding-right: 1%;
         &__title {
             width: 70%;
             font-size: 25px;
@@ -27,6 +30,7 @@
                 }
             }
         }
+
         &__subtitle {
             font-size: 16px;
         }
@@ -35,6 +39,12 @@
             border-color: #f25a4b;
         }
         
+        &__photoAuthor {
+            justify-self: flex-end;
+            align-self: flex-end;
+            font-size: 10px;
+        }
+
     }
     .ps__page__right {
         flex: 1;
@@ -57,6 +67,7 @@
             &__left {
                 display: flex;
                 flex-direction: column;
+                
                 &__menu {
                     flex: 1;
                     display: flex;
@@ -89,7 +100,7 @@
                             position: absolute;
                             height:22px;
                             top: -4px;
-                            right: 50%;
+                            right: 40%;
                             width: 1000px;
                             background-color: #f25a4b;
                         }
@@ -97,6 +108,9 @@
                             z-index: 2;
                             position: absolute;
                         }
+                    }
+                    .ps__buttons {
+                        width: 55%;
                     }
                 }
             }
@@ -152,8 +166,21 @@
             }
         }
         &__scroller {
+            padding-top: 20px;
             height: 20%;
             margin-bottom: 5%;
+            img {
+                height: 20px;
+                margin-bottom: -6px;
+                margin-right: 10px;
+                cursor: pointer;
+                
+            }
+            span {
+                font-size: 9px;
+                font-weight: 700;
+            }
+            
         }
     }
 }
