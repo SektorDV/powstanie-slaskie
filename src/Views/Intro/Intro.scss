@@ -19,6 +19,20 @@
         font-weight: 300;
         color: #6a8594;
         margin-left: 300px;
+        position: relative;
+        
+        &::before, &::after {
+            content: "";
+            width: 270px;
+            height: 6px;
+            left: -300px;
+            position: absolute;
+            background-color: #f25a4b;
+            top: calc(50% - 3px);
+        }
+        &::after {
+            left: 220px;
+        }
     }
     &__text {
         width: 42%;
