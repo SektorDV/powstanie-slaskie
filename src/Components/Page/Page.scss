@@ -9,9 +9,18 @@
         color: #e3f2fa;
         padding: 6%;
         display: flex;
-        padding-bottom: 4%;
+        padding-bottom: 75px;
         justify-content: space-between;
         padding-right: 1%;
+        &.right-align {
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        &.right-align .ps__page__left__title {
+            margin-bottom: 5%;
+            width: 90%;
+        }
         &__title {
             width: 70%;
             font-size: 25px;
@@ -43,6 +52,7 @@
             justify-self: flex-end;
             align-self: flex-end;
             font-size: 10px;
+            font-family: 'latoregular', sans-serif;
         }
 
     }
