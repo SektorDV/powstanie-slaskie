@@ -45,11 +45,9 @@ const Page = props => {
   return (
     <div className="ps__page__main">
       <div
-        className="ps__page__left"
+        className={`ps__page__left ${props.content.titleLeft ? '' : 'right-align' }`}
         style={{
           backgroundImage: `url(${props.content.bg})`,
-          justifyContent: props.content.titleLeft ? null : "flex-end",
-          alignItems: props.content.titleLeft ? null : "flex-end"
         }}
       >
         <div className="ps__page__left__title">
