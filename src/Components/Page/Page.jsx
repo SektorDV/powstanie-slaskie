@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./Page.scss";
-import Scrollbars from 'react-custom-scrollbars';
+import Scrollbar from 'react-scrollbars-custom';
 
 const Page = props => {
   const content = [];
@@ -38,7 +38,9 @@ const Page = props => {
                 return(
                   <div key={index} onClick={() => {
                     if(e.type === 'text') setMenuSelection(index);
-                  }}>{e.label}</div>
+                  }}
+                  style={menuSelection===index?{color: 'black'}:null}
+                  >{e.label}</div>
                 )
               })}
             </div>
@@ -48,7 +50,7 @@ const Page = props => {
         </div>
         <div className="ps__page__right__bottom">
           <div className="textfield">
-            <Scrollbars>{content[menuSelection]}</Scrollbars>
+            <Scrollbar style={{width: '90%'}}>{content[menuSelection]} </Scrollbar>
           </div>
         </div>
         <div className="ps__page__right__scroller">

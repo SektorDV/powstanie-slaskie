@@ -60,11 +60,17 @@
                     flex: 1;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
                     text-transform: uppercase;
                     font-family: 'poppinsregular', sans-serif;
                     font-weight: 700;
                     cursor: pointer;
+                    color: #6a8594;
+                    user-select: none;
+                    div:hover {
+                        transition: 0.5s;
+                        color: #41535f;
+                    }
                     
                 }
                 &__icons {
@@ -78,7 +84,7 @@
         &__bottom {
             height: 50%;
             .textfield {
-                width: 70%;
+                width: 80%;
                 height: 100%;
             }
         }
@@ -87,4 +93,20 @@
             margin-bottom: 5%;
         }
     }
+}
+
+.ScrollbarsCustom-Track {
+    width: 5px !important;
+    border-radius: 0 !important;
+    background-color: #bcc5ca !important;
+}
+
+.ScrollbarsCustom-Thumb {
+    border-radius: 0 !important;
+
+    background-color: #0b5a82 !important;
+}
+
+.ScrollbarsCustom-Content {
+    padding-right: 10px !important;
 }
