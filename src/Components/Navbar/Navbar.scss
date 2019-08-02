@@ -12,6 +12,7 @@
         align-items: center;
         color: white;
         height: 70px;
+       
         a {
             color: white;
             display: flex;
@@ -28,15 +29,14 @@
             z-index: 2;
             text-align: center;
             transition: 0.5s;
-
             &:hover {
-                color: #bbb;
+                color: #bbb !important;
             }
             &:visited {
                 color: white;
             }
             &.nav_active:hover {
-                color: white;
+                color: white !important;
             }
             &.nav_active .nav_select{
                animation: selectSlideIn 0.5s ease-in-out forwards;

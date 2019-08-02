@@ -5,6 +5,7 @@
     .ps__page__left {
         z-index: 3;
         flex: 1.1;
+        background-color: #e3f2fa;
         background-size: cover;
         color: #e3f2fa;
         padding: 6%;
@@ -23,7 +24,7 @@
         }
         &__title {
             width: 70%;
-            font-size: 25px;
+            font-size: 20px;
             &__headline {
                 font-family: 'dm_serif_displayregular', serif;
                 h2 {
@@ -82,13 +83,15 @@
                     flex: 1;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
                     text-transform: uppercase;
                     font-family: 'poppinsregular', sans-serif;
                     font-weight: 700;
                     cursor: pointer;
                     color: #6a8594;
                     user-select: none;
+                    div {
+                        margin-bottom: 10px;
+                    }
                     div:hover {
                         transition: 0.5s;
                         color: #41535f;
@@ -173,6 +176,9 @@
                 &.fadetop:before {
                     opacity: 1;
                 }
+            p {
+                margin-bottom: 20px;
+            }
             }
         }
         &__scroller {

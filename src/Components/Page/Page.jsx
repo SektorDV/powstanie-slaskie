@@ -6,7 +6,7 @@ import Scrolldownicon from '../../res/images/icons/scrolldown.png';
 
 const Page = props => {
   const content = [];
-
+  
   const audioContent = [];
   props.content.multimediaItems.forEach(el => el.type === "audio" ? audioContent.push(el) : false);
 
@@ -41,6 +41,7 @@ const Page = props => {
   useEffect(() => {
     (textHeight > textWindowHeight) ? setShowScroller(true) : setShowScroller(false);
   })
+
 
   return (
     <div className="ps__page__main">
@@ -97,6 +98,7 @@ const Page = props => {
             ${textScroll > 0 ? "fadetop" : ""} 
             ${textScroll < textHeight - textWindowHeight ? "fadebottom" : ""}
             `}
+            
           >
             <Scrollbar
               scrollTop={textScroll}
@@ -107,13 +109,13 @@ const Page = props => {
                 setTextWindowHeight(el.clientHeight);
               }}
             >
-              {content[menuSelection]}
+             <div className="textcontent" dangerouslySetInnerHTML={{__html: content[menuSelection]}}></div> 
             </Scrollbar>
           </div>
         </div>
-        {showScroller ? <div className="ps__page__right__scroller">
-             <img src={Scrolldownicon} alt="" onMouseEnter={() => enableScroll()} onMouseLeave={() => disableScroll()} /><span>PRZEWIJAJ TREŚĆ</span>
-        </div> : null}
+        <div className="ps__page__right__scroller">
+        {showScroller ? <><img src={Scrolldownicon} alt="" onMouseEnter={() => enableScroll()} onMouseLeave={() => disableScroll()} /><span>PRZEWIJAJ TREŚĆ</span></>: null}
+        </div> 
         
       </div>
     </div>
