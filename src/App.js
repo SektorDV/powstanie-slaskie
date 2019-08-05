@@ -25,7 +25,7 @@ import { tsPropertySignature } from "@babel/types";
 const App = withRouter(({location, ...props}) => {
   return (
     <div className="App">
-      {props.showModal ? <Modal /> : null}
+     
       <Header />
       <Pagination />
 
@@ -45,6 +45,7 @@ const App = withRouter(({location, ...props}) => {
           </section>
         </CSSTransition>
       </TransitionGroup>
+      {props.showModal ?<Modal /> : null}
       <Navbar />
     </div>
   );
