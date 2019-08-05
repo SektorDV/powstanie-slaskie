@@ -9,7 +9,6 @@ const Modal = props => {
         setModalOpacity(1);
     }, [])
     
-    
     return(
             <div className="ps__modalwindow" style={{opacity: modalOpacity}}>
                 <div className="ps__modalclose">
@@ -22,7 +21,7 @@ const Modal = props => {
                 </div>
                 <div className="ps__modalwindow__left">
                 </div>
-                <div className="ps__modalwindow__right">
+                <div className="ps__modalwindow__right" style={{backgroundImage: `url(${props.bgImg})`, width: 1000, height: 1000}}>
                 </div>
             </div>
     )
@@ -36,4 +35,10 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(Modal);
+const mapStateToProps = (state) => {
+    return {
+        bgImg: state.modalImgSrc
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Modal);

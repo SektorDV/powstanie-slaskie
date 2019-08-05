@@ -41,10 +41,6 @@
             &.nav_active .nav_select{
                animation: selectSlideIn 0.5s ease-in-out forwards;
             }
-            & .nav_select {
-             // animation: selectSlideOut 0.2s ease-in-out forwards;
-
-            }
             span {
                 position: absolute;
                 z-index: 3;

@@ -88,6 +88,10 @@ const Page = props => {
                     key={index}
                     onClick={() => {
                       if (e.type === "text") setMenuSelection(index);
+                      if (e.type === "persons") {
+                        props.sendDataToModal(e.content.img)
+                        props.showModal();
+                      }
                       if (e.type === "data") props.showModal();
                     }}
                     style={menuSelection === index ? { color: "black" } : null}
@@ -137,8 +141,16 @@ const Page = props => {
   );
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch, ownProps) => {
   return {
+    sendDataToModal: (img) => {
+      dispatch({
+        type: 'SET_MODAL_DATA',
+        payload: {
+          img: img
+        }
+      })
+    },
     showModal: () => dispatch({type: 'SWITCH_ON_MODAL'})
   }
 }
