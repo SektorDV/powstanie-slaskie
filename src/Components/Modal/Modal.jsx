@@ -4,7 +4,8 @@ import {connect, dispatch} from 'react-redux';
 import MaterialIcon from 'material-icons-react';
 
 const Modal = props => {
-    const [modalOpacity, setModalOpacity] = useState(0)
+    const [modalOpacity, setModalOpacity] = useState(0);
+    const [menuSelection, setMenuSelection] = useState(-1);
     useEffect(() => {
         setModalOpacity(1);
     }, [])
@@ -20,6 +21,20 @@ const Modal = props => {
                         }} icon="clear" />
                 </div>
                 <div className="ps__modalwindow__left">
+                    <div className="ps__modalwindow__left__personslist">
+                        {props.content.map((e,index) => {
+                            return(
+                            <div key={index} onClick={() => setMenuSelection(index)} className="ps__modalwindow__left__personslist__personcontainer">
+                                <div className="ps__modalwindow__left__personslist__personcontainer__bg"></div>
+                                <img src={e.img} alt={e.name}/>
+                            </div>
+                            )
+                        })}
+                      
+                    </div>
+                    <div className="ps__modalwindow__left__textcontainer">
+                        {menuSelection === -1 ? null : props.content[menuSelection].text}
+                    </div>
                 </div>
                 <div className="ps__modalwindow__right" style={{backgroundImage: `url(${props.bgImg})`, width: 1000, height: 1000}}>
                 </div>
@@ -37,7 +52,8 @@ const mapDispatchToProps = dispatch => {
 
 const mapStateToProps = (state) => {
     return {
-        bgImg: state.modalImgSrc
+        bgImg: state.modalImgSrc,
+        content: state.modalContent
     }
 }
 
