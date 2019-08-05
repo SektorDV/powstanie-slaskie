@@ -89,7 +89,7 @@ const Page = props => {
                     onClick={() => {
                       if (e.type === "text") setMenuSelection(index);
                       if (e.type === "persons") {
-                        props.sendDataToModal(e.content.img)
+                        props.sendDataToModal(e.content.img, e.content.content)
                         props.showModal();
                       }
                       if (e.type === "data") props.showModal();
@@ -103,7 +103,7 @@ const Page = props => {
             </div>
             <div className="ps__page__right__top__left__icons">
               <div className="ps__page__right__top__left__icons__label"><span>POSŁUCHAJ I ZOBACZ</span></div>
-              <Buttons audio={props.content.audio} audio={audioContent.length > 0} video={videoContent.length > 0} map={mapContent.length > 0} />
+              <Buttons audio={audioContent.length > 0} video={videoContent.length > 0} map={mapContent.length > 0} />
             </div>
           </div>
           <div
@@ -143,11 +143,12 @@ const Page = props => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    sendDataToModal: (img) => {
+    sendDataToModal: (img, content) => {
       dispatch({
         type: 'SET_MODAL_DATA',
         payload: {
-          img: img
+          img: img,
+          content: content
         }
       })
     },

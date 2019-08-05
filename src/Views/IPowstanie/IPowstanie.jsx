@@ -36,8 +36,51 @@ const content={
             label: "Przywódcy powstania",
             type: "persons",
             content: {
-                img: PersonsImg
-            }
+                img: PersonsImg,
+                content: [
+                        {
+                            name: 'Józef Grzegorzek',
+                            img: '#',
+                            text: `Maciej Ignacy Mielżyński, pseud. „Nowina-Doliwa” (ur. 13 października 1869 w Chobienicach, zm. 9 stycznia 1944 w Wiedniu) – hrabia, podpułkownik kawalerii Wojska Polskiego, polski działacz narodowy w Wielkopolsce i na Górnym Śląsku. Naczelny wódz III powstania śląskiego, współzałożyciel Stronnictwa Polskiego na Górnym Śląsku.
+
+                            Jego ojciec, Karol Ignacy hr. Mielżyński, był ziemianinem z Chobienic w powiecie wolsztyńskim, w Wielkopolsce. Matka Emilia pochodziła z rodu hrabiów Bnińskich. Jego rodzina należała do najbogatszych w Wielkopolsce. Ukończył szkołę średnią w Lesznie, a potem studiował prawo i malarstwo w Monachium. Odbył służbę wojskową w armii niemieckiej w latach 1894–1898, a następnie w latach 1898–1914 odbywał praktyki rolnicze w Będlewie i Dakowach Mokrych. W latach 1903–1914 był posłem do Reichstagu. W okresie 1904-1910 był prezesem Klubu Wioślarskiego z roku 1904 w Poznaniu.
+                            
+                            21 grudnia 1913 roku zastrzelił zdradzającą go żonę Felicję z Potockich (córkę hr. Bolesława Eligiusza Potockiego z Będlewa i Józefy z Mycielskich) oraz jej siostrzeńca i kochanka – hr. Alfreda Miączyńskiego (syna Władysława Miączyńskiego i Heleny z Potockich – siostry przyrodniej Felicji). Chociaż sąd go uniewinnił (działał w obronie honoru), stosowany był wobec niego w Wielkopolsce bojkot towarzyski.
+                            
+                            W 1909 roku posiadał wsie rycerskie: Chobienice, Godziszewo, Grońsko i Nieborze w powiecie babimojskim rejencji poznańskiej w Wielkim Księstwie Poznańskim[2].
+                            
+                            Maciej Mielżyński w 1909 roku zaczął interesować się sprawami górnośląskimi, politycznie związał się z endecją. Kupił też wydawnictwo Karola Miarki seniora w Mikołowie. I wojnę światową spędził w szeregach armii niemieckiej. W 1920 roku wstąpił do Wojska Polskiego w stopniu majora. W styczniu 1921 został oddelegowany na Górny Śląsk (już jako podpułkownik kawalerii). Początkowo zastępca dowódcy, a od kwietnia 1921 roku dowódca tajnej organizacji wojskowej Dowództwo Obrony Plebiscytu (DOP). W chwili wybuchu III powstania śląskiego DOP został przekształcony w Naczelną Komendę Wojsk Powstańczych, a Mielżyński stanął na czele III powstania śląskiego. O`
+                        },
+                        {
+                            name: 'Maciej Miełżyński',
+                            img: '#',
+                            text: `Maciej Ignacy Mielżyński, pseud. „Nowina-Doliwa” (ur. 13 października 1869 w Chobienicach, zm. 9 stycznia 1944 w Wiedniu) – hrabia, podpułkownik kawalerii Wojska Polskiego, polski działacz narodowy w Wielkopolsce i na Górnym Śląsku. Naczelny wódz III powstania śląskiego, współzałożyciel Stronnictwa Polskiego na Górnym Śląsku.
+
+                            Jego ojciec, Karol Ignacy hr. Mielżyński, był ziemianinem z Chobienic w powiecie wolsztyńskim, w Wielkopolsce. Matka Emilia pochodziła z rodu hrabiów Bnińskich. Jego rodzina należała do najbogatszych w Wielkopolsce. Ukończył szkołę średnią w Lesznie, a potem studiował prawo i malarstwo w Monachium. Odbył służbę wojskową w armii niemieckiej w latach 1894–1898, a następnie w latach 1898–1914 odbywał praktyki rolnicze w Będlewie i Dakowach Mokrych. W latach 1903–1914 był posłem do Reichstagu. W okresie 1904-1910 był prezesem Klubu Wioślarskiego z roku 1904 w Poznaniu.
+                            
+                            21 grudnia 1913 roku zastrzelił zdradzającą go żonę Felicję z Potockich (córkę hr. Bolesława Eligiusza Potockiego z Będlewa i Józefy z Mycielskich) oraz jej siostrzeńca i kochanka – hr. Alfreda Miączyńskiego (syna Władysława Miączyńskiego i Heleny z Potockich – siostry przyrodniej Felicji). Chociaż sąd go uniewinnił (działał w obronie honoru), stosowany był wobec niego w Wielkopolsce bojkot towarzyski.
+                            
+                            W 1909 roku posiadał wsie rycerskie: Chobienice, Godziszewo, Grońsko i Nieborze w powiecie babimojskim rejencji poznańskiej w Wielkim Księstwie Poznańskim[2].
+                            
+                            Maciej Mielżyński w 1909 roku zaczął interesować się sprawami górnośląskimi, politycznie związał się z endecją. Kupił też wydawnictwo Karola Miarki seniora w Mikołowie. I wojnę światową spędził w szeregach armii niemieckiej. W 1920 roku wstąpił do Wojska Polskiego w stopniu majora. W styczniu 1921 został oddelegowany na Górny Śląsk (już jako podpułkownik kawalerii). Początkowo zastępca dowódcy, a od kwietnia 1921 roku dowódca tajnej organizacji wojskowej Dowództwo Obrony Plebiscytu (DOP). W chwili wybuchu III powstania śląskiego DOP został przekształcony w Naczelną Komendę Wojsk Powstańczych, a Mielżyński stanął na czele III powstania śląskiego. O`
+                        },
+                        {
+                            name: 'Wojciech Korfanty',
+                            img: '#',
+                            text: `Maciej Ignacy Mielżyński, pseud. „Nowina-Doliwa” (ur. 13 października 1869 w Chobienicach, zm. 9 stycznia 1944 w Wiedniu) – hrabia, podpułkownik kawalerii Wojska Polskiego, polski działacz narodowy w Wielkopolsce i na Górnym Śląsku. Naczelny wódz III powstania śląskiego, współzałożyciel Stronnictwa Polskiego na Górnym Śląsku.
+
+                            Jego ojciec, Karol Ignacy hr. Mielżyński, był ziemianinem z Chobienic w powiecie wolsztyńskim, w Wielkopolsce. Matka Emilia pochodziła z rodu hrabiów Bnińskich. Jego rodzina należała do najbogatszych w Wielkopolsce. Ukończył szkołę średnią w Lesznie, a potem studiował prawo i malarstwo w Monachium. Odbył służbę wojskową w armii niemieckiej w latach 1894–1898, a następnie w latach 1898–1914 odbywał praktyki rolnicze w Będlewie i Dakowach Mokrych. W latach 1903–1914 był posłem do Reichstagu. W okresie 1904-1910 był prezesem Klubu Wioślarskiego z roku 1904 w Poznaniu.
+                            
+                            21 grudnia 1913 roku zastrzelił zdradzającą go żonę Felicję z Potockich (córkę hr. Bolesława Eligiusza Potockiego z Będlewa i Józefy z Mycielskich) oraz jej siostrzeńca i kochanka – hr. Alfreda Miączyńskiego (syna Władysława Miączyńskiego i Heleny z Potockich – siostry przyrodniej Felicji). Chociaż sąd go uniewinnił (działał w obronie honoru), stosowany był wobec niego w Wielkopolsce bojkot towarzyski.
+                            
+                            W 1909 roku posiadał wsie rycerskie: Chobienice, Godziszewo, Grońsko i Nieborze w powiecie babimojskim rejencji poznańskiej w Wielkim Księstwie Poznańskim[2].
+                            
+                            Maciej Mielżyński w 1909 roku zaczął interesować się sprawami górnośląskimi, politycznie związał się z endecją. Kupił też wydawnictwo Karola Miarki seniora w Mikołowie. I wojnę światową spędził w szeregach armii niemieckiej. W 1920 roku wstąpił do Wojska Polskiego w stopniu majora. W styczniu 1921 został oddelegowany na Górny Śląsk (już jako podpułkownik kawalerii). Początkowo zastępca dowódcy, a od kwietnia 1921 roku dowódca tajnej organizacji wojskowej Dowództwo Obrony Plebiscytu (DOP). W chwili wybuchu III powstania śląskiego DOP został przekształcony w Naczelną Komendę Wojsk Powstańczych, a Mielżyński stanął na czele III powstania śląskiego. O`
+                        }   
+                    ]                    
+                }
+            
+
         }
     ],
     multimediaItems: [
