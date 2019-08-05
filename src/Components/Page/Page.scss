@@ -6,13 +6,17 @@
         z-index: 3;
         flex: 1.1;
         background-color: #e3f2fa;
-        background-size: cover;
         color: #e3f2fa;
         padding: 6%;
         display: flex;
         padding-bottom: 75px;
         justify-content: space-between;
         padding-right: 1%;
+        background-size: 120%;
+        background-repeat: no-repeat;
+        transition: all 3s cubic-bezier(0.32, 0.63, 0, 0.63);
+        transition-delay: 0.2s;
+
         &.right-align {
             flex-direction: column;
             justify-content: flex-end;

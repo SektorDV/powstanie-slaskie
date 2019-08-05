@@ -50,7 +50,10 @@ const Page = props => {
     (textHeight > textWindowHeight) ? setShowScroller(true) : setShowScroller(false);
   })
 
-  useEffect(()=>parallax(x, setImgStyle));
+  useEffect(()=>{
+    parallax(x, setImgStyle)
+  
+  }, [x]);
 
   return (
     <div className="ps__page__main"  onMouseMove={e=>updatePositionX(e.clientX)}>
