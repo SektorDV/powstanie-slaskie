@@ -4,6 +4,8 @@ import Scrollbar from "react-scrollbars-custom";
 import Buttons from '../Buttons/Buttons';
 import Scrolldownicon from '../../res/images/icons/scrolldown.png';
 import {connect, dispatch} from 'react-redux';
+import {parallax} from '../../functions/parallax';
+
 
 const Page = props => {
   const content = [];
@@ -27,6 +29,12 @@ const Page = props => {
   const [textWindowHeight, setTextWindowHeight] = useState();
   const [scrollInterval, setScrollInterval] = useState();
   const [showScroller, setShowScroller] = useState(false);
+  const [imgStyle, setImgStyle] = useState({X:0,Y:0})
+  const [x, updatePositionX] = useState();
+  
+  
+
+
 
   const enableScroll = () => {
     setScrollInterval(
@@ -43,13 +51,18 @@ const Page = props => {
     (textHeight > textWindowHeight) ? setShowScroller(true) : setShowScroller(false);
   })
 
+  useEffect(()=>{
+    parallax(x, setImgStyle)
+  
+  }, [x]);
 
   return (
-    <div className="ps__page__main">
+    <div className="ps__page__main"  onMouseMove={e=>updatePositionX(e.clientX)}>
       <div
         className={`ps__page__left ${props.content.titleLeft ? '' : 'right-align' }`}
         style={{
-          backgroundImage: `url(${props.content.bg})`,
+          backgroundImage: `url(${props.content.bg})`, backgroundPositionX:-142 + imgStyle.X+'px',
+          backgroundPositionY:0 + imgStyle.Y+'px'
         }}
       >
         <div className="ps__page__left__title">
