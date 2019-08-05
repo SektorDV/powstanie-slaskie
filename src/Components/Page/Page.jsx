@@ -3,6 +3,7 @@ import "./Page.scss";
 import Scrollbar from "react-scrollbars-custom";
 import Buttons from '../Buttons/Buttons';
 import Scrolldownicon from '../../res/images/icons/scrolldown.png';
+import {connect, dispatch} from 'react-redux';
 import {parallax} from '../../functions/parallax';
 
 
@@ -87,6 +88,7 @@ const Page = props => {
                     key={index}
                     onClick={() => {
                       if (e.type === "text") setMenuSelection(index);
+                      if (e.type === "data") props.showModal();
                     }}
                     style={menuSelection === index ? { color: "black" } : null}
                   >
@@ -135,4 +137,10 @@ const Page = props => {
   );
 };
 
-export default Page;
+const mapDispatchToProps = dispatch => {
+  return {
+    showModal: () => dispatch({type: 'SWITCH_ON_MODAL'})
+  }
+}
+
+export default connect(null, mapDispatchToProps)(Page);

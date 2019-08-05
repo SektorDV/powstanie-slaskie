@@ -5,6 +5,7 @@
 
 .buttons {
     &__button {
+        cursor: pointer;
         width: 45px;
         margin: 0 15px;
         svg:hover .cls-1{
