@@ -4,6 +4,7 @@ import './App.css';
 import './res/fonts/fonts.scss';
 import Navbar from './Components/Navbar/Navbar';
 import { Route } from "react-router-dom";
+import {connect} from 'react-redux';
 
 //widoki routera
 import Intro from './Views/Intro/Intro';
@@ -16,12 +17,15 @@ import Plebiscyt from './Views/Plebiscyt/Plebiscyt';
 import Skutki from './Views/Skutki/Skutki';
 import Pagination from './Components/Pagination/Pagination';
 import Header from './Components/Header/Header';
+import Modal from './Components/Modal/Modal';
+import { stat } from 'fs';
+import { tsPropertySignature } from '@babel/types';
 
 
-
-function App() {
+function App(props) {
   return (
     <div className="App">
+        {props.showModal ? <Modal /> : null}
         <Header />
         <Pagination />
 
@@ -43,4 +47,10 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    showModal: state.showModal
+  }
+}
+
+export default connect(mapStateToProps)(App);

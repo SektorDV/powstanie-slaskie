@@ -1,11 +1,13 @@
 import React from "react";
 import "./Buttons.scss";
+import {connect, dispatch} from 'react-redux';
 
 const Buttons = (props) => {
   return (
     <div className="ps__buttons">
       {props.video ? <div className="buttons__button">
         <svg
+          onClick={props.showModal}
           id="icons"
           className="buttons__video"
           xmlns="http://www.w3.org/2000/svg"
@@ -34,6 +36,7 @@ const Buttons = (props) => {
   {props.audio ? 
       <div className="buttons__button">
         <svg
+          onClick={props.showModal}
           id="icons"
           className="buttons__audio"
           xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +67,7 @@ const Buttons = (props) => {
       {props.map ? 
       <div className="buttons__button">
         <svg
+          onClick={props.showModal}
           id="icons"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 41.68 38"
@@ -82,4 +86,10 @@ const Buttons = (props) => {
   );
 };
 
-export default Buttons;
+const mapDispatchToProps = dispatch => {
+  return {
+    showModal: () => dispatch({type: 'SWITCH_ON_MODAL'})
+  }
+}
+
+export default connect(null, mapDispatchToProps)(Buttons);
