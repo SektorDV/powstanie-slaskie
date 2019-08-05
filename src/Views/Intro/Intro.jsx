@@ -32,11 +32,11 @@ const Intro = () => {
             
             <div className="intro__img" style={{
                 backgroundPositionX:-142 + imgStyle.X+'px',
-                backgroundPositionY:0 + imgStyle.Y+'px'
+                backgroundPositionY:-100 + imgStyle.Y+'px'
                 }}>
                 <div className="intro__soldier"style={{
                     left:-130 +imgStyle.X+'px',
-                    top:122 +imgStyle.Y+'px'
+                    top:22 +imgStyle.Y+'px'
                     }}></div>
                 <span className="intro__line" style={{
                     left:65 +imgStyle.X+'px',
