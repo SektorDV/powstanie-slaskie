@@ -4,6 +4,7 @@ import Pagination from '../../Components/Pagination/Pagination';
 import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/ipowstanie.png';
 import Small from '../../res/images/small/ipowstaniesmall.png';
+import PersonsImg from '../../res/images/bg/ipowstaniepostacie.png'
 
 const content={
     headline: `"Zwycięstwo osiągniemy za wszelką cenę 
@@ -33,8 +34,10 @@ const content={
         },
         {
             label: "Przywódcy powstania",
-            type: "text",
-            content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
+            type: "persons",
+            content: {
+                img: PersonsImg
+            }
         }
     ],
     multimediaItems: [
