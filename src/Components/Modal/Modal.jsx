@@ -1,13 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './Modal.scss';
 import {connect, dispatch} from 'react-redux';
 import MaterialIcon from 'material-icons-react';
 
 const Modal = props => {
+    const [modalOpacity, setModalOpacity] = useState(0)
+    useEffect(() => {
+        setModalOpacity(1);
+    }, [])
+    
+    
     return(
-            <div className="ps__modalwindow">
+            <div className="ps__modalwindow" style={{opacity: modalOpacity}}>
                 <div className="ps__modalclose">
-                    <MaterialIcon onClick={props.switchOffModal} icon="clear" />
+                    <MaterialIcon onClick={() => {
+                        setModalOpacity(0);
+                        setTimeout(() => {
+                            props.switchOffModal();
+                        }, 300)
+                        }} icon="clear" />
                 </div>
                 <div className="ps__modalwindow__left">
                 </div>
@@ -19,7 +30,9 @@ const Modal = props => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        switchOffModal: () => dispatch({type: 'SWITCH_OFF_MODAL'})
+        switchOffModal: () => {
+            dispatch({type: 'SWITCH_OFF_MODAL'})
+        }
     }
 }
 
