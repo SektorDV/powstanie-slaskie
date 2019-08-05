@@ -5,6 +5,11 @@ import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/ipowstanie.png';
 import Small from '../../res/images/small/ipowstaniesmall.png';
 import PersonsImg from '../../res/images/bg/ipowstaniepostacie.png'
+import alfonsImg from '../../res/img/alfons.png'
+import jozefImg  from '../../res/img/jozef.png'
+import maksymilianImg  from '../../res/img/maksymilian.png'
+
+
 
 const content={
     headline: `"Zwycięstwo osiągniemy za wszelką cenę 
@@ -37,10 +42,11 @@ const content={
             type: "persons",
             content: {
                 img: PersonsImg,
+                author: 'Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe',
                 content: [
                         {
                             name: 'Józef Grzegorzek',
-                            img: '#',
+                            img: `${alfonsImg}`,
                             text: `Maciej Ignacy Mielżyński, pseud. „Nowina-Doliwa” (ur. 13 października 1869 w Chobienicach, zm. 9 stycznia 1944 w Wiedniu) – hrabia, podpułkownik kawalerii Wojska Polskiego, polski działacz narodowy w Wielkopolsce i na Górnym Śląsku. Naczelny wódz III powstania śląskiego, współzałożyciel Stronnictwa Polskiego na Górnym Śląsku.
 
                             Jego ojciec, Karol Ignacy hr. Mielżyński, był ziemianinem z Chobienic w powiecie wolsztyńskim, w Wielkopolsce. Matka Emilia pochodziła z rodu hrabiów Bnińskich. Jego rodzina należała do najbogatszych w Wielkopolsce. Ukończył szkołę średnią w Lesznie, a potem studiował prawo i malarstwo w Monachium. Odbył służbę wojskową w armii niemieckiej w latach 1894–1898, a następnie w latach 1898–1914 odbywał praktyki rolnicze w Będlewie i Dakowach Mokrych. W latach 1903–1914 był posłem do Reichstagu. W okresie 1904-1910 był prezesem Klubu Wioślarskiego z roku 1904 w Poznaniu.
@@ -53,7 +59,7 @@ const content={
                         },
                         {
                             name: 'Maciej Miełżyński',
-                            img: '#',
+                            img: `${jozefImg}`,
                             text: `Maciej Ignacy Mielżyński, pseud. „Nowina-Doliwa” (ur. 13 października 1869 w Chobienicach, zm. 9 stycznia 1944 w Wiedniu) – hrabia, podpułkownik kawalerii Wojska Polskiego, polski działacz narodowy w Wielkopolsce i na Górnym Śląsku. Naczelny wódz III powstania śląskiego, współzałożyciel Stronnictwa Polskiego na Górnym Śląsku.
 
                             Jego ojciec, Karol Ignacy hr. Mielżyński, był ziemianinem z Chobienic w powiecie wolsztyńskim, w Wielkopolsce. Matka Emilia pochodziła z rodu hrabiów Bnińskich. Jego rodzina należała do najbogatszych w Wielkopolsce. Ukończył szkołę średnią w Lesznie, a potem studiował prawo i malarstwo w Monachium. Odbył służbę wojskową w armii niemieckiej w latach 1894–1898, a następnie w latach 1898–1914 odbywał praktyki rolnicze w Będlewie i Dakowach Mokrych. W latach 1903–1914 był posłem do Reichstagu. W okresie 1904-1910 był prezesem Klubu Wioślarskiego z roku 1904 w Poznaniu.
@@ -66,7 +72,7 @@ const content={
                         },
                         {
                             name: 'Wojciech Korfanty',
-                            img: '#',
+                            img: `${maksymilianImg}`,
                             text: `Maciej Ignacy Mielżyński, pseud. „Nowina-Doliwa” (ur. 13 października 1869 w Chobienicach, zm. 9 stycznia 1944 w Wiedniu) – hrabia, podpułkownik kawalerii Wojska Polskiego, polski działacz narodowy w Wielkopolsce i na Górnym Śląsku. Naczelny wódz III powstania śląskiego, współzałożyciel Stronnictwa Polskiego na Górnym Śląsku.
 
                             Jego ojciec, Karol Ignacy hr. Mielżyński, był ziemianinem z Chobienic w powiecie wolsztyńskim, w Wielkopolsce. Matka Emilia pochodziła z rodu hrabiów Bnińskich. Jego rodzina należała do najbogatszych w Wielkopolsce. Ukończył szkołę średnią w Lesznie, a potem studiował prawo i malarstwo w Monachium. Odbył służbę wojskową w armii niemieckiej w latach 1894–1898, a następnie w latach 1898–1914 odbywał praktyki rolnicze w Będlewie i Dakowach Mokrych. W latach 1903–1914 był posłem do Reichstagu. W okresie 1904-1910 był prezesem Klubu Wioślarskiego z roku 1904 w Poznaniu.
