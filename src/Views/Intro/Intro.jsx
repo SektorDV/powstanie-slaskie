@@ -8,7 +8,7 @@ const Intro = () => {
     const [imgStyle, setImgStyle] = useState({X:0,Y:0})
     const [x, updatePositionX] = useState();
     
-    useEffect(()=>parallax(x, setImgStyle));
+    useEffect(()=>parallax(x, setImgStyle), [x]);
 
 
 
