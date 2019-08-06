@@ -1,7 +1,8 @@
 const initialState = {
     showModal: false,
     modalImgSrc: null,
-    modalContent: null
+    modalContent: null,
+    modalType: null
 }
 
 const reducer = (state = initialState, action) => {
@@ -10,7 +11,8 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 modalImgSrc: action.payload.img,
-                modalContent: action.payload.content
+                modalContent: action.payload.content,
+                modalType: action.payload.type
             }
 
         case 'SWITCH_ON_MODAL':

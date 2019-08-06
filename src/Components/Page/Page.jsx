@@ -89,11 +89,11 @@ const Page = props => {
                     key={index}
                     onClick={() => {
                       if (e.type === "text") setMenuSelection(index);
-                      if (e.type === "persons") {
-                        props.sendDataToModal(e.content.img, e.content.content)
+                      else {
+                        props.sendDataToModal(e.content.img, e.content.content, e.type)
                         props.showModal();
                       }
-                      if (e.type === "data") props.showModal();
+                      
                     }}
                     style={menuSelection === index ? { color: "black" } : null}
                   >
@@ -126,12 +126,13 @@ const Page = props => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    sendDataToModal: (img, content) => {
+    sendDataToModal: (img, content, type) => {
       dispatch({
         type: 'SET_MODAL_DATA',
         payload: {
           img: img,
-          content: content
+          content: content,
+          type: type
         }
       })
     },
