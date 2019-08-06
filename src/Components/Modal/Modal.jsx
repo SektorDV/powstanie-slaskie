@@ -24,6 +24,9 @@ const Modal = props => {
           icon="clear"
         />
       </div>
+      <div className="ps__modalwindow__bgauthor">
+        {props.imgAuthor}
+      </div>
       {props.type==="persons" ? <Persons content={props.content} /> : null}
       {props.type==="video" ? <Video content={props.content}/> : null}
           
@@ -50,6 +53,7 @@ const mapDispatchToProps = dispatch => {
 const mapStateToProps = state => {
   return {
     bgImg: state.modalImgSrc,
+    imgAuthor: state.modalImgAuthor,
     content: state.modalContent,
     type: state.modalType
   };

@@ -65,7 +65,7 @@ const Page = props => {
                     onClick={() => {
                       if (e.type === "text") setMenuSelection(index);
                       else {
-                        props.sendDataToModal(e.content.img, e.content.content, e.type)
+                        props.sendDataToModal(e.content.img, e.content.author, e.content.content, e.type)
                         props.showModal();
                       }
                       
@@ -104,11 +104,12 @@ const Page = props => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    sendDataToModal: (img, content, type) => {
+    sendDataToModal: (img, imgAuthor, content, type) => {
       dispatch({
         type: 'SET_MODAL_DATA',
         payload: {
           img: img,
+          imgAuthor: imgAuthor,
           content: content,
           type: type
         }

@@ -56,9 +56,7 @@ const content = {
         </p>,
         <p>
           Zryw trwał zaledwie tydzień. Zabrakło koordynacji działań
-          powstańczych, właściwego uzbrojenia oraz wsparcia odrodzonej
-          <strong>
-            Rzeczpospolitej, która borykała się w tamtym czasie z najazdem
+          powstańczych, właściwego uzbrojenia oraz wsparcia odrodzonej <strong>Rzeczpospolitej, która borykała się w tamtym czasie z najazdem
             bolszewickim
           </strong>
           . Alfons Zgrzebniok wydał rozkaz zaprzestania walk 26 sierpnia 1919.
@@ -83,7 +81,7 @@ const content = {
                             
                             W 1909 roku posiadał wsie rycerskie: Chobienice, Godziszewo, Grońsko i Nieborze w powiecie babimojskim rejencji poznańskiej w Wielkim Księstwie Poznańskim[2].
                             
-                            Maciej Mielżyński w 1909 roku zaczął interesować się sprawami górnośląskimi, politycznie związał się z endecją. Kupił też wydawnictwo Karola Miarki seniora w Mikołowie. I wojnę światową spędził w szeregach armii niemieckiej. W 1920 roku wstąpił do Wojska Polskiego w stopniu majora. W styczniu 1921 został oddelegowany na Górny Śląsk (już jako podpułkownik kawalerii). Początkowo zastępca dowódcy, a od kwietnia 1921 roku dowódca tajnej organizacji wojskowej Dowództwo Obrony Plebiscytu (DOP). W chwili wybuchu III powstania śląskiego DOP został przekształcony w Naczelną Komendę Wojsk Powstańczych, a Mielżyński stanął na czele III powstania śląskiego. O`
+                            Maciej Mielżyński w 1909 roku zaczął interesować się sprawami górnośląskimi, politycznie związał się z endecją. Kupił też wydawnictwo Karola Miarki seniora w Mikołowie. I wojnę światową spędził w szeregach armii niemieckiej. W 1920 roku wstąpił do Wojska Polskiego w stopniu majora. W styczniu 1921 został oddelegowany na Górny Śląsk (już jako podpułkownik kawalerii). Początkowo zastępca dowódcy, a od kwietnia 1921 roku dowódca tajnej organizacji wojskowej Dowództwo Obrony Plebiscytu (DOP). W chwili wybuchu III powstania śląskiego DOP został przekształcony w Naczelną Komendę Wojsk Powstańczych, a Mielżyński stanął na czele III powstania śląskiego.`
           },
           {
             name: "Józef Grzegorzek",

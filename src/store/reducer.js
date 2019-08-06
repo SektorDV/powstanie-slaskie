@@ -1,6 +1,7 @@
 const initialState = {
     showModal: false,
     modalImgSrc: null,
+    modalImgAuthor: null,
     modalContent: null,
     modalType: null,
    
@@ -12,6 +13,7 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 modalImgSrc: action.payload.img,
+                modalImgAuthor: action.payload.imgAuthor,
                 modalContent: action.payload.content,
                 modalType: action.payload.type,
 

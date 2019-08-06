@@ -18,13 +18,13 @@ const content = {
             type: "text",
             content: [<p>
             Górny Śląsk był w chwili zakończenia I wojny światowej jednym z najlepiej
-        rozwiniętych pod względem przemysłowym regionów Niemiec.    <strong>Olbrzymie pokłady węgla i wysoki stopień uprzemysłowienia</strong> 
+        rozwiniętych pod względem przemysłowym regionów Niemiec.    <strong>Olbrzymie pokłady węgla i wysoki stopień uprzemysłowienia </strong> 
             czynił z niego potencjalne źródło olbrzymich zysków. Jednocześnie był to
             obszar, który zamieszkiwali nieomal po równo Polacy i Niemcy.
         </p>,
         <p>
             Nic dziwnego, że oba państwa chciały Górnego Śląska w swoich granicach.
-            Sprawa regionu była też obiektem <strong>gry międzynarodowej</strong>
+            Sprawa regionu była też obiektem <strong>gry międzynarodowej </strong>
         podczas konferencji paryskiej po I wojnie światowej.    <strong>Francja </strong>optowała za przyłączeniem obszaru do Polski,
             widziała bowiem w Polsce naturalnego sojusznika, który szachowałby Niemcy
             od wschodu. <strong>Wielka Brytania</strong> z kolei obawiała się wzrostu
@@ -46,17 +46,17 @@ const content = {
         {
             label: "Polskość na górnym śląsku",
             type: "text",
-            content: `<p>
+            content: [<p>
             Bogaty w złoża naturalne i żyzny Śląsk znajdował się na styku Polski (czy
             raczej państwa wczesnopiastowskiego), Czech i Niemiec. Stanowił przez
             długie lata obiekt rywalizacji tych państw.
-        </p>
+        </p>,
         <p>
             Pierwszym dokumentem świadczącym o polskości Śląska był pozostawiony przez
             Mieszka I <strong>„Dagome iudex”</strong> (wydany pod koniec X wieku), w
             którym Dolny i część Górnego Śląska są wskazane jako terytorium podległe
             polskiemu biskupstwu wrocławskiemu.
-        </p>
+        </p>,
         <p>
             Wskutek <strong>rozbicia dzielnicowego</strong> Polski w 1138 roku, Śląsk
             stał się dziedziczną dzielnicą najstarszego syna Bolesława Krzywoustego –
@@ -64,7 +64,7 @@ const content = {
         Śląsku, a dzielnica z biegiem lat    <strong>rozdrobniła się na niewielkie ksiąstewka</strong>, których władcy
             poszukiwali wsparcia w Polsce, Niemczech i w Czechach. Śląsk stał się
             obiektem rywalizacji państw ościennych i areną walk książąt piastowskich.
-        </p>
+        </p>,
         <p>
             W pierwszej połowie XVI wieku księstwa piastowskie znalazły się w
             większości w zależności od monarchii <strong>Habsburgów</strong>. W 1653
@@ -72,18 +72,18 @@ const content = {
             na Śląsku – dostało się pod bezpośrednią kontrolę Habsburgów. Niemal sto
             lat później, <strong>w 1742 roku</strong> wskutek prusko-austriackiej wojny
             śląskiej region <strong>znalazł się w granicach Prus</strong>.
-        </p>
+        </p>,
         <p>
             XIX wiek był czasem przebudzenia narodowego Polaków na Śląsku. Była to w
             dużej mierze reakcja na
-        <strong>germanizację dzieci</strong>
-            w szkołach, którą wprowadzono w 1819 roku. Działalność takich postaci jak
-        <strong>ks. Józef Lompa, ks. Józef Szafranek czy Emanuel Smołka</strong>
+        <strong>germanizację dzieci </strong> 
+            w szkołach, którą wprowadzono w 1819 roku. Działalność takich postaci jak 
+        <strong> ks. Józef Lompa, ks. Józef Szafranek czy Emanuel Smołka </strong>
             (wszyscy byli wydawcami pierwszej polskiej gazety na Górnym Śląsku –
             „Dziennika Górnośląskiego”) doprowadziła do utrzymania polskości wśród
             Polaków, którzy zamieszkiwali Śląsk od pokoleń, ale także wśród tych,
             którzy przybyli na Śląsk za chlebem.
-        </p>`
+        </p>]
         },
         {
             label: "śląsk w traktacie wersalskim",

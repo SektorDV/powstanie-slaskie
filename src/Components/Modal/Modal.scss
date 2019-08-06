@@ -28,7 +28,14 @@
       user-select: none;
     }
   }
-  
+  &__bgauthor {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: white;
+    font-size: 10px;
+    font-family: "latoregular", sans-serif;
+  }
   &__right {
     width: 50%;
     background-size: cover;
