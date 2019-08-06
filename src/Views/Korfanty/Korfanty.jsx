@@ -15,12 +15,12 @@ const content = {
         {
             label: "Sylwetka",
             type: "text",
-            content: `<p>
+            content: [<p>
             Nie był przeciwnikiem zrywów, uważał jednak, że muszą one mieć miejsce w
             sprzyjających okolicznościach i widział je jako manifestację propolskich
         dążeń mieszkańców Śląska. Nic dziwnego, że to on stał na czele    <strong> II i III Powstania Śląskiego </strong>i zabiegał o korzystny dla
             Polski werdykt aliantów.
-        </p>
+        </p>,
         <p>
             Korfanty był przeciwnikiem <strong>Józefa Piłsudskiego</strong>, którego
         postrzegał jako niebezpiecznego radykała. Po    <strong>przewrocie majowym</strong> w 1926 roku Wojciech Korfanty był
@@ -29,12 +29,11 @@ const content = {
             kraju nie mógł wrócić nawet w 1938 roku na pogrzeb swego syna Witolda.
             Powrócił dopiero w kwietniu 1939 roku. Został jednak aresztowany i - mimo
             protestów - osadzony na Pawiaku, gdzie przesiedział trzy miesiące.
-        </p>
+        </p>,
         <p>
             <strong>Zmarł </strong>
         dwa tygodnie przez wybuchem II wojny światowej,    <strong>17 sierpnia 1939</strong>.
-        </p>
-            `
+        </p>]
         }
     ],
     multimediaItems: [

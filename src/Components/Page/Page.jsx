@@ -23,7 +23,6 @@ const Page = props => {
   props.content.menuItems.forEach(e => {
     if (e.content != "") content.push(e.content);
   });
-
   const [menuSelection, setMenuSelection] = useState(0);
   const [textScroll, setTextScroll] = useState();
   const [textHeight, setTextHeight] = useState();
@@ -104,7 +103,7 @@ const Page = props => {
             </div>
             <div className="ps__page__right__top__left__icons">
               <div className="ps__page__right__top__left__icons__label"><span>POSŁUCHAJ I ZOBACZ</span></div>
-              <Buttons audio={audioContent.length > 0} video={videoContent.length > 0} map={mapContent.length > 0} />
+              <Buttons audio={audioContent.length > 0} audioContent={audioContent} video={videoContent.length > 0} map={mapContent.length > 0} />
             </div>
           </div>
           <div

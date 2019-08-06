@@ -16,12 +16,12 @@ const content = {
         {
             label: "Problem śląska po i wojnie światowej",
             type: "text",
-            content: `<p>
+            content: [<p>
             Górny Śląsk był w chwili zakończenia I wojny światowej jednym z najlepiej
-        rozwiniętych pod względem przemysłowym regionów Niemiec.    <strong>Olbrzymie pokłady węgla i wysoki stopień uprzemysłowienia</strong>
+        rozwiniętych pod względem przemysłowym regionów Niemiec.    <strong>Olbrzymie pokłady węgla i wysoki stopień uprzemysłowienia</strong> 
             czynił z niego potencjalne źródło olbrzymich zysków. Jednocześnie był to
             obszar, który zamieszkiwali nieomal po równo Polacy i Niemcy.
-        </p>
+        </p>,
         <p>
             Nic dziwnego, że oba państwa chciały Górnego Śląska w swoich granicach.
             Sprawa regionu była też obiektem <strong>gry międzynarodowej</strong>
@@ -31,7 +31,7 @@ const content = {
             znaczenia Francji, a ponadto uważała, że Niemcy bez zysków z górnośląskich
         zakładów przemysłowych nie będą w stanie wypłacić    <strong>kontrybucji wojennych</strong>. Zdecydowano, że kwestię
         przynależności Górnego Śląska rozstrzygnie w przyszłości    <strong>plebiscyt</strong>.
-        </p>
+        </p>,
         <p>
             Równocześnie wieść o klęsce Niemiec i odradzaniu się państwa polskiego, w
             połączeniu z trudną sytuacją materialną spowodowaną wojną, rozbudziły wolę
@@ -41,7 +41,7 @@ const content = {
             nietykalność osobistą, a wojsko uzyskało prawo dokonywania rewizji i
             aresztowań polskich działaczy. Pogarszająca się sytuacja pchnęła polskich
         działaczy do podjęcia decyzji o rozpoczęciu    <strong>I powstania śląskiego</strong>.
-        </p>`
+        </p>]
         },
         {
             label: "Polskość na górnym śląsku",

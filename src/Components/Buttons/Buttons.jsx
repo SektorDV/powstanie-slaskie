@@ -36,7 +36,10 @@ const Buttons = (props) => {
   {props.audio ? 
       <div className="buttons__button">
         <svg
-          onClick={props.showModal}
+          onClick={() => {
+            props.setModalData(props.AudioContent)
+            props.showModal();
+          }}
           id="icons"
           className="buttons__audio"
           xmlns="http://www.w3.org/2000/svg"
