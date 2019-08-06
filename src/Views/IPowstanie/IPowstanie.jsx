@@ -4,9 +4,9 @@ import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/ipowstanie.png';
 import Small from '../../res/images/small/ipowstaniesmall.png';
 import PersonsImg from '../../res/images/bg/ipowstaniepostacie.png';
-import alfonsImg from '../../res/img/Alfons.png';
+import alfonsImg from '../../res/img/alfons.png';
 import jozefImg  from '../../res/img/Józef.png';
-import maksymilianImg  from '../../res/img/Maksymilian.png';
+import maksymilianImg  from '../../res/img/maksymilian.png';
 import AudioImg from '../../res/images/bg/ipowstanieaudio.png'
 
 const content={
