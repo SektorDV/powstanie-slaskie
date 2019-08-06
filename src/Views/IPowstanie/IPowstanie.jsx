@@ -5,6 +5,8 @@ import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/ipowstanie.png';
 import Small from '../../res/images/small/ipowstaniesmall.png';
 import PersonsImg from '../../res/images/bg/ipowstaniepostacie.png'
+import AudioImg from '../../res/images/bg/ipowstanieaudio.png'
+
 import alfonsImg from '../../res/img/alfons.png'
 import jozefImg  from '../../res/img/jozef.png'
 import maksymilianImg  from '../../res/img/maksymilian.png'
@@ -83,6 +85,47 @@ const content={
                             
                             Maciej Mielżyński w 1909 roku zaczął interesować się sprawami górnośląskimi, politycznie związał się z endecją. Kupił też wydawnictwo Karola Miarki seniora w Mikołowie. I wojnę światową spędził w szeregach armii niemieckiej. W 1920 roku wstąpił do Wojska Polskiego w stopniu majora. W styczniu 1921 został oddelegowany na Górny Śląsk (już jako podpułkownik kawalerii). Początkowo zastępca dowódcy, a od kwietnia 1921 roku dowódca tajnej organizacji wojskowej Dowództwo Obrony Plebiscytu (DOP). W chwili wybuchu III powstania śląskiego DOP został przekształcony w Naczelną Komendę Wojsk Powstańczych, a Mielżyński stanął na czele III powstania śląskiego. O`
                         }   
+                    ]                    
+                }
+            
+
+        },
+        {
+            type: "audio",
+            content: {
+                img: AudioImg,
+                author: 'Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe',
+                content: [
+                       {
+                           title: 'Nagranie numer 1',
+                           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                           source: 'ffc24e9b-a48d-47f1-807b-dd1df898af8f'
+                       },
+                        {
+                            title: 'Nagranie numer 2',
+                            text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+                            source: '55e443bf-782f-4113-8c01-dfca02ca5116'                       
+                        },
+                        {
+                            title: 'Nagranie numer 3',
+                            text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+                            source: '2e14cc64-4ac4-40b4-a588-ce7ff637eb83'                       
+                        },
+                        {
+                            title: 'Nagranie numer 4',
+                            text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
+                            source: '383b7b9d-8313-442d-bca1-5030d8f2a166'                       
+                        },
+                        {
+                            title: 'Nagranie numer 5',
+                            text: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?',
+                            source: '2a1e3fa6-340f-46f4-b787-70aa9c4e90d3'                       
+                        },
+                        {
+                            title: 'Nagranie numer 6',
+                            text: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.',
+                            source: '36f97c4b-91a5-4cd4-baf3-c503f34724f5'                       
+                        }    
                     ]                    
                 }
             
