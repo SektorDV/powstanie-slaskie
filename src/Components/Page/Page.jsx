@@ -107,7 +107,7 @@ const Page = props => {
               audio={audioContent.length > 0} 
               audioContent={audioContent} 
               video={videoContent.length > 0} 
-              videoContent={audioContent}
+              videoContent={videoContent}
               map={mapContent.length > 0}
               mapContent={mapContent} 
               />

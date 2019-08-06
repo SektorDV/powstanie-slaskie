@@ -97,7 +97,7 @@ const Buttons = (props) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    setModalData: (audio) => {
+    setModalData: (audio, video, map) => {
       dispatch({
         type: 'SET_MODAL_DATA',
         payload: {
