@@ -157,7 +157,24 @@ const content = {
             }
           ]
         }
+      },
+      {
+        type: "stats",
+        content: {
+          img: AudioImg,
+          author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+          content: []
+        }
+      },
+      {
+        type: "maps",
+        content: {
+          img: AudioImg,
+          author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+          content: []
+        }
       }
+
   ],
   multimediaItems: [
     {
