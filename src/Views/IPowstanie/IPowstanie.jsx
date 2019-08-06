@@ -9,8 +9,8 @@ import jozefImg  from '../../res/img/Józef.png';
 import maksymilianImg  from '../../res/img/maksymilian.png';
 import AudioImg from '../../res/images/bg/ipowstanieaudio.png'
 
-const content={
-    headline: `"Zwycięstwo osiągniemy za wszelką cenę 
+const content = {
+  headline: `"Zwycięstwo osiągniemy za wszelką cenę 
     i nie ma takiego mocarza na świecie, 
     który by mógł nas okuć ponownie 
     w kajdany germańskie" `,
