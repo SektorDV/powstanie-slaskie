@@ -14,13 +14,24 @@ const content={
         {
             label: "Efekty i skutki powstań",
             type: "text",
-            content: `<p>Powstania Śląskie doprowadziły do <strong>korzystnego dla Polski</strong> podziału Śląska. Choć do odrodzonej Rzeczpospolitej została przyłączona mniejsza część obszaru plebiscytowego, to <strong>stanowił on najlepiej rozwiniętą</strong> pod względem przemysłowym część Górnego Śląska.</p> 
-
-            <p>Śląsk odgrywał <strong>kluczową rolę dla odradzającej się Rzeczpospolitej</strong>. Jak uważa prof. Maria Wanda Wanatowicz, Śląsk przekształcił Polskę z kraju rolniczego w <strong>przemysłowo-rolniczy</strong>. W latach 20. z tego pochodziło stąd <strong>80 proc. polskiego eksportu</strong>. Od 1933 roku surowiec był transportowany specjalną magistralą kolejową do <strong>Gdyni</strong>. To również dzięki produkcji żelaza i węgla na Górnym Śląsku możliwe było stworzenie w latach 30. <strong>Centralnego Okręgu Przemysłowego</strong>.</p> 
-            
-            <p>Województwo śląskie, z uwagi na uwarunkowania narodowościowe i kulturowe, cieszyło się w II RP autonomią. Posiadało własny Sejmy i Skarb.</p> 
-            
-            `
+            content: `<p>
+            Powstania Śląskie doprowadziły do <strong>korzystnego dla Polski </strong>
+            podziału Śląska. Choć do odrodzonej Rzeczpospolitej została przyłączona
+        mniejsza część obszaru plebiscytowego, to    <strong>stanowił on najlepiej rozwiniętą </strong>pod względem przemysłowym
+            część Górnego Śląska.
+        </p>
+        <p>
+        Śląsk odgrywał    <strong>kluczową rolę dla odradzającej się Rzeczpospolitej</strong>. Jak
+            uważa prof. Maria Wanda Wanatowicz, Śląsk przekształcił Polskę z kraju
+            rolniczego w <strong>przemysłowo-rolniczy</strong>. W latach 20. z tego
+            pochodziło stąd <strong>80 proc. polskiego eksportu</strong>. Od 1933 roku
+        surowiec był transportowany specjalną magistralą kolejową do    <strong>Gdyni</strong>. To również dzięki produkcji żelaza i węgla na
+        Górnym Śląsku możliwe było stworzenie w latach 30.    <strong>Centralnego Okręgu Przemysłowego</strong>.
+        </p>
+        <p>
+            Województwo śląskie, z uwagi na uwarunkowania narodowościowe i kulturowe,
+            cieszyło się w II RP autonomią. Posiadało własny Sejmy i Skarb.
+        </p>`
         },
         {
             label: "Statystyki i dane",

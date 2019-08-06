@@ -2,10 +2,11 @@ import React, {useEffect, useState} from 'react';
 import './Modal.scss';
 import {connect, dispatch} from 'react-redux';
 import MaterialIcon from 'material-icons-react';
+import Textfield from '../Textfield/Textfield';
 
 const Modal = props => {
     const [modalOpacity, setModalOpacity] = useState(0);
-    const [menuSelection, setMenuSelection] = useState(-1);
+    const [menuSelection, setMenuSelection] = useState(0);
     useEffect(() => {
         setModalOpacity(1);
     }, [])
@@ -24,16 +25,18 @@ const Modal = props => {
                     <div className="ps__modalwindow__left__personslist">
                         {props.content.map((e,index) => {
                             return(
+
                             <div key={index} onClick={() => setMenuSelection(index)} className="ps__modalwindow__left__personslist__personcontainer">
-                                <div className="ps__modalwindow__left__personslist__personcontainer__bg"></div>
-                                <img src={e.img} alt={e.name}/>
+                                <div className="ps__modalwindow__left__personslist__personcontainer__bg" style={{backgroundColor: menuSelection === index ? '#f25a4b' : '#27262a'}}></div>
+                                <img src={e.img} alt={e.name} style={{filter: menuSelection === index ? null : 'contrast(0.8) brightness(0.5)'}}/>
                             </div>
                             )
                         })}
                       
                     </div>
                     <div className="ps__modalwindow__left__textcontainer">
-                        {menuSelection === -1 ? null : props.content[menuSelection].text}
+                        <h2>{props.content.name}</h2>
+                        <Textfield content={props.content[menuSelection].text} />
                     </div>
                 </div>
                 <div className="ps__modalwindow__right" style={{backgroundImage: `url(${props.bgImg})`, width: 1000, height: 1000}}>

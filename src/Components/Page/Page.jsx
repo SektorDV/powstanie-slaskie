@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Page.scss";
 import Scrollbar from "react-scrollbars-custom";
 import Buttons from '../Buttons/Buttons';
+import Textfield from '../Textfield/Textfield';
 import Scrolldownicon from '../../res/images/icons/scrolldown.png';
 import {connect, dispatch} from 'react-redux';
 import {parallax} from '../../functions/parallax';
@@ -112,25 +113,7 @@ const Page = props => {
           />
         </div>
         <div className="ps__page__right__bottom">
-          <div
-            className={`textfield 
-            ${textScroll > 0 ? "fadetop" : ""} 
-            ${textScroll < textHeight - textWindowHeight ? "fadebottom" : ""}
-            `}
-            
-          >
-            <Scrollbar
-              scrollTop={textScroll}
-              style={{ width: "90%" }}
-              onUpdate={el => {
-                setTextScroll(el.scrollTop);
-                setTextHeight(el.scrollHeight);
-                setTextWindowHeight(el.clientHeight);
-              }}
-            >
-             <div className="textcontent" dangerouslySetInnerHTML={{__html: content[menuSelection]}}></div> 
-            </Scrollbar>
-          </div>
+          <Textfield content={content[menuSelection]} />
         </div>
         <div className="ps__page__right__scroller">
         {showScroller ? <><img src={Scrolldownicon} alt="" onMouseEnter={() => enableScroll()} onMouseLeave={() => disableScroll()} /><span>PRZEWIJAJ TREŚĆ</span></>: null}
