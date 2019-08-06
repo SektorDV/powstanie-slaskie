@@ -7,7 +7,6 @@ import PersonsImg from '../../res/images/bg/ipowstaniepostacie.png';
 import alfonsImg from '../../res/img/Alfons.png';
 import jozefImg  from '../../res/img/Józef.png';
 import maksymilianImg  from '../../res/img/Maksymilian.png';
-import PersonsImg from '../../res/images/bg/ipowstaniepostacie.png'
 import AudioImg from '../../res/images/bg/ipowstanieaudio.png'
 
 const content={
