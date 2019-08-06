@@ -74,6 +74,7 @@
             background-color: #1b1b1d;
             color: white;
             transition: opacity 0.3s;
+            display: flex;
             .textfield {
                 &:before {
                     content: '';
