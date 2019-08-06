@@ -103,7 +103,14 @@ const Page = props => {
             </div>
             <div className="ps__page__right__top__left__icons">
               <div className="ps__page__right__top__left__icons__label"><span>POSŁUCHAJ I ZOBACZ</span></div>
-              <Buttons audio={audioContent.length > 0} audioContent={audioContent} video={videoContent.length > 0} map={mapContent.length > 0} />
+              <Buttons 
+              audio={audioContent.length > 0} 
+              audioContent={audioContent} 
+              video={videoContent.length > 0} 
+              videoContent={audioContent}
+              map={mapContent.length > 0}
+              mapContent={mapContent} 
+              />
             </div>
           </div>
           <div

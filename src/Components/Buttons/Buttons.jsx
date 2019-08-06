@@ -7,7 +7,10 @@ const Buttons = (props) => {
     <div className="ps__buttons">
       {props.video ? <div className="buttons__button">
         <svg
-          onClick={props.showModal}
+           onClick={() => {
+            props.setModalData(props.videoContent)
+            props.showModal();
+          }}
           id="icons"
           className="buttons__video"
           xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +40,7 @@ const Buttons = (props) => {
       <div className="buttons__button">
         <svg
           onClick={() => {
-            props.setModalData(props.AudioContent)
+            props.setModalData(props.audioContent)
             props.showModal();
           }}
           id="icons"
@@ -70,7 +73,10 @@ const Buttons = (props) => {
       {props.map ? 
       <div className="buttons__button">
         <svg
-          onClick={props.showModal}
+          onClick={() => {
+            props.setModalData(props.mapContent)
+            props.showModal();
+          }}
           id="icons"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 41.68 38"
@@ -91,6 +97,16 @@ const Buttons = (props) => {
 
 const mapDispatchToProps = dispatch => {
   return {
+    setModalData: (audio) => {
+      dispatch({
+        type: 'SET_MODAL_DATA',
+        payload: {
+          audio: audio,
+          video: video,
+          map: map
+        }
+      })
+    },
     showModal: () => dispatch({type: 'SWITCH_ON_MODAL'})
   }
 }
