@@ -24,8 +24,7 @@ const Textfield = props => {
       >
         <div
           className="textcontent"
-          dangerouslySetInnerHTML={{ __html: props.content }}
-        />
+        >{props.content}</div>
       </Scrollbar>
     </div>
   );

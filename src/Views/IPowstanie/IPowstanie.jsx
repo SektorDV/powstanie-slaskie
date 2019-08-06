@@ -22,19 +22,19 @@ const content={
         {
             label: "I Powstanie Śląskie",
             type: "text",
-            content: `<p>
+            content: [<p>
             Pogarszająca się sytuacja ekonomiczna, spowodowana niewydolnością
             gospodarki niemieckiej po I wojnie światowej, wieści o przetaczającej się
             przez Niemcy <strong>rewolucji</strong>, terror wprowadzony przez władze w
         regionie, połączony z informacją o zwycięstwie    <strong>Powstania Wielkopolskiego</strong> rozbudził wśród polskich
             mieszkańców Górnego Śląska chęć przyłączenia regionu do Polski.
-        </p>
+        </p>,
         <p>
         Bezpośrednim impulsem dla rozpoczęcia powstania była    <strong>masakra robotników w Mysłowicach</strong>. 15 sierpnia oddział
-        niemieckiego<strong>Grenzschutzu (niemieckiej „Straży Granicznej”) </strong>otworzył    <strong> </strong>ogień do ludzi, którzy zgromadzili się na terenie
+        niemieckiego <strong>Grenzschutzu (niemieckiej „Straży Granicznej”) </strong>otworzył    <strong> </strong>ogień do ludzi, którzy zgromadzili się na terenie
             mysłowickiej kopalni, domagając się zaległych wypłat. Zginęło siedmiu
             górników, dwie kobiety i 13-letni chłopiec.
-        </p>
+        </p>,
         <p>
             Decyzja o wybuchu I Powstania Śląskiego została podjęta na spotkaniu
             dowódców POW, którzy w obawie przed aresztowaniami udali się na emigrację
@@ -42,12 +42,12 @@ const content={
             podczas spotkania odgrywał <strong>Maksymilian Iksal</strong>, który jednak
             nie zdecydował się wziąć na siebie odpowiedzialności dowodzenia całym
             powstaniem.
-        </p>
+        </p>,
         <p>
             Wobec aresztowania <strong>Józefa Grzegorzka</strong>, dowódcy Polskiej
             Organizacji Wojskowej Górnego Śląska tuż przed wybuchem powstania, na czele
             oddziałów powstańczych stanął <strong>Alfons Zgrzebniok</strong>.
-        </p>
+        </p>,
         <p>
             Zryw trwał zaledwie tydzień. Zabrakło koordynacji działań powstańczych,
             właściwego uzbrojenia oraz wsparcia odrodzonej
@@ -56,8 +56,7 @@ const content={
                 bolszewickim
             </strong>
             . Alfons Zgrzebniok wydał rozkaz zaprzestania walk 26 sierpnia 1919.
-        </p>
-            `
+            </p>]
         },
         {
             label: "Przywódcy powstania",
@@ -94,6 +93,9 @@ const content={
             
 
         },
+        
+    ],
+    multimediaItems: [
         {
             type: "audio",
             content: {
@@ -134,17 +136,6 @@ const content={
                 }
             
 
-        }
-    ],
-    multimediaItems: [
-        {
-            type: "audio"
-        },
-        {
-            type: "video"
-        },
-        {
-            type: "map"
         }
     ]
 }
