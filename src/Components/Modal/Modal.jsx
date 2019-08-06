@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Modal.scss";
-import { connect, dispatch } from "react-redux";
+import { connect } from "react-redux";
 import MaterialIcon from "material-icons-react";
 import Textfield from "../Textfield/Textfield";
 
@@ -51,6 +51,9 @@ const Modal = props => {
           })}
         </div>
         <div className="ps__modalwindow__left__textcontainer">
+          <div className="arrow" style={{opacity: menuSelection===0?1:0}}></div>
+          <div className="arrow" style={{top: '45%', opacity: menuSelection===1?1:0}}></div>
+          <div className="arrow" style={{top: '79%', opacity: menuSelection===2?1:0}}></div>
           <h2>{props.content[menuSelection].name}</h2>
           <div className="ps__modalwindow__left__textcontainer__dots">
             <div className="dot" />

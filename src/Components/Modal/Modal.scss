@@ -96,15 +96,15 @@
       flex-direction: column;
       padding-left: 5%;
       padding-top: 5%;
-      &:before {
-          content: '';
+      .arrow {
           width: 100px;
           height: 100px;
           transform: rotate(45deg);
           background-color: #1b1b1d;
           position: absolute;
-          left: -2.2%;
-          top: attr(arrowheight);
+          left: -3%;
+          top: 10%;
+          transition: 0.5s;
       }
       h2 {
           font-family: "dm_serif_displayregular", serif;
@@ -175,6 +175,11 @@
         }
         &.fadetop:before {
           opacity: 1;
+        }
+        &__scroller {
+          img {
+            filter: brightness(255)
+          }
         }
       }
     }

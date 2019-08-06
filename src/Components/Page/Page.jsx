@@ -24,32 +24,8 @@ const Page = props => {
     if (e.content != "") content.push(e.content);
   });
   const [menuSelection, setMenuSelection] = useState(0);
-  const [textScroll, setTextScroll] = useState();
-  const [textHeight, setTextHeight] = useState();
-  const [textWindowHeight, setTextWindowHeight] = useState();
-  const [scrollInterval, setScrollInterval] = useState();
-  const [showScroller, setShowScroller] = useState(false);
   const [imgStyle, setImgStyle] = useState({X:0,Y:0})
   const [x, updatePositionX] = useState();
-  
-  
-
-
-
-  const enableScroll = () => {
-    setScrollInterval(
-      setInterval(() => {
-        setTextScroll(prevTextScroll => prevTextScroll+1)
-      }, 10)
-    )
-  }
-  const disableScroll = () => {
-    clearInterval(scrollInterval)
-  }
-
-  useEffect(() => {
-    (textHeight > textWindowHeight) ? setShowScroller(true) : setShowScroller(false);
-  })
 
   useEffect(()=>{
     parallax(x, setImgStyle)
@@ -114,10 +90,6 @@ const Page = props => {
         <div className="ps__page__right__bottom">
           <Textfield content={content[menuSelection]} />
         </div>
-        <div className="ps__page__right__scroller">
-        {showScroller ? <><img src={Scrolldownicon} alt="" onMouseEnter={() => enableScroll()} onMouseLeave={() => disableScroll()} /><span>PRZEWIJAJ TREŚĆ</span></>: null}
-        </div> 
-        
       </div>
     </div>
   );
