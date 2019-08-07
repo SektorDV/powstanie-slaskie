@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import MaterialIcon from "material-icons-react";
 import Persons from './Persons/Persons';
 import Video from './Video/Video';
+import Statistics from './Statistics/Statistics';
 
 const Modal = props => {
   const [modalOpacity, setModalOpacity] = useState(0);
@@ -29,15 +30,16 @@ const Modal = props => {
       </div>
       {props.type==="persons" ? <Persons content={props.content} /> : null}
       {props.type==="video" ? <Video content={props.content}/> : null}
+      {props.type==="data" ? <Statistics content={props.content} /> : null}
           
-      <div
+      {props.type!=="data" ? <div
         className="ps__modalwindow__right"
         style={{
           backgroundImage: `url(${props.bgImg})`,
           width: 1000,
           height: 1000
         }}
-      />
+      /> : null}
     </div>
   );
 };
