@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import MaterialIcon from "material-icons-react";
 import Persons from './Persons/Persons';
 import Video from './Video/Video';
+import Audio from './Audio/Audio';
 import Statistics from './Statistics/Statistics';
 
 const Modal = props => {
@@ -31,6 +32,7 @@ const Modal = props => {
       {props.type==="persons" ? <Persons content={props.content} /> : null}
       {props.type==="video" ? <Video content={props.content}/> : null}
       {props.type==="data" ? <Statistics content={props.content} tabs={props.modalTabs} /> : null}
+      {props.type==="audio" ? <Audio content={props.content}/> : null}
       {props.type!=="data" ? <div
         className="ps__modalwindow__right"
         style={{

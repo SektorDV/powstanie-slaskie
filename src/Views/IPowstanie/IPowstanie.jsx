@@ -142,12 +142,7 @@ const content = {
               "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
             source: "2a1e3fa6-340f-46f4-b787-70aa9c4e90d3"
           },
-          {
-            title: "Nagranie numer 6",
-            text:
-              "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-            source: "36f97c4b-91a5-4cd4-baf3-c503f34724f5"
-          }
+          
         ]
       }
     },
