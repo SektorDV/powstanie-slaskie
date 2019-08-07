@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import MaterialIcon from "material-icons-react";
 import Persons from './Persons/Persons';
 import Video from './Video/Video';
+import Audio from './Audio/Audio';
 
 const Modal = props => {
   const [modalOpacity, setModalOpacity] = useState(0);
@@ -29,6 +30,7 @@ const Modal = props => {
       </div>
       {props.type==="persons" ? <Persons content={props.content} /> : null}
       {props.type==="video" ? <Video content={props.content}/> : null}
+      {props.type==="audio" ? <Audio content={props.content}/> : null}
           
       <div
         className="ps__modalwindow__right"

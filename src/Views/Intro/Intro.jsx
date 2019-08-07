@@ -32,7 +32,7 @@ const Intro = () => {
             
             <div className="intro__img" style={{
                 backgroundPositionX:-142 + imgStyle.X+'px',
-                backgroundPositionY:-100 + imgStyle.Y+'px'
+                backgroundPositionY:-80 + imgStyle.Y+'px'
                 }}>
                 <div className="intro__soldier"style={{
                     left:-130 +imgStyle.X+'px',
