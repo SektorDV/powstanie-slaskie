@@ -1,0 +1,38 @@
+.ps__modalwindow__economy__main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    table {
+        font-family: 'latoregular', sans-serif;
+        text-align: center;
+        width: 40%;
+        color: #e3f2fa;
+        tr {
+            height: 50px;
+        }
+        th, td {
+            width: 20%;
+            padding: 3%;
+        }
+        .table {
+            &__red {
+                background-color: rgba(242, 90, 75, 0.77);
+            }
+            &__blue {
+                background-color: rgba(20, 81, 112, 0.77);
+            }
+            &__gray__transparent {
+                background-color: rgba(227, 242, 250, 0.3);
+                text-align: left;
+            }
+            &__red__transparent {
+                background-color: rgba(242, 90, 75, 0.3);
+            }
+            &__blue__transparent {
+                background-color: rgba(20, 81, 112, 0.3);
+            }
+        }
+    }
+}

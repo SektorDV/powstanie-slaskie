@@ -1,0 +1,54 @@
+.ps__modalwindow__stats__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4%;
+    transition: background-image 0.3s;
+    transition-delay: 0.3s;
+
+    &::after {
+        content: attr(author);
+        color: white;
+        position: absolute;
+        bottom: 1%;
+        right: 1%;
+        font-size: 10px;
+        font-family: "latoregular", sans-serif;
+    }
+}
+
+.modal-transition-group {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.modalfade-enter {
+    opacity: 0.01;
+}
+
+.modalfade-enter.modalfade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+    transition-delay: 300ms;
+}
+
+.modalfade-exit {
+    opacity: 1;
+}
+
+.modalfade-exit.modalfade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+.statistics-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+

@@ -1,0 +1,32 @@
+.ps__modalwindow__navmenu {
+    list-style: none;
+    width: 100%;
+    &__item {
+        display: inline-block;
+        color: #e3f2fa;
+        font-family: "latoregular", sans-serif;
+        margin-right: 3%;
+        transition: color 0.5s;
+        cursor: pointer;
+        text-transform: uppercase;
+        position: relative;
+        &::after {
+            content: '';
+            height: 100%;
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: #525156;
+            right: -29px;
+        }
+        &:last-child::after {
+            display: none;
+        }
+        &:hover {
+            color: #858d92;
+        }
+        &.selected {
+            color: #dc574b;
+        }
+    }
+}

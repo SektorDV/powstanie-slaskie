@@ -1,0 +1,44 @@
+.ps__modalwindow__population__grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 60%; 
+    h2 {
+        display: flex;
+        align-items: center;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        color: #e3f2fa;
+        position: relative;
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: -30px;
+            border: 1px solid #dc574b;
+            background: radial-gradient(circle, rgba(220,87,75,1) 30%, rgba(255,255,255,0) 30%);
+            border-radius: 50%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: #dc574b;
+            height: 2px;
+            width: 100px;
+            left: -135px;
+            top: calc(50% - 1px);
+        }
+    }
+    &__image {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

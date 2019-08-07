@@ -30,8 +30,7 @@ const Modal = props => {
       </div>
       {props.type==="persons" ? <Persons content={props.content} /> : null}
       {props.type==="video" ? <Video content={props.content}/> : null}
-      {props.type==="data" ? <Statistics content={props.content} /> : null}
-          
+      {props.type==="data" ? <Statistics content={props.content} tabs={props.modalTabs} /> : null}
       {props.type!=="data" ? <div
         className="ps__modalwindow__right"
         style={{
@@ -57,7 +56,8 @@ const mapStateToProps = state => {
     bgImg: state.modalImgSrc,
     imgAuthor: state.modalImgAuthor,
     content: state.modalContent,
-    type: state.modalType
+    type: state.modalType,
+    modalTabs: state.modalTabs
   };
 };
 
