@@ -4,13 +4,13 @@ import Pagination from '../../Components/Pagination/Pagination';
 import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/iiipowstanie.png';
 import Small from '../../res/images/small/iiipowstaniesmall.png';
-
-
+import ThirdUprisingMap from '../../Components/Modal/Map/3rdUprisingMap/3rdUprisingMap';
+import Mapbg from '../../res/images/bg/3rduprisingmapbg.png';
 const content={
-    headline: `"Zwycięstwo osiągniemy za wszelka cenę i nie ma takiego mocarza na świecie, który by mógł nas okuć ponownie w kajdany germańskie" `,
-    subheadline: `z odezwy Wojciecha Korfantego do rodaków, 3 maja 1921`,
+    headline: `„Zwycięstwo osiągniemy za wszelka cenę i nie ma takiego mocarza na świecie, który by mógł nas okuć ponownie w kajdany germańskie”. `,
+    subheadline: `Z odezwy Wojciecha Korfantego do rodaków, 3 maja 1921`,
     bg: Background,
-    bgAuthor: 'Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe',
+    bgAuthor: 'Uczestnicy III Powstania Śląskiego / Narodowe Centrum Cyfrowe',
     smallImg: Small,
     menuItems: [
         {
@@ -67,7 +67,9 @@ const content={
             type: "video"
         },
         {
-            type: "map"
+            type: "map",
+            layout: <ThirdUprisingMap bg={Mapbg} />,
+            img: Mapbg
         }
     ]
 }

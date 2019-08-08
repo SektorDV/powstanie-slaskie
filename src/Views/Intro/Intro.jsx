@@ -21,10 +21,7 @@ const Intro = () => {
             <h1 className="intro__title">Powstania <br /> Śląskie</h1>
             <h2 className="intro__date">1919-1921</h2>
             <p className= "intro__paragraph">
-                Górny Śląsk był w chwili zakończenia I wojny światowej jednym z najlepiej rozwiniętych 
-                pod względem przemysłowym regionów Niemiec. Olbrzymie pokłady węgla i wysoki stopień 
-                uprzemysłowienia czynił z niego potencjalne źródło olbrzymich zysków. Jednocześnie był
-                 to obszar, który zamieszkiwali nieomal po równo Polacy i Niemcy. 
+            Ślązacy trzykrotnie chwytali za broń, by zamanifestować swoją polskość. Prezentujemy multimedialny serwis edukacyjny, który stanowi kompendium wiedzy o trzech Powstaniach Śląskich. <strong>Zachęcamy do wysłuchania unikatowych nagrania głosów uczestników Powstań Śląskich.</strong>  
             </p>
             <Buttons map="1" audio="1" video="1"/>
             </div>

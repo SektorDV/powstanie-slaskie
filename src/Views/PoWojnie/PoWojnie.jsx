@@ -6,10 +6,10 @@ import Background from '../../res/images/bg/powojniebg.png';
 import Small from '../../res/images/small/powojniesmall.png';
 
 const content = {
-    headline: `„Wszystkie dążenia zmierzające do oderwania Górnego Śląska od Rzeszy Niemieckiej stanowią przestępstwo zdrady stanu.”`,
-    subheadline: `z rozporządzenia Walthera von Miguela, 31 grudnia 1918`,
+    headline: `„Wszystkie dążenia zmierzające do oderwania Górnego Śląska od Rzeszy Niemieckiej stanowią przestępstwo zdrady stanu”.`,
+    subheadline: `Z rozporządzenia Walthera von Miquela, prezydenta rejencji opolskiej z ramienia Niemiec, 31 grudnia 1918`,
     bg: Background,
-    bgAuthor: 'Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe',
+    bgAuthor: 'Krajobraz przemysłowy Górnego Śląska / Narodowe Archiwum Cyfrowe',
     smallImg: Small,
     titleLeft: true,
     menuItems: [
@@ -35,7 +35,7 @@ const content = {
         <p>
             Równocześnie wieść o klęsce Niemiec i odradzaniu się państwa polskiego, w
             połączeniu z trudną sytuacją materialną spowodowaną wojną, rozbudziły wolę
-            powrotu Ślązaków do Ojczyzny. Niemcy odpowiedzieli terrorem. Na teren
+            powrotu Ślązaków do Polski. Niemcy odpowiedzieli terrorem. Na teren
             Górnego Śląska sprowadzone zostały niemieckie oddziały wojskowe. 13
         stycznia 1919 komisarz <strong>Otto Hörsing</strong> ogłosił    <strong>stan oblężenia na Górnym Śląsku</strong>, w wyniku czego zniesiono
             nietykalność osobistą, a wojsko uzyskało prawo dokonywania rewizji i
@@ -88,7 +88,41 @@ const content = {
         {
             label: "śląsk w traktacie wersalskim",
             type: "text",
-            content: `Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...`
+            content: [<p>
+            <strong>
+                Fragment traktat pokojowy z Niemcami dotyczący sprawy Górnego Śląska –
+                Wersal – 28 czerwca 1919 roku
+            </strong>
+        </p>,
+        <p align="center">
+            <strong>Polska</strong>
+        </p>,
+        <p>
+            Artykuł 88. W części Śląska Górnego, położonego w granicach poniżej
+            opisanych, mieszkańcy zostaną powołani do wypowiedzenia się przez
+            głosowanie, czy życzą sobie przyłączenia do Niemiec, czy też do Polski. (…)
+        </p>,
+        <p align="center">
+            <strong>Aneks</strong>
+        </p>,
+        <p>
+            4. Prawo głosowania będzie przyznane każdej, bez różnicy płci, osobie,
+            która czyni zadość warunkom następującym:
+        </p>,
+        <p>
+            a) mieć będzie ukończonych 20 lat wieku w dniu 1 stycznia tego roku, w
+            którym plebiscyt się odbędzie;
+        </p>,
+        <p>
+            b) urodziła się na obszarze podlegającym plebiscytowi, albo też ma swoje tu
+            stałe miejsce zamieszkiwania (…).
+        </p>,
+        <p>
+            <em>
+                Źr. T. Maresz, K. Juszczyk, Historia w źródłach – nie tylko pisanych.
+                XX wiek i czasy współczesne 3, Toruń 2005, s. 99.
+            </em>
+        </p>]
         },
         {
             label: 'statystyki i dane',
@@ -100,9 +134,7 @@ const content = {
         {
             type: 'audio'
         },
-        {
-            type: 'video'
-        },
+        
         {
             type: 'map'
         }

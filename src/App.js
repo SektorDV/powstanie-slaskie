@@ -46,13 +46,15 @@ const App = withRouter(({location, ...props}) => {
           </section>
         </CSSTransition>
       </TransitionGroup>
-      {props.showModal ?<Modal /> : null}
+
+          {props.showModal ?<Modal /> : <></>}
+
       <Navbar />
     </div>
   );
 });
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   return {
     showModal: state.showModal
   };

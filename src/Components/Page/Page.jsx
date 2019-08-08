@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Page.scss";
-import Scrollbar from "react-scrollbars-custom";
 import Buttons from '../Buttons/Buttons';
 import Textfield from '../Textfield/Textfield';
-import Scrolldownicon from '../../res/images/icons/scrolldown.png';
 import {connect, dispatch} from 'react-redux';
 import {parallax} from '../../functions/parallax';
 
@@ -65,7 +63,7 @@ const Page = props => {
                     onClick={() => {
                       if (e.type === "text") setMenuSelection(index);
                       else {
-                        props.sendDataToModal(e.content.img, e.content.author, e.content.content, e.type, e.content.modalTabs||null)
+                        props.sendDataToModal(e.content.img||null, e.content.author||null, e.content.content||null, e.type, e.content.modalTabs||null)
                         props.showModal();
                       }
                       
@@ -102,7 +100,7 @@ const Page = props => {
   );
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
   return {
     sendDataToModal: (img, imgAuthor, content, type, modalTabs) => {
       dispatch({
