@@ -51,13 +51,17 @@ const Audio = props => {
                     clearInterval(timeInterval);
                     setPlayingAudio(index);
                     console.log('w środku onclicka:', audioRef);
+                    let time = audioRef[index].currentTime;
+                    console.log(time);
                     
                     const newInterval = setInterval(()=>{
                       let newTimeArray = durations;
+                      time++;
                       newTimeArray.splice(index, 1);
-                      newTimeArray.splice(index, 0, "1:00");
+                      newTimeArray.splice(index, 0, time);
                       setDurations(newTimeArray);
                        console.log('w środku intervala:', audioRef);
+                       console.log(time);
                        console.log(durations);
 
                     }, 1000);
