@@ -74,7 +74,7 @@ const Buttons = (props) => {
       <div className="buttons__button">
         <svg
           onClick={() => {
-            props.setModalData(props.mapContent, 'map', props.mapContent[0].content.img)
+            props.setModalData(props.mapContent, 'map', props.mapContent[0].img)
             props.showModal();
           }}
           id="icons"

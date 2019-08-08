@@ -11,10 +11,10 @@ import Gospodarka from '../../Components/Modal/Statistics/Skutki/Gospodarka';
 import Gospodarkaimg from '../../res/images/bg/economybg.png';
 
 const content={
-    headline: `„Śląsk postawił przed Polską konieczność rozstrzygnięcia nowych wielkich problemów, wciągnął całe społeczeństwo jeszcze silniej i zdecydowaniej w orbitę cywilizacji zachodu. Śląsk wywołał konieczność szybkiej rozbudowy Gdyni i połączenia wybrzeża morskiego Polski bezpośrednią siecią komunikacyjną z całą Rzeczpospolitą.”`,
+    headline: `„Śląsk postawił przed Polską konieczność rozstrzygnięcia nowych wielkich problemów, wciągnął całe społeczeństwo jeszcze silniej i zdecydowaniej w orbitę cywilizacji zachodu. Śląsk wywołał konieczność szybkiej rozbudowy Gdyni i połączenia wybrzeża morskiego Polski bezpośrednią siecią komunikacyjną z całą Rzeczpospolitą”.`,
     subheadline: `Eugeniusz Kwiatkowski, minister, współtwórca portu w Gdyni i Centralnego Okręgu Przemysłowego`,
     bg: Background,
-    bgAuthor: 'Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe',
+    bgAuthor: 'Eugeniusz Kwiatkowski / Narodowe Centrum Cyfrowe',
     smallImg: Small,
     menuItems: [
         {
@@ -28,7 +28,7 @@ const content={
         </p>,
         <p>
         Śląsk odgrywał    <strong>kluczową rolę dla odradzającej się Rzeczpospolitej</strong>. Jak
-            uważa prof. Maria Wanda Wanatowicz, Śląsk przekształcił Polskę z kraju
+            uważa prof. Maria Wanda Wanatowicz, historyk z Uniwersytetu Śląskiego, Śląsk przekształcił Polskę z kraju
             rolniczego w <strong>przemysłowo-rolniczy</strong>. W latach 20. z tego
             pochodziło stąd <strong>80 proc. polskiego eksportu</strong>. Od 1933 roku
         surowiec był transportowany specjalną magistralą kolejową do    <strong>Gdyni</strong>. To również dzięki produkcji żelaza i węgla na
