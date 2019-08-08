@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Audio.scss";
+import { parse } from "url";
 
 const Audio = props => {
   const [playingAudio, setPlayingAudio] = useState(null);
@@ -35,7 +36,13 @@ const Audio = props => {
     setMaxTime(maxTimeTempArray);
   }, [maxTime, audioRef]);
   
-
+  const parseCurrentTime = (val, time) => {
+    if (time/100 < 0.6) {
+    return `${parseInt(val.replace(':', ".")) + time/100}`
+    } else {
+      return `${parseInt(val.replace(':', ".")) + Math.floor(time/60) - 0.6}`
+    }
+  };
  
 
   return (
@@ -46,25 +53,23 @@ const Audio = props => {
             <div className="audio-player" key={index}>
               <div className="audio-player-top">
                 <div
-                  className="audio-player-description-and-play style="
+                  className="audio-player-description-and-play"
                   onClick={() => {
                     clearInterval(timeInterval);
                     setPlayingAudio(index);
-                    console.log('w środku onclicka:', audioRef);
-                    let time = audioRef[index].currentTime;
-                    console.log(time);
+                    let time = Math.floor(audioRef[index].currentTime);
                     
                     const newInterval = setInterval(()=>{
                       let newTimeArray = durations;
                       time++;
                       newTimeArray.splice(index, 1);
-                      newTimeArray.splice(index, 0, time);
-                      setDurations(newTimeArray);
-                       console.log('w środku intervala:', audioRef);
-                       console.log(time);
-                       console.log(durations);
+                      newTimeArray.splice(index, 0, parseCurrentTime(durations[index], time));
+                      console.log(durations);
 
-                    }, 1000);
+                      setDurations(newTimeArray);
+                     
+
+                    }, 500);
 
                     setTimeInterval(newInterval);
                     if (index == playingAudio) {
