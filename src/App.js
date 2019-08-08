@@ -33,6 +33,7 @@ const App = withRouter(({location, ...props}) => {
         <CSSTransition key={location.key} classNames='fade' timeout={{enter: 600, exit: 300}}>
         <section className="route-section">
           <Switch location={location}>
+            <Route path="/powstanieslaskie/" component={Intro} />
             <Route path="/" exact component={Intro} />
             <Route path="/PoWojnie" exact component={PoWojnie} />
             <Route path="/Korfanty" exact component={Korfanty} />

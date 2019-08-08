@@ -2,7 +2,7 @@
   "name": "powstanies",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://www2.polskieradio.pl/powstanieslaskie",
   "dependencies": {
     "material-icons-react": "^1.0.4",
     "node-sass": "^4.12.0",
