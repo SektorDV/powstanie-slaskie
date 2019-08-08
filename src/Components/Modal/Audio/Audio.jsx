@@ -1,100 +1,107 @@
-import React, {useState, useEffect, useRef} from 'react'
-import Textfield from "../../Textfield/Textfield";
-import './Audio.scss';
+import React, { useState, useEffect } from "react";
+import "./Audio.scss";
 
 const Audio = props => {
-  const [playingAudio, setPlayingAudio] = useState();
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [playingAudio, setPlayingAudio] = useState(null);
   const [durations, setDurations] = useState([]);
   const [maxTime, setMaxTime] = useState([]);
+  const [timeInterval, setTimeInterval] = useState();
+  
 
   const audioRef = [];
-  let currentTimeArray = [];
-//   let timeInterval;
+
+  useEffect(() => {
+    audioRef.forEach(x => {
+      audioRef.indexOf(x) !== playingAudio ? x.pause() : x.play();
+    });
+  });
 
 
-    useEffect(()=>{audioRef.forEach((x)=>{
-        audioRef.indexOf(x)!== playingAudio? x.pause() : x.play() 
-    })});
+  useEffect(() => {
+    let currentTimeArray = [];
+    if (durations.length == 0) {
+      audioRef.forEach((x, i) => {
+        currentTimeArray[i] = "0:00";
+      });
+      setDurations(currentTimeArray);
+    }
+  }, [durations, audioRef]);
 
-    useEffect(()=>{
-        for (let x of props.content[0].content.content) {
-            currentTimeArray.push('0:00')
-        }
-        setDurations(currentTimeArray);
-    },[])
+  useEffect(() => {
+    let maxTimeTempArray = [];
+    audioRef.forEach((x, i) => {
+      maxTimeTempArray[i] = x.duration;
+    });
+    setMaxTime(maxTimeTempArray);
+  }, [maxTime, audioRef]);
+  
 
-    useEffect(()=>{
-        let maxTimeTempArray = [];
-        audioRef.forEach((x,i)=>{
-            maxTimeTempArray[i] = x.duration;
-        })
-        setMaxTime(maxTimeTempArray);
-    })
+ 
 
-
-      return(
-        <div className="ps__modalwindow__content">
-        <div className="ps__modalwindow__content__audiolist">
-          {props.content[0].content.content.map((e, index) => {
-            return (
-                <div className="audio-player" key={index}>
-                <div className="audio-player-top">
-                  <div className="audio-player-description-and-play style=" 
-                        onClick={()=>{
-                            
-                            setPlayingAudio(index);
-                            setIsPlaying(true);
-                            // clearInterval(timeInterval);
-                            // timeInterval = setInterval((audioRef)=>{
-                            //     currentTimeArray[index] = audioRef[index];
-                            //     setDurations(currentTimeArray);
-                            //     console.log(audioRef);
-                            // },1000)
-                            if (isPlaying && index == playingAudio)  {
-                                audioRef[index].pause();
-                                setIsPlaying(false);
-                                setPlayingAudio(null);
-                            } 
-                        }
-                    }
-                        style={{backgroundColor: playingAudio == index? 'red': null}}
-                        >
-                        
+  return (
+    <div className="ps__modalwindow__content">
+      <div className="ps__modalwindow__content__audiolist">
+        {props.content[0].content.content.map((e, index) => {
+          return (
+            <div className="audio-player" key={index}>
+              <div className="audio-player-top">
+                <div
+                  className="audio-player-description-and-play style="
+                  onClick={() => {
+                    clearInterval(timeInterval);
+                    setPlayingAudio(index);
+                    console.log('w środku onclicka:', audioRef);
                     
-                    <audio preload="metadata" ref={ref => audioRef[index] = ref} src={`//static.prsa.pl/${e.source}.mp3`}>
-                    </audio>
-                  </div>
-                  <div className="audio-player-top-right">
-                    <h1>
-                      {e.title}
-                    </h1>
-                    <p>
-                        {e.text}
-                    </p>
-                  </div>
-                </div>
-                <div className="audio-player-bottom">
-                  <div className="audio-timeline">
-                    <div className="audio-timeline-active">
+                    const newInterval = setInterval(()=>{
+                      let newTimeArray = durations;
+                      newTimeArray.splice(index, 1);
+                      newTimeArray.splice(index, 0, "1:00");
+                      setDurations(newTimeArray);
+                       console.log('w środku intervala:', audioRef);
+                       console.log(durations);
 
-                    </div>
-                    <span className="audio_currentTime">
-                      {durations[index]}
-                    </span>
-                    <span className="audio_duration">
-                      {Math.floor(maxTime[index] / 60) +":"+(Math.floor(maxTime[index] % 60) > 9 ? "" : "0") +Math.floor(maxTime[index] % 60)|| '0:00'}
-                    </span>
-                  </div>
+                    }, 1000);
+
+                    setTimeInterval(newInterval);
+                    if (index == playingAudio) {
+                      audioRef[index].pause();
+                      setPlayingAudio(null);
+                      clearInterval(newInterval);
+                    }
+                  }}
+                  style={{
+                    backgroundColor: playingAudio == index ? "red" : null
+                  }}
+                >
+                  <audio
+                    preload="metadata"
+                    ref={ref => (audioRef[index] = ref)}
+                    src={`//static.prsa.pl/${e.source}.mp3`}
+                  />
+                </div>
+                <div className="audio-player-top-right">
+                  <h1>{e.title}</h1>
+                  <p>{e.text}</p>
                 </div>
               </div>
-            );
-          })}
-        </div>
-        
+              <div className="audio-player-bottom">
+                <div className="audio-timeline">
+                  <div className="audio-timeline-active" />
+                  <span className="audio_currentTime">{durations[index]}</span>
+                  <span className="audio_duration">
+                    {Math.floor(maxTime[index] / 60) +
+                      ":" +
+                      (Math.floor(maxTime[index] % 60) > 9 ? "" : "0") +
+                      Math.floor(maxTime[index] % 60) || "0:00"}
+                  </span>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
-    )
-}
+    </div>
+  );
+};
 
 export default Audio;
-
