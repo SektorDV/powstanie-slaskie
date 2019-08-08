@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Audio.scss";
-import { parse } from "url";
 
 const Audio = props => {
   const [playingAudio, setPlayingAudio] = useState(null);
   const [durations, setDurations] = useState([]);
   const [maxTime, setMaxTime] = useState([]);
   const [timeInterval, setTimeInterval] = useState();
-  
 
   const audioRef = [];
 
@@ -16,7 +14,6 @@ const Audio = props => {
       audioRef.indexOf(x) !== playingAudio ? x.pause() : x.play();
     });
   });
-
 
   useEffect(() => {
     let currentTimeArray = [];
@@ -35,15 +32,14 @@ const Audio = props => {
     });
     setMaxTime(maxTimeTempArray);
   }, [maxTime, audioRef]);
-  
+
   const parseCurrentTime = (val, time) => {
-    if (time/100 < 0.6) {
-    return `${parseInt(val.replace(':', ".")) + time/100}`
-    } else {
-      return `${parseInt(val.replace(':', ".")) + Math.floor(time/60) - 0.6}`
-    }
+    return `${(
+      parseInt(val.replace(":", ".")) +
+      Math.floor(time / 60) +
+      (time % 60) / 100
+    ).toFixed(2)}`.replace(".", ":");
   };
- 
 
   return (
     <div className="ps__modalwindow__content">
@@ -58,18 +54,22 @@ const Audio = props => {
                     clearInterval(timeInterval);
                     setPlayingAudio(index);
                     let time = Math.floor(audioRef[index].currentTime);
-                    
-                    const newInterval = setInterval(()=>{
+                    let addedTime = 0;
+                    const newInterval = setInterval(() => {
                       let newTimeArray = durations;
-                      time++;
+                      addedTime++;
+
+                      let finalTime = time + addedTime;
+
                       newTimeArray.splice(index, 1);
-                      newTimeArray.splice(index, 0, parseCurrentTime(durations[index], time));
-                      console.log(durations);
+                      newTimeArray.splice(
+                        index,
+                        0,
+                        parseCurrentTime(durations[index], finalTime)
+                      );
 
                       setDurations(newTimeArray);
-                     
-
-                    }, 500);
+                    }, 1000);
 
                     setTimeInterval(newInterval);
                     if (index == playingAudio) {
@@ -95,7 +95,26 @@ const Audio = props => {
               </div>
               <div className="audio-player-bottom">
                 <div className="audio-timeline">
-                  <div className="audio-timeline-active" />
+                  <div className="audio-timeline-active">
+                    <div
+                      style={{
+                        height: "100%",
+                        backgroundColor: "red",
+                        width: `${
+                          durations[index] !== undefined
+                            ? (
+                                Number(
+                                  durations[index].replace(":", ".") * 100
+                                ) / maxTime[index]
+                              ).toFixed(2) *
+                                100 +
+                              "%"
+                            : "0%"
+                        }`
+                      }}
+                    />
+                    {}
+                  </div>
                   <span className="audio_currentTime">{durations[index]}</span>
                   <span className="audio_duration">
                     {Math.floor(maxTime[index] / 60) +
