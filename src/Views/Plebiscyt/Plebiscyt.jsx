@@ -3,6 +3,8 @@ import './Plebiscyt.scss';
 import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/plebiscytbg.png';
 import Small from '../../res/images/small/plebiscytsmall.png';
+import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+
 
 
 const content={
@@ -51,7 +53,42 @@ const content={
         },
         {
             type: "map"
-        }
+        },
+        {
+            type: "audio",
+            content: {
+              img: AudioImg,
+              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              content: [
+                {
+                  title: 'Marki leżały na ulicach' ,
+                  text:
+                  `- Wiarę ludzi w powrót do Polski unaoczniał fakt stosunku do waluty. Polskie marki trzymano w domu ukryte, z nadzieją, że wkrótce się przydadzą. Niemcy rozrzucali swoje pieniądze po ulicy, ale nikt w ich wypłacalność nie wierzył - wspominał Teodor Mańczyk, działacz plebiscytowy na Górnym Śląsku, uczestnik III Powstania Śląskiego. (PR, 25.05.1962)`,                 
+                  source: "352c1f1e-686c-4b69-9692-32779461fe03"
+                },
+                {
+                    title: "Granaty pod nogi agitatorów",
+                    text:
+                    '- Ludzie byli zastraszani. Niemieckie bojówki nie cofały się przed niczym. Rzucano granaty pod nogi agitatorów –wspominał działacz plebiscytowy Teodor Mańczyk. (PR, 13.11.1958)',
+                    source: "fa52cf63-ba9a-414f-acfe-c2e4db99b94f"
+                  },
+                  {
+                    title: "Nie zdawał człowiek na łzy matki",
+                    text:
+                    '- Poszliśmy w powstanie. Pamiętam taki moment, kiedy mieliśmy zabrać na noszach jednego powstańca z utrąconą nogą, a ten gada: „Pieruna, dajcie mi, a zabija tych pięciu pierunów i dopiero umrę” – relacja uczestnika II Powstania Śląskiego. (PR, 4.08.1975)',
+                    source: "2708a050-7a1f-4d81-9aa9-5d3cc2976f97"
+                  },
+                  {
+                    title: "Przyszli spalić komisariat",
+                    text:
+                    '- Dzień przed plebiscytem pod budynkiem Polskiego Komisariatu Plebiscytowego zebrało się ok. 4000 ludzi. Chcieli wedrzeć się do środka i wykraść dokumenty. Podpalili szopę, która znajdowała się za budynkiem komisariatu - mówił Jan Wawrzynek, działacz plebiscytowy. (PR, 28.04.1971)',
+                    source: "37806b93-3691-4c74-b578-3dea138043c5"
+                  },
+                
+                
+              ]
+            }
+          },
     ]
 }
 

@@ -104,35 +104,12 @@ const content = {
         author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
         content: [
           {
-            title: "Nagranie numer 1",
+            title: "Piłsudski nie pomoże",
             text:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            source: "ffc24e9b-a48d-47f1-807b-dd1df898af8f"
+              "- Przyjechaliśmy do Warszawy. Przyjął nas Józef Piłsudski. Ostro powiedział, że ani żołnierzy, ani karabinów na Śląsk nie da. W trakcie powrotu postanowiliśmy nie mówić o tym nikomu. Gdyby się Niemcy dowiedzieli o odmowie Piłsudskiego, to by było po plebiscycie i po Śląsku – wspominał Piotr Ful, delegat Ślązaków do ówczesnego Naczelnika Państwa. (PR, 25.05.1962)",
+            source: "c9b689e5-680e-48af-969a-1321f4a3b35e"
           },
-          {
-            title: "Nagranie numer 2",
-            text:
-              'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-            source: "55e443bf-782f-4113-8c01-dfca02ca5116"
-          },
-          {
-            title: "Nagranie numer 3",
-            text:
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-            source: "2e14cc64-4ac4-40b4-a588-ce7ff637eb83"
-          },
-          {
-            title: "Nagranie numer 4",
-            text:
-              "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
-            source: "383b7b9d-8313-442d-bca1-5030d8f2a166"
-          },
-          {
-            title: "Nagranie numer 5",
-            text:
-              "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-            source: "2a1e3fa6-340f-46f4-b787-70aa9c4e90d3"
-          },
+          
           
         ]
       }

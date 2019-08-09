@@ -37,9 +37,7 @@ const content = {
         }
     ],
     multimediaItems: [
-        {
-            type: "audio"
-        },
+        
         {
             type: "video"
         }

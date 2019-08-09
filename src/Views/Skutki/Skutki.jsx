@@ -9,6 +9,8 @@ import Ludnoscimg from '../../res/images/bg/populationbg.png';
 import Ludnosc from '../../Components/Modal/Statistics/Skutki/Ludnosc';
 import Gospodarka from '../../Components/Modal/Statistics/Skutki/Gospodarka';
 import Gospodarkaimg from '../../res/images/bg/economybg.png';
+import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+
 
 const content={
     headline: `„Śląsk postawił przed Polską konieczność rozstrzygnięcia nowych wielkich problemów, wciągnął całe społeczeństwo jeszcze silniej i zdecydowaniej w orbitę cywilizacji zachodu. Śląsk wywołał konieczność szybkiej rozbudowy Gdyni i połączenia wybrzeża morskiego Polski bezpośrednią siecią komunikacyjną z całą Rzeczpospolitą”.`,
@@ -69,7 +71,30 @@ const content={
         },
         {
             type: "map"
-        }
+        },
+        {
+            type: "audio",
+            content: {
+              img: AudioImg,
+              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              content: [
+                {
+                  title: 'Ci, którzy zostali ' ,
+                  text:
+                  `- Wielu powstańców pozostało po stronie niemieckiej. Aż do 1939 roku organizowaliśmy życie społeczne Polaków w Niemczech - mówił Jan Wawrzynek, członek Związku Polaków w Niemczech. (PR, 28.04.1971)`,                 
+                  source: "e28b250b-f5e0-45be-921a-eb495cf90952"
+                },
+                {
+                    title: "Po dwudziestu latach pokoju",
+                    text:
+                    'Powstańcy śląscy wspominają wrzesień 1939 roku i ponowną walkę o polskość regionu. (PR, 2.09.1969)',
+                    source: "b3c7520e-3e10-4548-9da2-6e9755ca3ff1"
+                  },
+                  
+                
+              ]
+            }
+          },
     ]
 }
 

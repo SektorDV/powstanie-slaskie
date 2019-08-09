@@ -5,10 +5,7 @@ import MaterialIcon from "material-icons-react";
 import Persons from './Persons/Persons';
 import Video from './Video/Video';
 import Audio from './Audio/Audio';
-<<<<<<< HEAD
-=======
 import Map from './Map/Map';
->>>>>>> b4660084b5e1a6fa40060189ec6863733dfed15d
 import Statistics from './Statistics/Statistics';
 
 const Modal = props => {
@@ -37,22 +34,15 @@ const Modal = props => {
       </div>
       {props.type==="persons" ? <Persons content={props.content} /> : null}
       {props.type==="video" ? <Video content={props.content}/> : null}
-<<<<<<< HEAD
-      {props.type==="audio" ? <Audio content={props.content}/> : null}
-      {props.type==="data" ? <Statistics content={props.content} /> : null}
-          
-      {props.type!=="data" ? <div
-=======
       {props.type==="data" ? <Statistics content={props.content} tabs={props.modalTabs} /> : null}
       {props.type==="audio" ? <Audio content={props.content}/> : null}
       {props.type==="map" ? <Map content={props.content}/> : null}
       {props.type!=="data" && props.type!=="map" ? <div
->>>>>>> b4660084b5e1a6fa40060189ec6863733dfed15d
         className="ps__modalwindow__right"
         style={{
           backgroundImage: `url(${props.bgImg})`,
-          width: 1000,
-          height: 1000
+          width: '60rem',
+          height: '100%'
         }}
       /> : null}
     </div>
