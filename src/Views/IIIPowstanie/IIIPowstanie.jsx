@@ -1,11 +1,15 @@
 import React from 'react';
 import './IIIPowstanie.scss';
-import Pagination from '../../Components/Pagination/Pagination';
 import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/iiipowstanie.png';
 import Small from '../../res/images/small/iiipowstaniesmall.png';
 import ThirdUprisingMap from '../../Components/Modal/Map/3rdUprisingMap/3rdUprisingMap';
+import PersonsImg from "../../res/images/bg/iiipowstaniepostacie.png";
 import Mapbg from '../../res/images/bg/3rduprisingmapbg.png';
+import maciejImg from "../../res/img/Maciej.png";
+import kazimierzImg from "../../res/img/Kazimierz.png";
+import wojciechImg from "../../res/img/Wojciech.png";
+
 const content={
     headline: `„Zwycięstwo osiągniemy za wszelka cenę i nie ma takiego mocarza na świecie, który by mógł nas okuć ponownie w kajdany germańskie”. `,
     subheadline: `Z odezwy Wojciecha Korfantego do rodaków, 3 maja 1921`,
@@ -55,9 +59,29 @@ const content={
         },
         {
             label: "Przywódcy powstania",
-            type: "text",
-            content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
-        }
+            type: "persons",
+            content: {
+              img: PersonsImg,
+              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              content: [
+                {
+                  name: "Maciej Mielżyński",
+                  img: `${maciejImg}`,
+                  text: `Wielkopolski ziemianin, hrabia. W początkowej fazie walk był dowódcą wojskowym III Powstania Śląskiego. Wobec niewielkich postępów wojsk powstańczych, Mielżyński został 31 maja 1921 roku odwołany ze stanowiska. Decyzję o odwołaniu Mielżyńskiego spowodowały również trudności we współpracy między nim, a dyktatorem powstania – Wojciechem Korfantym. Korfanty nie cofnął się nawet przed wypomnieniem podwładnemu, że ten w 1913 roku zamordował swoją żonę i jej kochanka, a zarazem siostrzeńca. Sąd uniewinnił Mielżyńskiego, uzasadniając, że hrabia działał w obronie honoru. Wobec Mielżyńskiego obowiązywał jednak bojkot towarzyski w Wielkopolsce. Zmarł w 1940 roku w Wiedniu, gdzie przebywał pod nadzorem Gestapo.`
+                },
+                {
+                  name: "Kazimierz Zenkteller",
+                  img: `${kazimierzImg}`,
+                  text: `Powstaniec wielkopolski i śląski. Po zdymisjonowaniu Macieja Mielżyńskiego ze stanowiska naczelnego dowódcy wojsk powstańczych zajął jego miejsce. Choć komendę nad wojskami powstańczymi sprawował krótko, to przyszło mu w udziale utrzymanie morale wojsk po ogłoszeniu zawieszenia broni i zdławienie buntu części armii powstańczej pod komendą Michała Grażyńskiego, późniejszego wojewody śląskiego z ramienia sanacji. Po III Powstaniu Śląskim wycofał się z życia politycznego. Zmarł w 1955 roku.`
+                },
+                {
+                  name: "Wojciech Korfanty",
+                  img: `${wojciechImg}`,
+                  text: `Dyktator i inicjator wybuchu III Powstania Śląskiego. Był polskim komisarzem plebiscytowym. 3 maja 1921 roku ogłosił odezwę, w której wzywał do powstania. Jako dyktator powstania wziął na siebie ciężar odpowiedzialności politycznej za wynik zrywu. Na jego barkach spoczywały sprawy wojskowe i cywilne związane z administrowaniem obszarem, który zajęli uczestnicy III Powstania, do jego kompetencji należał także kontakt z Warszawą, skąd nieoficjalnie płynęła pomoc dla powstańców, oraz z aliantami, od których arbitrażu miał zależeć przyszły podział Górnego Śląska.   Tuż po zakończeniu powstania, 19 lipca 1921 roku opuścił Śląsk, wyznaczając Józefa Rymera na swojego następcę.`
+                }
+              ]
+            }
+          },
     ],
     multimediaItems: [
         {

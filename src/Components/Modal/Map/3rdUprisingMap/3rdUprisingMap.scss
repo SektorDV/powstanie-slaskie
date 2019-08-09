@@ -42,7 +42,7 @@
         display: grid;
         column-gap: 5%;
         grid-template-columns: 10% 90%;
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: repeat(1fr);
         font-family: 'latoregular', sans-serif;
         * {
             align-self: center;
