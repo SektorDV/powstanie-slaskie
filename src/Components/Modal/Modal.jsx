@@ -4,11 +4,8 @@ import { connect } from "react-redux";
 import MaterialIcon from "material-icons-react";
 import Persons from './Persons/Persons';
 import Video from './Video/Video';
-<<<<<<< HEAD
 import Audio from './Audio/Audio';
-=======
 import Statistics from './Statistics/Statistics';
->>>>>>> 660d50b20e26dc40af34624018f836d2d2bd033a
 
 const Modal = props => {
   const [modalOpacity, setModalOpacity] = useState(0);
@@ -34,11 +31,8 @@ const Modal = props => {
       </div>
       {props.type==="persons" ? <Persons content={props.content} /> : null}
       {props.type==="video" ? <Video content={props.content}/> : null}
-<<<<<<< HEAD
       {props.type==="audio" ? <Audio content={props.content}/> : null}
-=======
       {props.type==="data" ? <Statistics content={props.content} /> : null}
->>>>>>> 660d50b20e26dc40af34624018f836d2d2bd033a
           
       {props.type!=="data" ? <div
         className="ps__modalwindow__right"
