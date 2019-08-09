@@ -1,6 +1,6 @@
 .ps__page__main {
     display: flex;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 3.5rem);
     width: 100%;
     .ps__page__left {
         z-index: 3;
@@ -9,7 +9,7 @@
         color: #e3f2fa;
         padding: 6%;
         display: flex;
-        padding-bottom: 75px;
+        padding-bottom: 3.75rem;
         justify-content: space-between;
         padding-right: 1%;
         background-size: 120%;
@@ -27,8 +27,8 @@
             width: 90%;
         }
         &__title {
-            width: 70%;
-            font-size: 20px;
+            width: 31rem;
+            font-size: 1rem;
             &__headline {
                 font-family: 'dm_serif_displayregular', serif;
                 h2 {
@@ -37,7 +37,7 @@
             }
             &__subheadline {
                 font-family: 'dm_serif_displayregular', serif;
-                font-size: 20px;
+                font-size: 1rem;
                 font-weight: 300;
                 p {
                     font-weight: 300;
@@ -46,10 +46,10 @@
         }
 
         &__subtitle {
-            font-size: 16px;
+            font-size: 0.8rem;
         }
         hr {
-            margin: 20px 0;
+            margin: 1rem 0;
             border-color: #f25a4b;
         }
         
@@ -95,7 +95,7 @@
                     color: #6a8594;
                     user-select: none;
                     div {
-                        margin-bottom: 10px;
+                        margin-bottom: 0.5rem;
                     }
                     div:hover {
                         transition: 0.5s;
@@ -105,21 +105,21 @@
                 }
                 &__icons {
                     flex: 1;
-                    margin-top: 10px;
+                    margin-top: 0.5rem;
                     &__label {
                         font-family: 'poppinsregular', sans-serif;
                         font-weight: 700;
                         position: relative;
-                        margin-bottom: 30px;
+                        margin-bottom: 1.5rem;
                         
                         &::before {
                             content: '';
                             z-index: 1;
                             position: absolute;
-                            height:22px;
-                            top: -4px;
+                            height:1.2rem;
+                            top: -0.2rem;
                             right: 40%;
-                            width: 1000px;
+                            width: 50rem;
                             background-color: #f25a4b;
                         }
                         span {

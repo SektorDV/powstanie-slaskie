@@ -8,39 +8,39 @@
         font-family: 'dm_serif_displayregular', serif;
         font-weight: 300;
         color: #01638b;
-        margin-left: 150px;
-        margin-top: 100px;
-        line-height: 100px;
-        text-indent: -130px;
+        margin-left: 7.5rem;
+        margin-top: 5rem;
+        line-height: 5rem;
+        text-indent: -6.5rem;
     }
     &__date {
-        font-size: 50px;
+        font-size: 2.5rem;
         font-family: 'dm_serif_displayregular', serif;
         font-weight: 300;
         color: #6a8594;
-        margin-left: 300px;
+        margin-left: 15rem;
         position: relative;
         
         &::before, &::after {
             content: "";
-            width: 270px;
-            height: 6px;
-            left: -300px;
+            width: 13.5rem;
+            height: 0.3rem;
+            left: -15rem;
             position: absolute;
             background-color: #f25a4b;
-            top: calc(50% - 3px);
+            top: calc(50% - 0.15rem);
         }
         &::after {
-            left: 220px;
+            left: 11rem;
         }
     }
     &__line {
-        width: 80px;
+        width: 4rem;
     height: 6px;
-    left: 65px;
+    left: 3.25rem;
     position: absolute;
     background-color: #0b5a82;
-    top: 307px;
+    top: 16.2rem;
     z-index: 1;
     transition: all 3s cubic-bezier(0.32, 0.63, 0, 0.63);
     transition-delay: 0.2s;
@@ -50,31 +50,30 @@
         margin-left: 8%;
     }
     &__paragraph {
-        font-size: 14px;
-        width: 490px;
-        line-height: 20px;
-        margin-top: 20px;
-        margin-bottom: 40px;
+        font-size: 0.7rem;
+        width: 24.5rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
     &__img {
         background-image: url(../../res/img/soliders_final.png);
         width: 50%;
-        height: calc(100vh - 140px);
-        background-position: -139px 0px;
+        background-size: 62rem;
+        height: calc(100vh - 6rem);
+        background-position: -7rem 0px;
         background-repeat: no-repeat;
         position: relative;
         transition: all 3s cubic-bezier(0.32, 0.63, 0, 0.63);
         transition-delay: 0.2s;
     }
     &__soldier {
-        
-       
             background-image: url(../../res/img/01_Powstanie_śląskie_INTRO.png);
             background-size: contain;
-            width: 320px;
-            height: 750px;
-            top: 102px;
-            left: -130px;
+            width: 16rem;
+            height: 37.5rem;
+            top: 20rem;
+            left: -6.5rem;
             position: absolute;
             background-repeat: no-repeat;
             z-index: 2;
