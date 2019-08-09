@@ -41,7 +41,7 @@ body {
     opacity: 0.01;
 }
 
-.fade-enter.fade-enter-active {
+.fade-enter-active {
     opacity: 1;
     transition: opacity 300ms ease-in;
     transition-delay: 300ms;
@@ -51,7 +51,29 @@ body {
     opacity: 1;
 }
 
-.fade-exit.fade-exit-active {
+.fade-exit-active {
     opacity: 0.01;
     transition: opacity 300ms ease-in;
+}
+
+.modalfade-enter {
+  opacity: 0.01;
+}
+
+.modalfade-enter {
+  opacity: 0.01;
+}
+
+
+.modalfade-enter-active {
+  opacity: 1;
+}
+
+.modalfade-exit {
+  opacity: 1;
+}
+
+.modalfade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }

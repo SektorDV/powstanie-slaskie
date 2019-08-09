@@ -16,7 +16,7 @@ const reducer = (state = initialState, action) => {
                 modalImgAuthor: action.payload.imgAuthor,
                 modalContent: action.payload.content,
                 modalType: action.payload.type,
-
+                modalTabs: action.payload.modalTabs
             }
 
         case 'SWITCH_ON_MODAL':

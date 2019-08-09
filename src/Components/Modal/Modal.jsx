@@ -5,17 +5,23 @@ import MaterialIcon from "material-icons-react";
 import Persons from './Persons/Persons';
 import Video from './Video/Video';
 import Audio from './Audio/Audio';
+<<<<<<< HEAD
+=======
+import Map from './Map/Map';
+>>>>>>> b4660084b5e1a6fa40060189ec6863733dfed15d
 import Statistics from './Statistics/Statistics';
 
 const Modal = props => {
   const [modalOpacity, setModalOpacity] = useState(0);
   useEffect(() => {
-    setModalOpacity(1);
+    setTimeout(() => {
+      setModalOpacity(1);
+    }, 1)
   }, []);
 
   return (
-    <div className="ps__modalwindow" style={{ opacity: modalOpacity }}>
-      <div className="ps__modalclose">
+    <div className="ps__modalwindow" style={{ transition: "opacity 0.3s", opacity: modalOpacity }}>
+      <div className="ps__modalclose" style={{ backgroundColor:  props.type === 'map' ? '#cac4b1' : '', color: props.type === 'map' ? 'black' : '' }}>
         <MaterialIcon
           onClick={() => {
             setModalOpacity(0);
@@ -31,10 +37,17 @@ const Modal = props => {
       </div>
       {props.type==="persons" ? <Persons content={props.content} /> : null}
       {props.type==="video" ? <Video content={props.content}/> : null}
+<<<<<<< HEAD
       {props.type==="audio" ? <Audio content={props.content}/> : null}
       {props.type==="data" ? <Statistics content={props.content} /> : null}
           
       {props.type!=="data" ? <div
+=======
+      {props.type==="data" ? <Statistics content={props.content} tabs={props.modalTabs} /> : null}
+      {props.type==="audio" ? <Audio content={props.content}/> : null}
+      {props.type==="map" ? <Map content={props.content}/> : null}
+      {props.type!=="data" && props.type!=="map" ? <div
+>>>>>>> b4660084b5e1a6fa40060189ec6863733dfed15d
         className="ps__modalwindow__right"
         style={{
           backgroundImage: `url(${props.bgImg})`,
@@ -59,7 +72,8 @@ const mapStateToProps = state => {
     bgImg: state.modalImgSrc,
     imgAuthor: state.modalImgAuthor,
     content: state.modalContent,
-    type: state.modalType
+    type: state.modalType,
+    modalTabs: state.modalTabs
   };
 };
 

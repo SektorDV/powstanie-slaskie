@@ -8,13 +8,12 @@ import alfonsImg from "../../res/img/alfons.png";
 import jozefImg from "../../res/img/Józef.png";
 import maksymilianImg from "../../res/img/maksymilian.png";
 import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+import Mapbg from '../../res/images/bg/1stuprisingmapbg.png';
+import FirstUprisingMap from '../../Components/Modal/Map/1stUprisingMap/1stUprisingMap';
 
 const content = {
-  headline: `"Zwycięstwo osiągniemy za wszelką cenę 
-    i nie ma takiego mocarza na świecie, 
-    który by mógł nas okuć ponownie 
-    w kajdany germańskie" `,
-  subheadline: `z odezwy Wojciecha Korfantego do rodaków, 3 maja 1921`,
+  headline: `„Jedyny sposób naszej wygranej widzę w zastosowaniu brutalnej represji względem wszystkiego, co polskie”.`,
+  subheadline: `Otto Horsing, niemiecki sekretarz stanu na prowincję Śląsk`,
   bg: Background,
   bgAuthor: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
   smallImg: Small,
@@ -59,7 +58,7 @@ const content = {
           powstańczych, właściwego uzbrojenia oraz wsparcia odrodzonej <strong>Rzeczpospolitej, która borykała się w tamtym czasie z najazdem
             bolszewickim
           </strong>
-          . Alfons Zgrzebniok wydał rozkaz zaprzestania walk 26 sierpnia 1919.
+          . Alfons Zgrzebniok wydał rozkaz zaprzestania walk 26 sierpnia 1919. I powstanie śląskie zakończyło się klęską powstańców. 
         </p>
       ]
     },
@@ -73,25 +72,17 @@ const content = {
           {
             name: "Alfons Zgrzebniok",
             img: `${alfonsImg}`,
-            text: `Maciej Ignacy Mielżyński, pseud. „Nowina-Doliwa” (ur. 13 października 1869 w Chobienicach, zm. 9 stycznia 1944 w Wiedniu) – hrabia, podpułkownik kawalerii Wojska Polskiego, polski działacz narodowy w Wielkopolsce i na Górnym Śląsku. Naczelny wódz III powstania śląskiego, współzałożyciel Stronnictwa Polskiego na Górnym Śląsku.
-
-                            Jego ojciec, Karol Ignacy hr. Mielżyński, był ziemianinem z Chobienic w powiecie wolsztyńskim, w Wielkopolsce. Matka Emilia pochodziła z rodu hrabiów Bnińskich. Jego rodzina należała do najbogatszych w Wielkopolsce. Ukończył szkołę średnią w Lesznie, a potem studiował prawo i malarstwo w Monachium. Odbył służbę wojskową w armii niemieckiej w latach 1894–1898, a następnie w latach 1898–1914 odbywał praktyki rolnicze w Będlewie i Dakowach Mokrych. W latach 1903–1914 był posłem do Reichstagu. W okresie 1904-1910 był prezesem Klubu Wioślarskiego z roku 1904 w Poznaniu.
-                            
-                            21 grudnia 1913 roku zastrzelił zdradzającą go żonę Felicję z Potockich (córkę hr. Bolesława Eligiusza Potockiego z Będlewa i Józefy z Mycielskich) oraz jej siostrzeńca i kochanka – hr. Alfreda Miączyńskiego (syna Władysława Miączyńskiego i Heleny z Potockich – siostry przyrodniej Felicji). Chociaż sąd go uniewinnił (działał w obronie honoru), stosowany był wobec niego w Wielkopolsce bojkot towarzyski.
-                            
-                            W 1909 roku posiadał wsie rycerskie: Chobienice, Godziszewo, Grońsko i Nieborze w powiecie babimojskim rejencji poznańskiej w Wielkim Księstwie Poznańskim[2].
-                            
-                            Maciej Mielżyński w 1909 roku zaczął interesować się sprawami górnośląskimi, politycznie związał się z endecją. Kupił też wydawnictwo Karola Miarki seniora w Mikołowie. I wojnę światową spędził w szeregach armii niemieckiej. W 1920 roku wstąpił do Wojska Polskiego w stopniu majora. W styczniu 1921 został oddelegowany na Górny Śląsk (już jako podpułkownik kawalerii). Początkowo zastępca dowódcy, a od kwietnia 1921 roku dowódca tajnej organizacji wojskowej Dowództwo Obrony Plebiscytu (DOP). W chwili wybuchu III powstania śląskiego DOP został przekształcony w Naczelną Komendę Wojsk Powstańczych, a Mielżyński stanął na czele III powstania śląskiego.`
+            text: `Był dowódcą wojskowym I i II Powstania Śląskiego. W czasie I wojny światowej służył w armii niemieckiej na froncie zachodnim, był trzykrotnie ranny. Po wojnie został współorganizatorem POW Górnego Śląska i jej komendantem głównym. Przed wybuchem powstań był jednym z najbardziej poszukiwanych ludzi na Górnym Śląsku.  W czasie III Powstania śląskiego był szefem oddziału personalnego Naczelnej Komendy Wojsk Powstańczych i doradcą wojskowym przy sztabie 1. Dywizji Wojsk Powstańczych. W 1923 roku założył Związek Powstańców Śląskich.`
           },
           {
             name: "Józef Grzegorzek",
             img: `${jozefImg}`,
-            text: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?`
+            text: `Był współorganizatorem POW Górnego Śląska i jej pierwszym komendantem głównym. Nie brał udziału w I Powstaniu Śląskim - tuż przed wybuchem zrywu został aresztowany przez Niemców. Dopiero 25 września 1919 roku udało mu się zbiec z obozu jenieckiego. Brał udział w III powstaniu śląskim, w trakcie którego był członkiem Komitetu Wykonawczego Naczelnej Komendy Wojsk Powstańczych. Był sekretarzem Naczelnej Rady Ludowej na Górnym Śląsku. Choć nie brał udziału w I Powstaniu, jako pierwszy spisał jego dzieje – w swoim opracowaniu krytykował decyzję środowiska Maksymiliana Iksala o rozpoczęciu I Powstania jako nieodpowiedzialną.`
           },
           {
             name: "Maksymilian Iksal",
             img: `${maksymilianImg}`,
-            text: `At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.`
+            text: `Dowódca POW Górnego Śląska w powiecie rybnickim. Zagrożony niemieckim aresztowaniem, udał się w 1919 roku do obozu dla uchodźców w Piotrowicach (miasto znajdowało się wówczas na terenie spornym między Rzeczpospolitą i Czechosłowacją, od 1920 roku należało do Czechosłowacji). Tam stanął na czele komitetu złożonego z komendantów powiatowych POW Górnego Śląska. 14 sierpnia 1919 wydał rozkaz do rozpoczęcia powstania (był to de facto zamach stanu – Iksal nie miał uprawnień do podjęcia takiej decyzji), nie objął jednak dowództwa naczelnego wojsk powstańczych.`
           }
         ]
       }
@@ -169,11 +160,8 @@ const content = {
     },
     {
       type: "map",
-      content: {
-        img: AudioImg,
-        author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
-        content: []
-      }
+      layout: <FirstUprisingMap bg={Mapbg} />,
+      img: Mapbg
     }
   ]
 };

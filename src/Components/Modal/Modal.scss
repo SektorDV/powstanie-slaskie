@@ -7,9 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.3s;
   margin-top: -70px;
   .ps__modalclose {
+    z-index: 999;
     width: 60px;
     height: 60px;
     position: absolute;
