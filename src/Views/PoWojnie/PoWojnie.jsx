@@ -4,6 +4,8 @@ import Pagination from '../../Components/Pagination/Pagination';
 import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/powojniebg.png';
 import Small from '../../res/images/small/powojniesmall.png';
+import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+
 
 const content = {
     headline: `„Wszystkie dążenia zmierzające do oderwania Górnego Śląska od Rzeszy Niemieckiej stanowią przestępstwo zdrady stanu”.`,

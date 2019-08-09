@@ -3,6 +3,8 @@ import './IIPowstanie.scss';
 import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/iipowstaniebg.png';
 import Small from '../../res/images/small/iipowstaniesmall.png';
+import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+
 
 const content = {
     headline: `„Rozwój sytuacji na polskim froncie wschodnim i w samej Polsce pozwala spodziewać się niezbyt silnego oporu Polaków na Górnym Śląsku”`,
@@ -59,7 +61,35 @@ const content = {
      
     ],
     multimediaItems: [
-      
+        {
+            type: "audio",
+            content: {
+              img: AudioImg,
+              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              content: [
+                {
+                  title: 'W Katowicach czuć było podenerwowanie' ,
+                  text:
+                  `- Niemcy zabili dra Andrzeja Mielęckiego. Ustalono, że pojadę składu granatów. Pojechała ze mną jedna z czterech lwowianek, które przyjechały tutaj na prace plebiscytowe, Bożenna Sołtysówna – wspominał uczestnik II Powstania Śląskiego. (PR, 4.08.1975)`,                 
+                  source: "ef21703b-9be9-42c9-a409-7c98f83f7521"
+                },
+                {
+                    title: "W boju z SIPO ",
+                    text:
+                    '- Potyczka pod Śmiechowicami toczyła się cały dzień. Było nas zaledwie dwudziestu chłopa – wspominał uczestnik II Powstania Śląskiego. (PR, 4.08.1975)',
+                    source: "fa52cf63-ba9a-414f-acfe-c2e4db99b94f"
+                  },
+                  {
+                    title: "Nie zdawał człowiek na łzy matki",
+                    text:
+                    '- Poszliśmy w powstanie. Pamiętam taki moment, kiedy mieliśmy zabrać na noszach jednego powstańca z utrąconą nogą, a ten gada: „Pieruna, dajcie mi, a zabija tych pięciu pierunów i dopiero umrę” – relacja uczestnika II Powstania Śląskiego. (PR, 4.08.1975)',
+                    source: "79623e04-ec38-4bdb-a11f-acc7f3201bfa"
+                  },
+                
+                
+              ]
+            }
+          },
     ]
   };
 
