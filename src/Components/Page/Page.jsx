@@ -31,6 +31,7 @@ const SmallImg = styled.div`
   background-image: url(${props => props.bg});
   grid-area: 1 / 2 / 2 / 3;
   background-repeat: no-repeat;
+  background-size: contain;
 `
 
 const ButtonsLabel = styled.div`
