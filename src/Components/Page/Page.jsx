@@ -50,14 +50,8 @@ const Page = props => {
       onMouseMove={e => updatePositionX(e.clientX)}
     >
       <div
-<<<<<<< HEAD
         className={`ps__page__left ${props.content.titleLeft ? '' : 'right-align' }`}
         ref = {imgRef}
-=======
-        className={`ps__page__left ${
-          props.content.titleLeft ? "" : "right-align"
-        }`}
->>>>>>> 0ec9037564019c52f44b0a6879765a1a1fdb9ba9
         style={{
           backgroundImage: `url(${props.content.bg})`,
           backgroundPositionX: -142 + imgStyle.X + "px",
@@ -78,7 +72,6 @@ const Page = props => {
         </div>
       </div>
       <div className="ps__page__right">
-<<<<<<< HEAD
         <div className="ps__page__right__top">
           <div className="ps__page__right__top__left">
             <div className="ps__page__right__top__left__menu">
@@ -114,38 +107,6 @@ const Page = props => {
                   </div>
                 );
               })}
-=======
-        <div className="ps__page__right__menu">
-          <div className="ps__page__right__menu__top">
-            {props.content.menuItems.map((e, index) => {
-              return (
-                <div
-                  key={index}
-                  onClick={() => {
-                    if (e.type === "text") setMenuSelection(index);
-                    else {
-                      props.sendDataToModal(
-                        e.content.img || null,
-                        e.content.author || null,
-                        e.content.content || null,
-                        e.type,
-                        e.content.modalTabs || null
-                      );
-                      props.showModal();
-                    }
-                  }}
-                  style={menuSelection === index ? { color: "black" } : null}
-                >
-                  {e.label}
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="ps__page__right__menu__icons">
-            <div className="ps__page__right__menu__icons__label">
-              <span>POSŁUCHAJ I ZOBACZ</span>
->>>>>>> 0ec9037564019c52f44b0a6879765a1a1fdb9ba9
             </div>
             <Buttons
               audio={audioContent.length > 0}
