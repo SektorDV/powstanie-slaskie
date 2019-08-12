@@ -1,7 +1,7 @@
 .ps__pagination {
     position: absolute;
-    left: 25px;
-    top: calc(50% - 158px);
+    left: 1.25rem;
+    top: calc(50% - 5rem);
     z-index: 4;
     
 }
@@ -12,25 +12,25 @@
     flex-direction: column;
     align-items: center;
     list-style: none;
-    width: 50px;
+    width: 2.5rem;
   }
   &__link {
-    width: 8px;
-    height: 8px;
+    width: 0.4rem;
+    height: 0.4rem;
     background-color: #899eaa;
     border-radius: 50%;
-    margin: 7px 0;
+    margin: 0.4rem 0;
     position: relative;
     z-index: 2;
     transition: 0.5s;
 
     &::after {
         content: "";
-        top: -6px;
-        left: -6px;
+        top: -0.29rem;
+        left: -0.31rem;
         position: absolute;
-        width: 18px;
-        height: 18px;
+        width: 0.90rem;
+        height: 0.90rem;
         border-radius: 50%;
         border: 1px solid #899eaa;
         opacity: 0;
