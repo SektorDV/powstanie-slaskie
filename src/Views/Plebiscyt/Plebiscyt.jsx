@@ -11,11 +11,11 @@ const content={
     headline: `„Głos przodków, Ojczyzny i serc Waszych polskich oraz interes własny i Waszych potomków nakazuje Wam głosować za Polską”`,
     subheadline: `Wojciech Korfanty, polski komisarz plebiscytowy, cytat za plebiscytowym wydaniem magazynu „Kocynder”`,
     bg: Background,
-    bgAuthor: 'Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe',
+    bgAuthor: 'Działacze plebiscytowi / Narodowe Centrum Cyfrowe',
     smallImg: Small,
     menuItems: [
         {
-            label: "Efekty i skutki powstań",
+            label: "Plebiscyt",
             type: "text",
             content: [<p>
                 Na mocy ustaleń <strong>traktatu wersalskiego</strong> na Górnym Śląsku

@@ -14,7 +14,7 @@ const content = {
     smallImg: Small,
     menuItems: [
       {
-        label: "I Powstanie Śląskie",
+        label: "II Powstanie Śląskie",
         type: "text",
         content: [
             <p>

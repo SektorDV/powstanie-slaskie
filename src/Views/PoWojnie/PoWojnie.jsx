@@ -134,12 +134,31 @@ const content = {
     ],
     multimediaItems: [
         {
-            type: 'audio'
-        },
+            type: "audio",
+            content: {
+              img: AudioImg,
+              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              content: [
+                
+                  {
+                    title: "Chleb pod kluczem" ,
+                    text:
+                    '- Gdy przyniosłem matce pierwszą wypłatę, w kwocie 25 marek niemieckich, rozpłakała się. Chleb był u nas w domu pod zamknięciem – opowiadał Aleksander Gniełka, uczestnik powstań śląskich. (PR, 22.08.1982)',
+                    source: "b3c7520e-3e10-4548-9da2-6e9755ca3ff1"
+                  },
+                  {
+                    title: "Polska, ale jaka? ",
+                    text:
+                    '- W 1918 roku zaczęły budzić się w Polakach sentymenty narodowe. Nawet wśród grup, które takich sentymentów nie miały pod koniec XVIII wieku, jak Polacy na Śląsku – oceniał prof. Paweł Wieczorkiewicz. (PR, 21.04.2004)',
+                    source: "0e6089eb-ad67-4698-a519-0c751d17893c"
+                  },
+                  
+                
+              ]
+            }
+          },
         
-        {
-            type: 'map'
-        }
+      
     ]
 }
 

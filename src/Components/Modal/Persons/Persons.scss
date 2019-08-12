@@ -13,6 +13,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      @media (max-width: 900px) {
+        margin-left: 1%;   
+      }
       &__personcontainer {
         position: relative;
         height: 30%;
