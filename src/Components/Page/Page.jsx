@@ -46,7 +46,8 @@ const Page = props => {
         style={{
           backgroundImage: `url(${props.content.bg})`,
           backgroundPositionX: -142 + imgStyle.X + "px",
-          backgroundPositionY: 0 + imgStyle.Y + "px"
+          
+
         }}
       >
         <div className="ps__page__left__title">
