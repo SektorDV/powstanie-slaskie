@@ -43,7 +43,7 @@ const Modal = props => {
         className="ps__modalwindow__right"
         style={{
           backgroundImage: `url(${props.bgImg})`,
-          width: '60rem',
+          width: '50%',
           height: '100%'
         }}
       /> : null}
