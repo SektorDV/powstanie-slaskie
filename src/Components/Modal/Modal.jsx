@@ -7,6 +7,8 @@ import Video from './Video/Video';
 import Audio from './Audio/Audio';
 import Map from './Map/Map';
 import Statistics from './Statistics/Statistics';
+import Scrollbar from "react-scrollbars-custom";
+
 
 const Modal = props => {
   const [modalOpacity, setModalOpacity] = useState(0);
@@ -41,7 +43,7 @@ const Modal = props => {
         className="ps__modalwindow__right"
         style={{
           backgroundImage: `url(${props.bgImg})`,
-          width: '60rem',
+          width: '50%',
           height: '100%'
         }}
       /> : null}

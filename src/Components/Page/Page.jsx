@@ -29,17 +29,31 @@ const Page = props => {
   const [menuSelection, setMenuSelection] = useState(0);
   const [imgStyle, setImgStyle] = useState({ X: 0 });
   const [x, updatePositionX] = useState();
+  const [top, setTop] = useState();
+  const [left, setLeft] = useState();
+  const [menuHeight, setMenuHeight] = useState()
+  const menuRef =[];
+  let imgRef = React.createRef();
 
   useEffect(() => {
     parallax(x, setImgStyle);
   }, [x]);
 
+  useEffect(()=>{
+    setTop(menuRef[0].getBoundingClientRect().top)
+    setLeft(`calc(${imgRef.current.getBoundingClientRect().width}px - 2.5rem)`)
+    setMenuHeight(menuRef[0].getBoundingClientRect().height)
+
+  
+  }, []);
   return (
     <div
       className="ps__page__main"
       onMouseMove={e => updatePositionX(e.clientX)}
     >
       <div
+                ref = {imgRef}
+
         className={`ps__page__left ${
           props.content.titleLeft ? "" : "right-align"
         }`}
@@ -66,12 +80,25 @@ const Page = props => {
       <div className="ps__page__right">
         <div className="ps__page__right__menu">
           <div className="ps__page__right__menu__top">
+          <div class="menuSelected" style={
+                {top: `calc(${top+menuHeight/2}px - 3.8rem)` , left: left, zIndex: 5, transition:'all 1s ease'}
+                }>
+
+                  <div className="menuSelected--half" style={{width: '50%', height: '100%', backgroundColor: '#f25a4b'}}>
+
+                  </div>
+                </div>
             {props.content.menuItems.map((e, index) => {
               return (
                 <div
-                  key={index}
-                  onClick={() => {
-                    if (e.type === "text") setMenuSelection(index);
+                ref={ref => (menuRef[index] = ref)}
+                key={index}
+                onClick={() => {
+                  if (e.type === "text"){setMenuSelection(index);
+                  setTop(menuRef[index].getBoundingClientRect().top);
+                  setMenuHeight(menuRef[index].getBoundingClientRect().height)
+                  
+                  }
                     else {
                       props.sendDataToModal(
                         e.content.img || null,

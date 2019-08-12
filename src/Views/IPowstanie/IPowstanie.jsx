@@ -109,6 +109,20 @@ const content = {
               "- Przyjechaliśmy do Warszawy. Przyjął nas Józef Piłsudski. Ostro powiedział, że ani żołnierzy, ani karabinów na Śląsk nie da. W trakcie powrotu postanowiliśmy nie mówić o tym nikomu. Gdyby się Niemcy dowiedzieli o odmowie Piłsudskiego, to by było po plebiscycie i po Śląsku – wspominał Piotr Ful, delegat Ślązaków do ówczesnego Naczelnika Państwa. (PR, 25.05.1962)",
             source: "c9b689e5-680e-48af-969a-1321f4a3b35e"
           },
+          {
+            title: "Na linii frontu",
+            text:
+              "- Szturm Grenzschutzu był niezwykle zaciekły. Do tego stopnia, że z kolegami musieliśmy uciekać na wieżę kościelną i stamtąd odpierać ataki. Walczyliśmy, dopóki starczyło amunicji. Musieliśmy skapitulować – mówił Józef Termin, uczestnik pierwszego powstania. (PR, 15.08.1973)",
+            source: "4e435c29-2bac-43b4-9378-a3700f961e10"
+          },
+          
+          {
+            title: "Dawid i Goliat",
+            text:
+              "- W moim oddziale było zaledwie dwunastu ludzi. Początkowo nie mieliśmy nawet broni. Przeciwko nam były wojska  Grenzschutzu, lepiej uzbrojone, posiadali samochody i panowali nad koleją – wspominał Józef Termin, dowódca w pierwszym powstaniu. (PR, 15.08.1973)",
+            source: "b1ac3b1a-100e-4b04-aeb4-cb80b114c5aa"
+          },
+          
           
           
         ]
