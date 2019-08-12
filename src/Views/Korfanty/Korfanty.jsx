@@ -15,7 +15,7 @@ const content = {
     smallImg: Small,
     menuItems: [
         {
-            label: "Sylwetka",
+            label: "Wojciech Korfanty",
             type: "text",
             content: [<p>
             Nie był przeciwnikiem zrywów, uważał jednak, że muszą one mieć miejsce w

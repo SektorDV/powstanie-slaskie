@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="ps__navbar">
             <ul>
                 <NavLink to={`/`} exact activeClassName="nav_active"><li><div className="nav_select"></div><span>Główna</span></li></NavLink>
-                <NavLink to={`/PoWojnie`} activeClassName="nav_active"><li><div className="nav_select"></div><span>Śląsk po I&nbsp;Wojnie&nbsp;Światowej</span></li></NavLink>
+                <NavLink to={`/PoWojnie`} activeClassName="nav_active"><li><div className="nav_select"></div><span>Śląsk po I Wojnie Światowej</span></li></NavLink>
                 <NavLink to={`/Korfanty`} activeClassName="nav_active"><li><div className="nav_select"></div><span>Wojciech Korfanty</span></li></NavLink>
                 <NavLink to={`/IPowstanie`} activeClassName="nav_active"><li><div className="nav_select"></div><span>I Powstanie Śląskie</span></li></NavLink>
                 <NavLink to={`/IIPowstanie`} activeClassName="nav_active"><li><div className="nav_select"></div><span>II Powstanie Śląskie</span></li></NavLink>
