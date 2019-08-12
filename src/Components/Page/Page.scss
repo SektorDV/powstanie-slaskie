@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     transition: all 3s cubic-bezier(0.32, 0.63, 0, 0.63);
     transition-delay: 0.2s;
-
+ 
     &.right-align {
       flex-direction: column;
       justify-content: flex-end;
@@ -29,7 +29,7 @@
     }
     &__title {
       width: 31rem;
-      font-size: 1rem;
+      font-size: 90%;
       &__headline {
         font-family: "dm_serif_displayregular", serif;
         h2 {
@@ -80,6 +80,7 @@
       color: #6a8594;
       user-select: none;
       display: grid;
+      font-size: 100%;
       grid-template: 1fr 80px / 1fr;
       div {
         margin-bottom: 0.5rem;
@@ -125,6 +126,7 @@
     &__imgSmall {
       grid-area: 1 / 2 / 2 / 3;
       background-repeat: no-repeat;
+      background-size: cover;
     }
     &__bottom {
         
