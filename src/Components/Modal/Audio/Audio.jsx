@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Audio.scss";
-import AudioPlayer from '../../AudioPlayer/AudioPlayer'
+import AudioPlayer from '../../AudioPlayer/AudioPlayer';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 
 const Audio = (props) => {

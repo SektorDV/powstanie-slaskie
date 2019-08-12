@@ -3,6 +3,8 @@ import './Korfanty.scss';
 import Background from '../../res/images/bg/korfantybg.png';
 import Page from '../../Components/Page/Page';
 import Small from '../../res/images/small/korfantysmall.png';
+import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+
 
 
 const content = {
@@ -39,8 +41,41 @@ const content = {
     multimediaItems: [
         
         {
-            type: "video"
-        }
+            type: "audio",
+            content: {
+              img: AudioImg,
+              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              content: [
+                {
+                  title: 'Tytan pracy ' ,
+                  text:
+                  `- W jego gabinecie z zewnątrz nie było klamki. Jeśli ktoś chciał się do niego dostać, musiał zgłosić się w sekretariacie, z kolei sekretariat dopiero zawiadamiał telefonicznie stryja o wizycie interesanta – wspominała Anna Beczała, bratanica Wojciecha Korfantego. (PR, brak daty)`,                 
+                  source: "6879d8ce-12b8-4f0e-9187-a56ceafacf7a"
+                },
+                {
+                    title: "Pies na Niemców ",
+                    text:
+                    '- Wojciech Korfanty chodził z wielką laską, którą odgrażał się, że będzie bił swoich wrogów i z ukochanym psem, wilczurem, który, jak mawiał jego właściciel, był wytresowany tak, że wyczuwał niemczyznę na kilkadziesiąt metrów – mówił prof. Pawła Wieczorkiewicza na temat Wojciecha Korfantego. (PR, 28.03.2007)',
+                    source: "d69aa222-7a31-49e5-9659-029d5631add1"
+                  },
+                  {
+                    title: "Emigrant",
+                    text:
+                    '- W 1935 roku udał się na emigrację do Czechosłowacji. Gdy ta de facto przestała istnieć w wyniku działań Hitlera, wyjechał do Francji, a pod koniec życia powrócił do Polski. Tutaj czekało go więzienie – wyjaśniał prof. Piotr Szlanta. (PR, 20.05.2019)',
+                    source: "b291746b-0d23-48aa-8902-722afbf395f5"
+                  },
+                  {
+                    title: "Ostatnie dni",
+                    text:
+                    '- Przypomina mi się wygląd stryja po śmierci. Byłam przerażona, zszokowana. On wyglądał jak mój dziadek – wspominała ostatnie dni życia Wojciecha Korfantego jego bratanica, Anna Beczała. (PR, brak daty) ',
+                    source: "800badf3-c1ca-4cbd-bee3-031287ca2daf"
+                  },
+                  
+                
+                
+              ]
+            }
+          },
     ]
 }
 

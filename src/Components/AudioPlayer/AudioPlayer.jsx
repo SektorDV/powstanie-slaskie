@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Scrollbar from "react-scrollbars-custom";
+
 
 class AudioPlayer extends Component {
   constructor(props) {
@@ -59,7 +61,10 @@ class AudioPlayer extends Component {
           </div>
           <div className="audio-player-top-right">
             <h1>{this.props.content.title}</h1>
-            <p>{this.props.content.text}</p>
+            <Scrollbar style={{ width: 185, height: 120 }}>
+                <p>{this.props.content.text}</p>           
+             </Scrollbar>
+            
           </div>
         </div>
         <div className="audio-player-bottom">

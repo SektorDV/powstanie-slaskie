@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Page.scss";
 import Buttons from '../Buttons/Buttons';
 import Textfield from '../Textfield/Textfield';
@@ -24,16 +24,27 @@ const Page = props => {
   const [menuSelection, setMenuSelection] = useState(0);
   const [imgStyle, setImgStyle] = useState({X:0,Y:0})
   const [x, updatePositionX] = useState();
+  const [top, setTop] = useState();
+  const [left, setLeft] = useState();
+  const menuRef =[];
+  let imgRef = React.createRef();
 
   useEffect(()=>{
     parallax(x, setImgStyle)
   
   }, [x]);
 
+  useEffect(()=>{
+    setTop(menuRef[0].getBoundingClientRect().top)
+    setLeft(`calc(${imgRef.current.getBoundingClientRect().width}px - 2.5rem)`)
+  
+  }, []);
+
   return (
     <div className="ps__page__main"  onMouseMove={e=>updatePositionX(e.clientX)}>
       <div
         className={`ps__page__left ${props.content.titleLeft ? '' : 'right-align' }`}
+        ref = {imgRef}
         style={{
           backgroundImage: `url(${props.content.bg})`, backgroundPositionX:-142 + imgStyle.X+'px',
           backgroundPositionY:0 + imgStyle.Y+'px'
@@ -56,13 +67,27 @@ const Page = props => {
         <div className="ps__page__right__top">
           <div className="ps__page__right__top__left">
             <div className="ps__page__right__top__left__menu">
+              <div class="menuSelected" style={
+                {top: `calc(${top}px - 2.6rem)`, left: left, zIndex: 5, transition:'all 1s ease'}
+                }>
+
+                  <div className="menuSelected--half" style={{width: '50%', height: '100%', backgroundColor: '#f25a4b'}}>
+
+                  </div>
+                </div>
+               
               {props.content.menuItems.map((e, index) => {
                 return (
                   <div
+                    ref={ref => (menuRef[index] = ref)}
                     key={index}
                     onClick={() => {
-                      if (e.type === "text") setMenuSelection(index);
+                      if (e.type === "text"){setMenuSelection(index);
+                      setTop(menuRef[index].getBoundingClientRect().top);
+                      
+                      }
                       else {
+
                         props.sendDataToModal(e.content.img||null, e.content.author||null, e.content.content||null, e.type, e.content.modalTabs||null)
                         props.showModal();
                       }
