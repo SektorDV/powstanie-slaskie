@@ -3,21 +3,21 @@
         
     if (window.innerWidth < 1000) {return}
     if (x - mid < 300 && x > mid) {
-       return callback({X:-10,Y:0})
+       return callback({X:-10})
     } else if (x - mid > -300 && x < mid) {
-        return callback({X:10,Y:0}) 
+        return callback({X:10}) 
     } else if (x - mid < 500 && x > mid) {
-        return callback({X:-20,Y:0})
+        return callback({X:-20})
     } else if (x - mid > -500 && x < mid) {
-        return callback({X:20,Y:0})
+        return callback({X:20})
     } else if (x - mid < 700 && x > mid) {
-        return callback({X:-30,Y:0})
+        return callback({X:-30})
     } else if (x - mid > -700 && x < mid) {
-        return callback({X:30,Y:0})
+        return callback({X:30})
     } else if (x - mid < 900 && x > mid) {
-        return callback({X:-40,Y:0})
+        return callback({X:-40})
     } else if (x - mid > -900 && x < mid) {
-        return callback({X:40,Y:0})
+        return callback({X:40})
     }
 
     }

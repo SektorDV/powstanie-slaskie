@@ -27,7 +27,7 @@ const Page = props => {
     if (e.content != "") content.push(e.content);
   });
   const [menuSelection, setMenuSelection] = useState(0);
-  const [imgStyle, setImgStyle] = useState({ X: 0, Y: 0 });
+  const [imgStyle, setImgStyle] = useState({ X: 0 });
   const [x, updatePositionX] = useState();
   const [top, setTop] = useState();
   const [left, setLeft] = useState();
