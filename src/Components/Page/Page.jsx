@@ -113,7 +113,7 @@ const Page = props => {
                       props.showModal();
                     }
                   }}
-                  style={menuSelection === index ? { color: "black" } : null}
+                  style={menuSelection === index ? { color: "#292929" } : null}
                 >
                   {e.label}
                 </div>
