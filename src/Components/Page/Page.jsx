@@ -59,9 +59,9 @@ const Page = props => {
         }`}
         style={{
           backgroundImage: `url(${props.content.bg})`,
-          backgroundPositionX: -7.1 + imgStyle.X + "rem",
-          
-
+          backgroundPositionX: props.content.menuItems[0].label == 'Wojciech Korfanty'? -2.5 + imgStyle.X + "rem" : -7.1 + imgStyle.X + "rem",
+          backgroundSize: props.content.menuItems[0].label == 'Wojciech Korfanty'? '55rem' : '70rem',
+          backgroundRepeat: props.content.menuItems[0].label == 'Wojciech Korfanty'? 'repeat' : 'no-repeat'
         }}
       >
         <div className="ps__page__left__title">
