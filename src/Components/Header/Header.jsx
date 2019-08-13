@@ -5,7 +5,7 @@ import image from '../../res/img/header_logo.png';
 const Header = () => {
     return(
         <div className="ps__header">
-            <img className="ps__logo" src={image} alt="Logo Polskiego Radia 24"></img>
+            <a href="https://polskieradio24.pl/"><img className="ps__logo" src={image} alt="Logo Polskiego Radia 24"></img></a>
             
         </div>
     )
