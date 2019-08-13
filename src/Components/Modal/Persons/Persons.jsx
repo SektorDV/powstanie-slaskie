@@ -11,9 +11,9 @@ const Persons = props => {
   useEffect(() => {
       let arr = [];
       arr.push(
-        menuRef[0].getBoundingClientRect().top, 
-        menuRef[1].getBoundingClientRect().top, 
-        menuRef[2].getBoundingClientRect().top)
+        menuRef[0].getBoundingClientRect().top-menuRef[2].getBoundingClientRect().height/2, 
+        menuRef[1].getBoundingClientRect().top-menuRef[2].getBoundingClientRect().height/2, 
+        menuRef[2].getBoundingClientRect().top-menuRef[2].getBoundingClientRect().height/2)
       setTop(arr);
       
   },[])
@@ -25,7 +25,7 @@ const Persons = props => {
           {props.content.map((e, index) => {
             return (
               <div
-                ref={ref => (menuRef[index] = ref)}                
+                            
                 key={index}
                 onClick={() => {setMenuSelection(index);
                 }}
@@ -33,6 +33,7 @@ const Persons = props => {
                 name={props.content[index].name}
               >
                 <div
+                 ref={ref => (menuRef[index] = ref)}
                   className="ps__modalwindow__content__personslist__personcontainer__bg"
                   style={{
                     backgroundColor:
@@ -49,9 +50,9 @@ const Persons = props => {
           })}
         </div>
         <div className="ps__modalwindow__content__textcontainer">
-          <div className="arrow" style={{top: top?top[0]:null, opacity: menuSelection===0?1:0}}></div>
-          <div className="arrow" style={{top: top?top[1]:null, opacity: menuSelection===1?1:0}}></div>
-          <div className="arrow" style={{top: top?top[2]:null, opacity: menuSelection===2?1:0}}></div>
+          <div className="arrow" style={{top: top?`calc(${top[0]}px - 3.5rem)`:null, opacity: menuSelection===0?1:0}}></div>
+          <div className="arrow" style={{top: top?`calc(${top[1]}px - 3.5rem)`:null, opacity: menuSelection===1?1:0}}></div>
+          <div className="arrow" style={{top: top?`calc(${top[2]}px - 3.5rem)`:null, opacity: menuSelection===2?1:0}}></div>
           <h2>{props.content[menuSelection].name}</h2>
           <div className="ps__modalwindow__content__textcontainer__dots">
             <div className="dot" />
