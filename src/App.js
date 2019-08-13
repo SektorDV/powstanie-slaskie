@@ -23,6 +23,7 @@ import { stat } from "fs";
 import { tsPropertySignature } from "@babel/types";
 
 const App = withRouter(({location, ...props}) => {
+  console.log(props);
   return (
     <div className="App">
      
@@ -35,6 +36,7 @@ const App = withRouter(({location, ...props}) => {
           <Switch location={location}>
             <Route path="/powstanieslaskie/" component={Intro} />
             <Route path="/" exact component={Intro} />
+            <Route path="" exact component={Intro} />
             <Route path="/PoWojnie" exact component={PoWojnie} />
             <Route path="/Korfanty" exact component={Korfanty} />
             <Route path="/IPowstanie" exact component={IPowstanie} />
