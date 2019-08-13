@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import Textfield from "../../Textfield/Textfield";
 import './Video.scss';
 import ResponsiveEmbed from 'react-responsive-embed'
 
