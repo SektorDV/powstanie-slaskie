@@ -16,7 +16,7 @@
     transition: all 3s cubic-bezier(0.32, 0.63, 0, 0.63);
     transition-delay: 0.2s;
     position: relative;
- 
+
     &.right-align {
       flex-direction: column;
       justify-content: flex-end;
@@ -39,7 +39,7 @@
       }
       &__subheadline {
         font-family: "dm_serif_displayregular", serif;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 300;
         p {
           font-weight: 300;

@@ -7,7 +7,6 @@ import Video from './Video/Video';
 import Audio from './Audio/Audio';
 import Map from './Map/Map';
 import Statistics from './Statistics/Statistics';
-import Scrollbar from "react-scrollbars-custom";
 
 
 const Modal = props => {
