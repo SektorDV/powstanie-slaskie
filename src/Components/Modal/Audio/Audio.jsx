@@ -16,8 +16,8 @@ const Audio = (props) => {
 } 
 const settings = {
   dots: true,
-  rows: 2,
-  slidesPerRow: 2,
+  rows: 4,
+  slidesPerRow: 1,
   arrows: false,
   customPaging: i => (
     <div
@@ -36,14 +36,16 @@ const settings = {
     </div>
   )
   
+    };
 
 
-};
 
   return (
     <div className="ps__modalwindow__content">
-      <div className="ps__modalwindow__content__audiolist" style={{justifyContent: props.content[0].content.content.length > 1 ? null:'center'}}>
-        { props.content[0].content.content.length > 7? 
+      <div className="ps__modalwindow__content__audiolist" style={{
+        display: props.content[0].content.content.length > 4 ? 'block':'flex', 
+        marginTop: props.content[0].content.content.length > 4 ? '5%':'2%'}}>
+        { props.content[0].content.content.length > 4? 
           <Slider {...settings}>
             {props.content[0].content.content.map((e, index) => {
             return (<AudioPlayer 
@@ -67,7 +69,7 @@ const settings = {
         })
         }
           
-        };
+       
       </div>
     </div>
   );

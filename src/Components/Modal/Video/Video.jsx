@@ -4,24 +4,16 @@ import './Video.scss';
 import ResponsiveEmbed from 'react-responsive-embed'
 
 const Video = props => {
-  const [menuSelection, setMenuSelection] = useState(0);
+  const [visible, setVisible] = useState(false);
     return(
         <div className="ps__modalwindow__content">
         <div className="ps__modalwindow__content__videolist">
           {props.content[0].content.content.map((e, index) => {
             return (
-              <div className='ps__modalwindow__content__videocontainer'>
-                  <ResponsiveEmbed src={`//embed.polskieradio.pl/video/${e.source}`} onLoad={()=>{console.log('aaa')}} allowFullScreen />
+              <div className='ps__modalwindow__content__videocontainer' style={{opacity: visible? '1':'0', transition: 'opacity 1s ease-in'}}>
+                  <ResponsiveEmbed src={`//embed.polskieradio.pl/video/${e.source}`} onLoad={()=>{setVisible(true)}} allowFullScreen />
 
-                  {/* <iframe 
-                  width="460" 
-                  height="260" 
-                  src= {`//embed.polskieradio.pl/video/${e.source}`} 
-                  scrolling="no" 
-                  frameborder="0" 
-                  allowfullscreen="">
-                </iframe> */}
-                <div  className='ps__modalwindow__content__videotext'>
+                 <div  className='ps__modalwindow__content__videotext'>
                     <p>{e.text}</p>
                 </div>>
               </div>

@@ -61,6 +61,7 @@
         width: 50%;
         background-size: 62rem;
         height: calc(100vh - 6rem);
+
         background-position: -7rem 0px;
         background-repeat: no-repeat;
         position: relative;
@@ -81,5 +82,15 @@
             transition-delay: 0.2s;
 
         }
+    &__imgDesc {
+    font-size: 0.5rem;
+    font-family: "latoregular", sans-serif;
+    white-space: nowrap;
+    position: absolute;
+    color: white;
+    bottom: 1.5rem;
+    right: 1rem;
+    }
+    
         
 }

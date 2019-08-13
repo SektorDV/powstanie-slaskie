@@ -76,7 +76,7 @@ const Buttons = (props) => {
         </svg>
       </div> : null }
       {props.map ? 
-      <div className={props.stopWorking==true?"buttons__button":"buttons__button"}>
+      <div className={props.stopWorking==true?"buttons__button":"buttons__button working"}>
         <svg
           onClick={() => {
             if (props.stopWorking == undefined) {
