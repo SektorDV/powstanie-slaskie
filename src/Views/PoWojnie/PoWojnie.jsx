@@ -135,7 +135,7 @@ const content = {
                     {
                         name: "terytorium",
                         layout: <PoWojnieStats bg={PoWojnieImg} author="Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe"/>,
-                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe"
+                        bgImgAuthor: "Narodowe Centrum Cyfrowe"
                     },
                    
             ]

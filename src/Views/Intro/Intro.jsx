@@ -39,7 +39,7 @@ const Intro = () => {
                     left:3.25 +imgStyle.X+'rem',
                     top:16.35 +imgStyle.Y+'rem'
                     }}></span>
-                <span class="intro__imgDesc">Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe</span>
+                <span class="intro__imgDesc">Narodowe Centrum Cyfrowe</span>
             </div>
             
 
