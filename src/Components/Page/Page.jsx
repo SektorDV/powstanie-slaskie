@@ -59,7 +59,7 @@ const Page = props => {
         }`}
         style={{
           backgroundImage: `url(${props.content.bg})`,
-          backgroundPositionX: -142 + imgStyle.X + "px",
+          backgroundPositionX: -7.1 + imgStyle.X + "rem",
           
 
         }}

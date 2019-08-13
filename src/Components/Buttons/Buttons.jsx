@@ -5,7 +5,7 @@ import {connect, dispatch} from 'react-redux';
 const Buttons = (props) => {
   return (
     <div className="ps__buttons">
-      {props.video ? <div className="buttons__button">
+      {props.video ? <div className={props.stopWorking==true?"buttons__button":"buttons__button working"}>
         <svg
            onClick={() => {
             if (props.stopWorking == undefined) {
@@ -39,8 +39,8 @@ const Buttons = (props) => {
         </svg>
   </div> : null }
   {props.audio ? 
-      <div className="buttons__button">
-        <svg
+      <div className={props.stopWorking==true?"buttons__button":"buttons__button working"}>
+      <svg
           onClick={() => {
             if (props.stopWorking == undefined) {
 
@@ -76,7 +76,7 @@ const Buttons = (props) => {
         </svg>
       </div> : null }
       {props.map ? 
-      <div className="buttons__button">
+      <div className={props.stopWorking==true?"buttons__button":"buttons__button"}>
         <svg
           onClick={() => {
             if (props.stopWorking == undefined) {

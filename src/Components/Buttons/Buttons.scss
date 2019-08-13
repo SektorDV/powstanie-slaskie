@@ -5,17 +5,21 @@
 
 .buttons {
     &__button {
-        cursor: pointer;
         width: 2.04rem;
         margin: 0 0.75rem;
-        svg:hover .cls-1{
-            fill: #f25a4b;
-        }
+       
         &:first-child {
             margin-left: 0;
         }
         &:last-child {
             margin-right: 0;
+        }
+    }
+    &__button.working {
+        cursor: pointer;
+
+        svg:hover .cls-1{
+            fill: #f25a4b;
         }
     }
 }

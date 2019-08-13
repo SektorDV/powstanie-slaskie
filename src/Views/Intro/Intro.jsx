@@ -28,16 +28,16 @@ const Intro = () => {
             
             
             <div className="intro__img" style={{
-                backgroundPositionX:-142 + imgStyle.X+'px',
-                backgroundPositionY:`-5rem`
+                backgroundPositionX: -7.1 + imgStyle.X+'rem',
+                backgroundPositionY:`-3rem`
                 }}>
                 <div className="intro__soldier"style={{
-                    left:-130 +imgStyle.X+'px',
-                    top:22 +imgStyle.Y+'px'
+                    left: -6.5 + imgStyle.X + 'rem',
+                    top:3 +imgStyle.Y+'rem'
                     }}></div>
                 <span className="intro__line" style={{
-                    left:65 +imgStyle.X+'px',
-                    top:327 +imgStyle.Y+'px'
+                    left:3.25 +imgStyle.X+'rem',
+                    top:16.35 +imgStyle.Y+'rem'
                     }}></span>
 
             </div>
