@@ -74,7 +74,7 @@ class AudioPlayer extends Component {
             onClick={e => {
               let percent =
                 ((e.clientX -
-                  this.timelineRef.current.getBoundingClientRect().x) /
+                  this.timelineRef.current.getBoundingClientRect().left) /
                   this.timelineRef.current.getBoundingClientRect().width) *
                 100;
               let newTime = (this.state.duration * percent) / 100;
