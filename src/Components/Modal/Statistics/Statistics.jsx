@@ -23,11 +23,11 @@ const Statistics = props => {
       style={{ backgroundImage: `url(${backgrounds[menuSelection]})` }}
       author={props.tabs[menuSelection].bgImgAuthor}
     >
-      <Navmenu
+      {props.tabs.length > 1 ? <Navmenu
         menuItems={props.tabs}
         handler={menuSelectionHandler}
         selected={menuSelection}
-      />
+      /> : null }
       <TransitionGroup className="modal-transition-group">
         <CSSTransition key={menuSelection} classNames="modalfade" timeout={{enter: 600, exit: 300}}>
             <section className="statistics-section">

@@ -8,14 +8,14 @@
     padding: 4%;
     transition: background-image 0.3s;
     transition-delay: 0.3s;
-
+    background-size: cover;
     &::after {
         content: attr(author);
         color: white;
         position: absolute;
-        bottom: 1%;
+        bottom: 10%;
         right: 1%;
-        font-size: 10px;
+        font-size: 0.5rem;
         font-family: "latoregular", sans-serif;
     }
 }

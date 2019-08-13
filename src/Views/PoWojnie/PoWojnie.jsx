@@ -5,7 +5,8 @@ import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/powojniebg.png';
 import Small from '../../res/images/small/powojniesmall.png';
 import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
-
+import PoWojnieStats from "../../Components/Modal/Statistics/PoWojnie/PoWojnie";
+import PoWojnieImg from "../../res/images/bg/powojniestatisticsbg.png";
 
 const content = {
     headline: `„Wszystkie dążenia zmierzające do oderwania Górnego Śląska od Rzeszy Niemieckiej stanowią przestępstwo zdrady stanu”.`,
@@ -127,9 +128,19 @@ const content = {
         </p>]
         },
         {
-            label: 'statystyki i dane',
+            label: "Statystyki i dane",
             type: "data",
-            content: ``
+            content: {
+                modalTabs: [
+                    {
+                        name: "terytorium",
+                        layout: <PoWojnieStats bg={PoWojnieImg} author="Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe"/>,
+                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe"
+                    },
+                   
+            ]
+
+            }
         }
     ],
     multimediaItems: [
