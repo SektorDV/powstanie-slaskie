@@ -1,16 +1,16 @@
 
 
 .audio-player {
-    width: 250px;
-    height: 210px;
+    width: 40%;
+    height: 30%;
     overflow: hidden;
     margin: 3%;
-    
+    display: inline-block;
 
 
     &-description-and-play {
-        width: 50px;
-        height: 50px;
+        width: 2.5rem;
+        height: 2.5rem;
         background-color: #6f6f6f;
         display: flex;
         justify-content: center;
@@ -27,43 +27,64 @@
     &-top {
         display: flex;
         color: #9ea3a7;
+        &-right {
+            width: 60%;
+            height: 7rem;
+            margin-bottom: 20%;
+
+        }
 
     }
     h1 {
-        font-size: 16px;
-        line-height: 16px;
-        height: 40px;
+        font-size: 1rem;        
+        line-height: 0.9rem;
+        margin-bottom: 10%;
+
     }
     p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 0.7rem;
+        line-height: 1rem;
         
         overflow: hidden;
 
 
     }
     &-bottom {
-        display: flex;
-        justify-content: flex-end;
+        width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15%;
     }
 }
 .ps__modalwindow__content__audiolist {
-    display: flex;
-    flex-wrap: wrap;
+   
     width: 90%;
     
 }
 
 .audio-timeline {
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color: #9ea3a7;
-    margin-top: 10px;
+        width: 75%;
+        display: flex;
+        margin-left: 25%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: #9ea3a7;
+        margin-top: 10px;
+    
     &-active {
         width: 100%;
         height: 5px;
         background-color: #424242;
     }
+}
+.ScrollbarsCustom{
+
+&.trackYVisible {
+    width: 100% !important;
+}
+&-Scroller {
+    margin-right: -18px !important;
+}
+
+
 }

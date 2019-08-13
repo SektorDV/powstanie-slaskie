@@ -10,8 +10,12 @@ const Persons = props => {
 
   useEffect(() => {
       let arr = [];
-      arr.push(menuRef[0].getBoundingClientRect().top, menuRef[1].getBoundingClientRect().top, menuRef[2].getBoundingClientRect().top);
+      arr.push(
+        menuRef[0].getBoundingClientRect().top, 
+        menuRef[1].getBoundingClientRect().top, 
+        menuRef[2].getBoundingClientRect().top)
       setTop(arr);
+      
   },[])
 
 

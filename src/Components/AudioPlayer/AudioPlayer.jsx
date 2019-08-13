@@ -61,7 +61,7 @@ class AudioPlayer extends Component {
           </div>
           <div className="audio-player-top-right">
             <h1>{this.props.content.title}</h1>
-            <Scrollbar style={{ width: 185, height: 120 }}>
+            <Scrollbar style={{ width: '100%', height: '100%' }}>
                 <p>{this.props.content.text}</p>           
              </Scrollbar>
             
