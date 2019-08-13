@@ -80,7 +80,6 @@
       text-transform: uppercase;
       font-family: "poppinsregular", sans-serif;
       font-weight: 700;
-      cursor: pointer;
       color: #6a8594;
       user-select: none;
       display: grid;
@@ -91,6 +90,11 @@
       }
       
       &__top {
+        div {
+      cursor: pointer;
+      display: inline-block;
+
+        }
         div:hover {
             transition: 0.5s;
             color: #41535f;
