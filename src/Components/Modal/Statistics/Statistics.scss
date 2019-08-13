@@ -11,7 +11,7 @@
     background-size: cover;
     &::after {
         content: attr(author);
-        color: white;
+        color: #c8cfd3;
         position: absolute;
         bottom: 10%;
         right: 1%;

@@ -10,11 +10,11 @@
         position: absolute;
         bottom: 0;
         align-items: center;
-        color: white;
+        color: #c8cfd3;
         height: 7.5vh;
        
         a {
-            color: white;
+            color: #c8cfd3;
             display: flex;
             align-items: center;
             height: 100%;
@@ -33,10 +33,10 @@
                 color: #bbb !important;
             }
             &:visited {
-                color: white;
+                color: #c8cfd3;
             }
             &.nav_active:hover {
-                color: white !important;
+                color: #c8cfd3 !important;
             }
             &.nav_active .nav_select{
                animation: selectSlideIn 0.5s ease-in-out forwards;
