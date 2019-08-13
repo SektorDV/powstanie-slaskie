@@ -58,7 +58,9 @@ const content={
                     },
                     {
                         name: "gospodarka",
-                        layout: <Gospodarka bg={Gospodarkaimg}/>
+                        layout: <Gospodarka bg={Gospodarkaimg}/>,
+                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe"
+
                     }
             ]
 

@@ -4,7 +4,8 @@ import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/iipowstaniebg.png';
 import Small from '../../res/images/small/iipowstaniesmall.png';
 import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
-
+import Mapbg from '../../res/images/bg/2nduprisingmapbg.png';
+import SecondUprisingMap from '../../Components/Modal/Map/2ndUprisingMap/2ndUprisingMap';
 
 const content = {
     headline: `„Rozwój sytuacji na polskim froncie wschodnim i w samej Polsce pozwala spodziewać się niezbyt silnego oporu Polaków na Górnym Śląsku”`,
@@ -106,6 +107,11 @@ const content = {
               ]
             }
           },
+          {
+            type: "map",
+            layout: <SecondUprisingMap bg={Mapbg} />,
+            img: Mapbg
+        }
     ]
   };
 

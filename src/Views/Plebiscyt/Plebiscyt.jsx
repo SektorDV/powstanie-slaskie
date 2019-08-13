@@ -64,9 +64,11 @@ const content={
               ]
             }
           },
-        {
-            type: "map"
-        },
+          {
+            type: "map",
+            //layout: <ReferendumMap bg={Mapbg} author='Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe'/>,
+            //img: Mapbg
+          },
         {
             type: "audio",
             content: {
