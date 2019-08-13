@@ -14,7 +14,7 @@ const content = {
     bg: Background,
     bgAuthor: 'Krajobraz przemysłowy Górnego Śląska / Narodowe Archiwum Cyfrowe',
     smallImg: Small,
-    titleLeft: true,
+    titleLeft: false,
     menuItems: [
         {
             label: "Problem śląska po i wojnie światowej",

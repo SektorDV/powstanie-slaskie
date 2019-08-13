@@ -22,7 +22,7 @@ const content = {
             W lutym 1920 roku, zgodnie z postanowieniami traktatu wersalskiego, na
             śląsku rozlokowały się wojska brytyjskie, francuskie i włoskie pod komendą 
             <strong>
-                Międzysojuszniczej Komisji Rządzącej i Plebiscytowej na Górnym Śląsku
+            &nbsp;Międzysojuszniczej Komisji Rządzącej i Plebiscytowej na Górnym Śląsku
             </strong>
             . Alianci mieli czuwać nad prawidłowym przebiegiem plebiscytu, który z
             kolei miał zadecydować o podziale Górnego Śląska.
