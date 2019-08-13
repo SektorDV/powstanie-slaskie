@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Textfield from "../../Textfield/Textfield";
 import './Video.scss';
-import ResponsiveEmbed from '../../../../node_modules/react-responsive-embed/src/index'
+import ResponsiveEmbed from 'react-responsive-embed';
 
 const Video = props => {
   const [menuSelection, setMenuSelection] = useState(0);
