@@ -58,7 +58,7 @@ const content = {
           powstańczych, właściwego uzbrojenia oraz wsparcia odrodzonej <strong>Rzeczpospolitej, która borykała się w tamtym czasie z najazdem
             bolszewickim
           </strong>
-          . Alfons Zgrzebniok wydał rozkaz zaprzestania walk 26 sierpnia 1919. I powstanie śląskie zakończyło się klęską powstańców. 
+          . Alfons Zgrzebniok wydał rozkaz zaprzestania walk 26 sierpnia 1919. I Powstanie Śląskie zakończyło się klęską powstańców. 
         </p>
       ]
     },
