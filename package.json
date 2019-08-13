@@ -1,8 +1,8 @@
 {
-  "name": "powstanies",
+  "name": "powstaniaslaskie",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://powstaniaśląskie.polskieradio24.pl",
+  "homepage": "https://www2.polskieradio.pl/powstaniaslaskie",
   "dependencies": {
     "material-icons-react": "^1.0.4",
     "node-sass": "^4.12.0",
