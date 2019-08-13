@@ -30,12 +30,13 @@
     }
     &__title {
       min-width: 21rem;
-      max-width: 60%;
+      max-width: 80%;
       font-size: 90%;
       &__headline {
         font-family: "dm_serif_displayregular", serif;
         h2 {
           font-weight: 300;
+          font-size: 1.5rem;
         }
       }
       &__subheadline {
