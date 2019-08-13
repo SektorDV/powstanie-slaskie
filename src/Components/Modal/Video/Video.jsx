@@ -14,7 +14,7 @@ const Video = props => {
 
                  <div  className='ps__modalwindow__content__videotext'>
                     <p>{e.text}</p>
-                </div>>
+                </div>
               </div>
             );
           })}

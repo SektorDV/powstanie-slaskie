@@ -122,8 +122,14 @@ const Page = props => {
           </div>
 
           <div className="ps__page__right__menu__icons">
-            <div className="ps__page__right__menu__icons__label">
-              <span>POSŁUCHAJ I ZOBACZ</span>
+            <div className={audioContent.length > 0 && videoContent.length == 0 && mapContent.length == 0?'ps__page__right__menu__icons__label shorter':'ps__page__right__menu__icons__label'}>
+          {audioContent.length > 0 && (videoContent.length > 0 || mapContent.length > 0)?<span>POSŁUCHAJ I ZOBACZ</span>:null }
+          {audioContent.length > 0 && videoContent.length == 0 && mapContent.length == 0?<span>POSŁUCHAJ</span>:null }
+          {audioContent.length == 0 && (videoContent.length > 0 || mapContent.length > 0)?<span>ZOBACZ</span>:null }
+
+
+                  
+            
             </div>
             <Buttons
               audio={audioContent.length > 0}
