@@ -90,6 +90,22 @@ const content = {
               ]
             }
           },
+          {
+            type: "video",
+            content: {
+              img: AudioImg,
+              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              content: [
+                {
+                  title: "Nagranie numer 1",
+                  text:
+                    "- II Powstanie Śląskie było demonstracją siły. Miało pokazać, że Ślązacy są gotowi walczyć, byli lepiej uzbrojeni i gotowi do podjęcia działań. Garnizony policji niemieckiej były cernowane, czyli otaczane przez powstańców, a ich załogi rozbrajano – wyjaśniał Jan Planta, historyk z Muzeum Powstań Śląskich w Świętochłowicach.",
+                  source: "48e6774f-44fb-457b-a7d5-85b9525621f8"
+                },
+                
+              ]
+            }
+          },
     ]
   };
 

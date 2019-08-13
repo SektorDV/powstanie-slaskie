@@ -67,8 +67,21 @@ const content={
     ],
     multimediaItems: [
         {
-            type: "video"
-        },
+            type: "video",
+            content: {
+              img: AudioImg,
+              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              content: [
+                {
+                  title: "Nagranie numer 1",
+                  text:
+                    "- Górny Śląsk był skarbem przemysłowym. Choć ten teren był bardzo malutki, odpowiadał za 90 proc. eksportu Rzeczpospolitej. Również potęga morska Polski opierała się na Śląsku – do budowy portu w Gdyni wykorzystano maszyny przewiezione z Górnego Śląska – wyjaśniał Jan Planta, historyk z Muzeum Powstań Śląskich w Świętochłowicach.",
+                  source: "38f946ae-49c7-4b71-b10b-219961c73613"
+                },
+                
+              ]
+            }
+          },
        
         {
             type: "audio",

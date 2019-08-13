@@ -49,8 +49,21 @@ const content={
     ],
     multimediaItems: [
         {
-            type: "video"
-        },
+            type: "video",
+            content: {
+              img: AudioImg,
+              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              content: [
+                {
+                  title: "Nagranie numer 1",
+                  text:
+                    "- Ze względu na znaczenie przemysłowe regionu, plebiscyt na Górnym Ślasku był najważniejszy spośród referendów zaplanowanych w traktacie wersalskim. Obie strony zmobilizowały olbrzyie siły, by ten plebiscyt wygrać. Posługiwano się ostrą propagandą na wiecach, w prasie i na plakatach - podkreślał Jan Planta, historyk z Muzeum Powstań Śląskich w Świętochłowicach.",
+                  source: "a5147625-296f-4f70-ab05-6426e5b701dd"
+                },
+                
+              ]
+            }
+          },
         {
             type: "map"
         },

@@ -137,15 +137,10 @@ const content = {
           {
             title: "Nagranie numer 1",
             text:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            source: "3f4b1066-79c1-473c-a14c-388410466b40"
+              "- Jedną z przyczyn wybuchu I Powstania Śląskiego były problemy ekonomiczne. Po I wojnie światowej na Górnym Śląsku żyło się ciężko. Żołnierze, którzy wracali z frontu byli rozgoryczeni klęską państwa niemieckiego. Polska dawała nadzieję na lepsze jutro. Ślązacy zaczęli organizować propolskie stowarzyszenia, w tym w działania Polskiej Organizacji Wojskowej Górnego Śląska – wyjaśniał Jan Planta, historyk z Muzeum Powstań Śląskich w Świętochłowicach.",
+            source: "d4e890a9-61f1-4a5c-905e-ad8e3c999989"
           },
-          {
-            title: "Nagranie numer 2",
-            text:
-              'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-            source: "b5ba3b88-9ed8-44bf-9146-7546b78ff959"
-          }
+          
         ]
       }
     },

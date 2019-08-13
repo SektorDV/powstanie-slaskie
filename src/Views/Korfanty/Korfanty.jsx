@@ -76,6 +76,22 @@ const content = {
               ]
             }
           },
+          {
+            type: "video",
+            content: {
+              img: AudioImg,
+              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              content: [
+                {
+                  title: "Nagranie numer 1",
+                  text:
+                    "- Korfanty był mistrzem czegoś, co dziś nazwalibyśmy kreowaniem marki osobistej. Bardzo dbał o własny wizerunek. Był przystojny i postawny – miał 180 cm wzrostu. Ubierał się bardzo elegancko, kobiety za nim szalały. To wszystko pomagało mu zjednywać sobie ludzi – podkreślał Jan Planta, historyk z Muzeum Powstań Śląskich w Świętochłowicach.",
+                  source: "01806c08-56eb-401b-8ca8-78209683759a"
+                },
+                
+              ]
+            }
+          },
     ]
 }
 
