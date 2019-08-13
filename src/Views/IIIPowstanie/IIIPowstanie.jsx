@@ -86,9 +86,103 @@ const content={
           },
     ],
     multimediaItems: [
-        {
-            type: "audio"
-        },
+      {
+        type: "audio",
+        content: {
+          img: AudioImg,
+          author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+          content: [
+            {
+              title: 'Dywersja Grupy Wawelberga' ,
+              text:
+              `- Naszym zadaniem było otwarcie śluz i spuszczenie wody po wysadzeniu mostów. Mieliśmy zablokować drogę Niemcom - Stefan Gocman, członek dywersyjnej Grupy Wawelberga, której zadaniem było wysadzenie mostów na Górnym Śląsku przed rozpoczęciem powstania. (PR, 25.05.1962)`,                 
+              source: "42914a4e-94dc-4fc8-ac23-405f3e189ce2"
+            },
+            {
+                title: "Akcja „Mosty”",
+                text:
+                '- O godzinie 2 w nocy wszystkie mosty idą w powietrze – to jest sygnał rozpoczęcia powstania. Skończyłem oficerską szkołę we Francji, tam uczono mnie, że pierwsze zwycięstwo decyduje o morale żołnierza, dlatego postanowiłem ruszyć z moimi żołnierzami do natarcia – wspominał Teodor Mańczyk, uczestnik III Powstania Śląskiego. (PR, 25.05.1962)',
+                source: "cf08b364-0e0c-49eb-92c0-05163e7770f8"
+              },
+              {
+                title: "Powstańcza armia",
+                text:
+                '- Jedyne, co nas odznaczało, to była biało-czerwona opaska na lewym rękawie. Oficerowie nosili biało-niebieską opaskę. Poza tym nosiło się własne ubrania. Jak mi się spodnie rozpruły przy przeskakiwaniu przez płot, to znalazłem sklep z odzieżą i, zostawiwszy kwitek, że po powstaniu zapłacę, zarekwirowałem nową parę – mówił Teodor Mańczyk, uczestnik III Powstania Śląskiego (PR, 25.05.1962)',
+                source: "a5cf7e18-6ac0-45b9-8288-14199cee208f"
+              },
+              {
+                title: "„Broni mieliśmy mało”",
+                text:
+                '- Zaczęliśmy kupować broń od niemieckich policjantów i dezerterów z wojska. Rozbrajało się bojówki niemieckie, a czasami też policję plebiscytową. Taka policja składała się po równo z Polaków i Niemców. Polacy szli z nami, a Niemców zostawialiśmy bez broni – mówił Teodor Mańczyk, uczestnik III Powstania Śląskiego. (PR, 25.05.1962)',
+                source: "7eb74f91-6403-49ce-888a-91aa522ad7e2"
+              },
+              {
+                title: 'Krwawe potyczki' ,
+                text:
+                `- Obrzuciliśmy granatami karczmę, w której byli niemieccy żandarmi. Wywiesili białą flagę. Kiedy weszliśmy do środka, żeby ich pojmać, otworzyli do nas ogień z karabinów. Ośmiu powstańców padło - mówił uczestnik III Powstania Franciszek Zagórniak. (PR, 28.04.1971)`,                 
+                source: "41cf47f4-0bdc-4046-969f-585f5603b95f"
+              },
+              {
+                  title: "W załodze samochodu pancernego",
+                  text:
+                  '- Przyszło mi w udziale walczyć w specjalnym oddziale szturmowym, który był zorganizowany przez ówczesnego porucznika marynarki wojennej Roberta Oszka. Oddział był mały, liczył 67 ludzi. Walczyliśmy na samochodzie pancernym, który sam sobie skonstruowaliśmy. Odgrywał wielką rolę, bo poruszaliśmy się szybko tam, gdzie byliśmy potrzebni – wspominał uczestnik III Powstania Śląskiego. (PR, 3.02.1978)',
+                  source: "47c56e38-b8ae-4061-b0c8-6b15af5b7664"
+                },
+                {
+                  title: "Z Bytomia na Górę św. Anny ",
+                  text:
+                  '- Zgrupowanie zaczęło się od zebrania w karczmie, od przedstawienia odnoszącego się do powstania kościuszkowskiego. Poszliśmy stamtąd na Górę Św. Anny – wspominał uczestnik powstania. (PR, 22.06.1976) ',
+                  source: "2f1410d2-441e-4fb4-9dab-1f2a67b48425"
+                },
+                {
+                  title: "„Pierunie strzelej!”",
+                  text:
+                  'Ustawiliśmy gniazdo karabinu maszynowego w Markowicach. Niedługo pojawił się oddział. „Pierunie strzelej!” wołali do mnie. A ja na to: „Dopiero jak podejdą na 100 metrów”. Okazało się, że to nie byli Niemcy, tylko Włosi, którzy ubezpieczali plebiscyt.  Francuzi byli za nami, Włosi za Niemcami. Chcieli nas rozbroić, więc puściłem serię, żeby ich przegonić – wspominał powstaniec śląski Jan Wawrzynek. (PR, 25.05.1962)',
+                  source: "570491c9-f232-4adf-9809-f72b64010d52"
+                },
+                {
+                  title: "Broń zdobywana na aliantach",
+                  text:
+                  '- Rozbroiliśmy Włochów z wojsk obrony plebiscytu. Przebraliśmy się w ich mundury i podeszliśmy prosto pod gniazdo karabinów maszynowych. Dzięki przebraniu mogliśmy rozbroić Niemców – mówił uczestnik III Powstania Śląskiego. (PR, 22.06.1976)',
+                  source: "5e3dd17a-879c-4a39-ab5d-322733a94e94"
+                },
+                {
+                  title: "Ranny walczył dalej" ,
+                  text:
+                  '- Nasz oddział szturmowy marynarzy pod dowództwem kpt. Roberta Oszka walczył w rejonie Góry Św. Anny w samochodzie pancernym. Podczas trzeciego zdobywania Licheni Oszka podniósł klapę wozu wychylił się i został ranny, mimo to walczył dalej. Opatrzyliśmy go dopiero po walce – wspominał marynarz biorący udział w bitwie o Górę Św. Anny. (PR, 22.06.1976)',
+                  source: "9de14520-64b3-47d4-aa77-b85d620779af"
+                },
+                {
+                  title: "Potyczka pociągów pancernych",
+                  text:
+                  '- Ruszyliśmy pociągiem pancernym w kierunku Gliwic. Z naprzeciwka nadjechał parowóz niemiecki. Rozpoczęła się dramatyczna strzelanina. Do zaprzestania walki zmusił Niemców ostrzał z posterunku francuskiego - opowiadał powstaniec Hubert Urla. (PR, 28.04.1971)',
+                  source: "7a59812a-3cd6-49da-8349-dda3c92fbad1"
+                },
+                {
+                  title: "Walka o kluczowy punkt",
+                  text:
+                  '- Kędzierzyn był kluczowy dla powodzenia całego powstania. Tutaj znajdował się węzeł drogowy i kolejowy. Tutaj też były duże magazyny z żywnością. W walkach wykorzystaliśmy pociąg pancerny, który „zdezerterował” z Polski – mówił Jerzy Łapiński, który walczył w rejonie Kędzierzyna. (PR, 25.05.1962)',
+                  source: "2f1359ce-725c-4961-859a-32b7d4688566"
+                },
+                {
+                  title: "Ochotnicy ze Lwowa" ,
+                  text:
+                  '- Kilkudziesięciu lwowskich elewów zbiegło na Śląsk, by dołączyć do powstańców. Sześciu z nich zginęło. Wśród nich był Karol Chodkiewicz – ostatni potomek po mieczu hetmana Karola Chodkiewicza, jednego z najwybitniejszych wodzów przedrozbiorowych Rzeczpospolitej – Witold Szolginia. (PR, 31.12.1995-12-31)',
+                  source: "e04e2ff1-118d-4dd9-9581-3efc93c18072"
+                },
+                {
+                  title: "Najgorsze oblicze wojny",
+                  text:
+                  '- Myśmy widzieli po wioskach ukrzyżowanych powstańców. Wisieli na parkanach, na płotach. Niektórzy mieli wykłute serca, inni poprzebijane genitalia, jeszcze inni – gwoździe za paznokciami - wspominał terror wojny domowej powstaniec-ochotnik z Polski Leon Węgrowski. (PR, 28.04.1971)',
+                  source: "d29a0d12-52eb-44de-8a70-efa249f8da41"
+                },
+              
+              
+            
+            
+          ]
+        }
+      },
         {
             type: "video",
             content: {

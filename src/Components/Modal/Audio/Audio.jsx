@@ -18,15 +18,19 @@ const Audio = (props) => {
   return (
     <div className="ps__modalwindow__content">
       <div className="ps__modalwindow__content__audiolist" style={{justifyContent: props.content[0].content.content.length > 1 ? null:'center'}}>
-
-        {props.content[0].content.content.map((e, index) => {
-          return (<AudioPlayer 
+        { props.content[0].content.content.length > 7? 
+          console.log('aaaaa')
+        :
+          props.content[0].content.content.map((e, index) => {
+            return (<AudioPlayer 
             content={props.content[0].content.content[index]}
             i = {index}
             sendIndex = {sendIndex}
             playingIndex = {playingIndex}
             ></AudioPlayer>);
         })}
+          
+        {}
       </div>
     </div>
   );
