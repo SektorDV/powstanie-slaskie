@@ -29,7 +29,7 @@ const FirstUprisingMap = props => {
                     <div className="legend__box__plflag"></div>
                     <div className="legend__label">Dowództwo wojsk polskich</div>
                     <div className="legend__box__large box__cyan"></div>
-                    <div className="legend__label">Dowództwo straży granicznej</div>
+                    <div className="legend__label">Dowództwo niemieckiej straży granicznej Grenzschutz</div>
 
                 </div>
                 <div className="ps__modalwindow__map__grid__map">

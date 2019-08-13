@@ -8,8 +8,8 @@ import Mapbg from '../../res/images/bg/2nduprisingmapbg.png';
 import SecondUprisingMap from '../../Components/Modal/Map/2ndUprisingMap/2ndUprisingMap';
 
 const content = {
-    headline: `„Rozwój sytuacji na polskim froncie wschodnim i w samej Polsce pozwala spodziewać się niezbyt silnego oporu Polaków na Górnym Śląsku”`,
-    subheadline: `ocena sytuacji na Górnym Śląsku przygotowana przez Reichswehrę w połowie 1920 roku (cytat za Ryszard Kaczmarek, „Powstania Śląskie”)`,
+    headline: `„Rozwój sytuacji na polskim froncie wschodnim i w samej Polsce pozwala spodziewać się niezbyt silnego oporu Polaków na Górnym Śląsku”.`,
+    subheadline: `Ocena sytuacji na Górnym Śląsku przygotowana przez Reichswehrę w połowie 1920 roku (cytat za Ryszard Kaczmarek, „Powstania Śląskie”)`,
     bg: Background,
     bgAuthor: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
     smallImg: Small,
@@ -20,9 +20,9 @@ const content = {
         content: [
             <p>
             W lutym 1920 roku, zgodnie z postanowieniami traktatu wersalskiego, na
-            śląsku rozlokowały się wojska brytyjskie, francuskie i włoskie pod komendą
+            śląsku rozlokowały się wojska brytyjskie, francuskie i włoskie pod komendą 
             <strong>
-                Międzysojusznicza Komisja Rządząca i Plebiscytowa na Górnym Śląsku
+                Międzysojuszniczej Komisji Rządzącej i Plebiscytowej na Górnym Śląsku
             </strong>
             . Alianci mieli czuwać nad prawidłowym przebiegiem plebiscytu, który z
             kolei miał zadecydować o podziale Górnego Śląska.
