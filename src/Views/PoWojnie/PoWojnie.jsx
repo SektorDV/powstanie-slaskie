@@ -144,7 +144,7 @@ const content = {
                     title: "Chleb pod kluczem" ,
                     text:
                     '- Gdy przyniosłem matce pierwszą wypłatę, w kwocie 25 marek niemieckich, rozpłakała się. Chleb był u nas w domu pod zamknięciem – opowiadał Aleksander Gniełka, uczestnik powstań śląskich. (PR, 22.08.1982)',
-                    source: "b3c7520e-3e10-4548-9da2-6e9755ca3ff1"
+                    source: "6a8c165a-9bdb-4a1d-9dc2-daf1235c418a"
                   },
                   {
                     title: "Polska, ale jaka? ",

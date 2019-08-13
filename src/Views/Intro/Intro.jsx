@@ -23,7 +23,7 @@ const Intro = () => {
             <p className= "intro__paragraph">
             Ślązacy trzykrotnie chwytali za broń, by zamanifestować swoją polskość. Prezentujemy multimedialny serwis edukacyjny, który stanowi kompendium wiedzy o trzech Powstaniach Śląskich. <strong>Zachęcamy do wysłuchania unikatowych nagrania głosów uczestników Powstań Śląskich.</strong>  
             </p>
-            <Buttons map="1" audio="1" video="1"/>
+            <Buttons map="1" audio="1" video="1" stopWorking={true}/>
             </div>
             
             

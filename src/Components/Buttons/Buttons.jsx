@@ -8,8 +8,10 @@ const Buttons = (props) => {
       {props.video ? <div className="buttons__button">
         <svg
            onClick={() => {
+            if (props.stopWorking == undefined) {
             props.setModalData(props.videoContent, 'video', props.videoContent[0].content.img)
             props.showModal();
+            }
           }}
           id="icons"
           className="buttons__video"
@@ -40,8 +42,11 @@ const Buttons = (props) => {
       <div className="buttons__button">
         <svg
           onClick={() => {
+            if (props.stopWorking == undefined) {
+
             props.setModalData(props.audioContent, 'audio', props.audioContent[0].content.img)
             props.showModal();
+            }
           }}
           id="icons"
           className="buttons__audio"
@@ -74,8 +79,11 @@ const Buttons = (props) => {
       <div className="buttons__button">
         <svg
           onClick={() => {
+            if (props.stopWorking == undefined) {
+
             props.setModalData(props.mapContent, 'map', props.mapContent[0].img)
             props.showModal();
+            }
           }}
           id="icons"
           xmlns="http://www.w3.org/2000/svg"
