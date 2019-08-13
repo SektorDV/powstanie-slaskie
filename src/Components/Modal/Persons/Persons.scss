@@ -20,7 +20,7 @@
         width: 10rem;
         display: flex;
         justify-content: center;
-        margin-bottom: 35px;
+        margin-bottom: 5.8rem;
         cursor: pointer;
         &:hover img:not(.selected) {
             filter: contrast(0.9) brightness(0.7);
@@ -29,10 +29,12 @@
             content: attr(name);
             font-family: "dm_serif_displayregular", serif;
             position: absolute;
-            bottom: -1.2rem;
+            bottom: -2.8rem;
             left: 0;
             color: white;
             opacity: 0.8;
+            width: 10rem;
+            text-align: center
         }
         &__bg {
           position: absolute;
@@ -104,7 +106,7 @@
         height: 70%;
         width: 100%;
         font-family: "latoregular", sans-serif;
-        line-height: 1.4;
+        line-height: 1.8;
         
         
         &:before {
