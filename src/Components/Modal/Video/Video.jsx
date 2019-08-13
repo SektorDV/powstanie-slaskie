@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Textfield from "../../Textfield/Textfield";
 import './Video.scss';
+import ResponsiveEmbed from '../../../../node_modules/react-responsive-embed/src/index'
 
 const Video = props => {
   const [menuSelection, setMenuSelection] = useState(0);
@@ -10,16 +11,17 @@ const Video = props => {
           {props.content[0].content.content.map((e, index) => {
             return (
               <div className='ps__modalwindow__content__videocontainer'>
-                  <iframe 
+                  <ResponsiveEmbed src={`//embed.polskieradio.pl/video/${e.source}`}  allowFullScreen />
+
+                  {/* <iframe 
                   width="460" 
                   height="260" 
                   src= {`//embed.polskieradio.pl/video/${e.source}`} 
                   scrolling="no" 
                   frameborder="0" 
                   allowfullscreen="">
-                </iframe>
+                </iframe> */}
                 <div  className='ps__modalwindow__content__videotext'>
-                    <h2>{e.title}</h2>
                     <p>{e.text}</p>
                 </div>>
               </div>

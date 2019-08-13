@@ -41,7 +41,7 @@ const Page = props => {
 
   useEffect(()=>{
     setTop(menuRef[0].getBoundingClientRect().top)
-    setLeft(`calc(${imgRef.current.getBoundingClientRect().width}px - 2.5rem)`)
+    setLeft(`calc(${imgRef.current.getBoundingClientRect().width}px - 2%)`)
     setMenuHeight(menuRef[0].getBoundingClientRect().height)
 
   
