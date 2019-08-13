@@ -92,13 +92,13 @@
 
 .slick-dots div::after {
         content: "";
-        top: -0.34rem;
-        left: -0.34rem;
+        top: -0.33rem;
+        left: -0.33rem;
         position: absolute;
         width: 0.90rem;
         height: 0.90rem;
         border-radius: 50%;
-        border: 1px solid #899eaa;
+        border: 0.1rem solid #899eaa;
         opacity: 0;
         transition: 0.5s;
 
@@ -107,11 +107,12 @@
 
 
   
-  li.slick-active div {
+li.slick-active div {
   
   
       transition: 0.5s;
       background-color: #f25a4b !important;
+      position: relative;
       &::after {
           opacity: 1;
       }
