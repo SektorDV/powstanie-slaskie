@@ -44,7 +44,7 @@ const Modal = props => {
           height: '100%'
         }}
       > <div className="ps__modalwindow__bgauthor">
-      Narodowe Centrum Cyfrowe
+      Narodowe Archiwum Cyfrowe
     </div></div> : null}
     </div>
   );

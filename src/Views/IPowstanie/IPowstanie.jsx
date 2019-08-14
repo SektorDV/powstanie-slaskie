@@ -15,7 +15,7 @@ const content = {
   headline: `„Jedyny sposób naszej wygranej widzę w zastosowaniu brutalnej represji względem wszystkiego, co polskie”.`,
   subheadline: `Otto Horsing, niemiecki sekretarz stanu na prowincję Śląsk`,
   bg: Background,
-  bgAuthor: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+  bgAuthor: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
   smallImg: Small,
   menuItems: [
     {
@@ -67,7 +67,7 @@ const content = {
       type: "persons",
       content: {
         img: PersonsImg,
-        author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+        author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
         content: [
           {
             name: "Alfons Zgrzebniok",
@@ -91,7 +91,7 @@ const content = {
         type: "stats",
         content: {
           img: PersonsImg,
-          author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+          author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
           content: []
         }
       }
@@ -101,7 +101,7 @@ const content = {
       type: "audio",
       content: {
         img: AudioImg,
-        author: "Narodowe Centrum Cyfrowe",
+        author: "Narodowe Archiwum Cyfrowe",
         content: [
           {
             title: "Piłsudski nie pomoże",
@@ -132,7 +132,7 @@ const content = {
       type: "video",
       content: {
         img: AudioImg,
-        author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+        author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
         content: [
           {
             title: "Nagranie numer 1",

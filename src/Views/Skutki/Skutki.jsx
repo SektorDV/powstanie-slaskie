@@ -16,7 +16,7 @@ const content={
     headline: `„Śląsk postawił przed Polską konieczność rozstrzygnięcia nowych wielkich problemów, wciągnął całe społeczeństwo jeszcze silniej i zdecydowaniej w orbitę cywilizacji zachodu. Śląsk wywołał konieczność szybkiej rozbudowy Gdyni i połączenia wybrzeża morskiego Polski bezpośrednią siecią komunikacyjną z całą Rzeczpospolitą”.`,
     subheadline: `Eugeniusz Kwiatkowski, minister, współtwórca portu w Gdyni i Centralnego Okręgu Przemysłowego`,
     bg: Background,
-    bgAuthor: 'Eugeniusz Kwiatkowski / Narodowe Centrum Cyfrowe',
+    bgAuthor: 'Eugeniusz Kwiatkowski / Narodowe Archiwum Cyfrowe',
     smallImg: Small,
     menuItems: [
         {
@@ -49,17 +49,17 @@ const content={
                     {
                         name: "terytorium",
                         layout: <Terytorium bg={Terytoriumimg}/>,
-                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe"
+                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe"
                     },
                     {
                         name: "ludność",
                         layout: <Ludnosc bg={Ludnoscimg}/>,
-                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe"
+                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe"
                     },
                     {
                         name: "gospodarka",
                         layout: <Gospodarka bg={Gospodarkaimg}/>,
-                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe"
+                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe"
 
                     }
             ]
@@ -72,7 +72,7 @@ const content={
             type: "video",
             content: {
               img: AudioImg,
-              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
               content: [
                 {
                   title: "Nagranie numer 1",
@@ -89,7 +89,7 @@ const content={
             type: "audio",
             content: {
               img: AudioImg,
-              author: "Narodowe Centrum Cyfrowe",
+              author: "Narodowe Archiwum Cyfrowe",
               content: [
                 {
                   title: 'Ci, którzy zostali ' ,

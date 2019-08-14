@@ -134,8 +134,8 @@ const content = {
                 modalTabs: [
                     {
                         name: "terytorium",
-                        layout: <PoWojnieStats bg={PoWojnieImg} author="Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe"/>,
-                        bgImgAuthor: "Narodowe Centrum Cyfrowe"
+                        layout: <PoWojnieStats bg={PoWojnieImg} author="Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe"/>,
+                        bgImgAuthor: "Narodowe Archiwum Cyfrowe"
                     },
                    
             ]
@@ -148,7 +148,7 @@ const content = {
             type: "audio",
             content: {
               img: AudioImg,
-              author: "Narodowe Centrum Cyfrowe",
+              author: "Narodowe Archiwum Cyfrowe",
               content: [
                 
                   {

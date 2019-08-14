@@ -11,7 +11,7 @@ const content={
     headline: `„Głos przodków, Ojczyzny i serc Waszych polskich oraz interes własny i Waszych potomków nakazuje Wam głosować za Polską”`,
     subheadline: `Wojciech Korfanty, polski komisarz plebiscytowy, cytat za plebiscytowym wydaniem magazynu „Kocynder”`,
     bg: Background,
-    bgAuthor: 'Działacze plebiscytowi / Narodowe Centrum Cyfrowe',
+    bgAuthor: 'Działacze plebiscytowi / Narodowe Archiwum Cyfrowe',
     smallImg: Small,
     menuItems: [
         {
@@ -52,7 +52,7 @@ const content={
             type: "video",
             content: {
               img: AudioImg,
-              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
               content: [
                 {
                   title: "Nagranie numer 1",
@@ -66,14 +66,14 @@ const content={
           },
           {
             type: "map",
-            //layout: <ReferendumMap bg={Mapbg} author='Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe'/>,
+            //layout: <ReferendumMap bg={Mapbg} author='Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe'/>,
             //img: Mapbg
           },
         {
             type: "audio",
             content: {
               img: AudioImg,
-              author: "Narodowe Centrum Cyfrowe",
+              author: "Narodowe Archiwum Cyfrowe",
               content: [
                 {
                   title: 'Marki leżały na ulicach' ,

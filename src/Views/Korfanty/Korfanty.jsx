@@ -11,7 +11,7 @@ const content = {
     headline: `„Mości panowie, nie chcemy ani piędzi ziemi niemieckiej. Żądamy jedynie, w myśl postanowień punktu trzynastego programu Wilsona, własnej, jednej, złożonej z ziem trzech zaborów Polski”.`,
     subheadline: `Fragment mowy posła Wojciecha Korfantego w Reichstagu, 25 października 1918`,
     bg: Background,
-    bgAuthor: 'Wojciech Korfanty / Narodowe Centrum Cyfrowe',
+    bgAuthor: 'Wojciech Korfanty / Narodowe Archiwum Cyfrowe',
     smallImg: Small,
     menuItems: [
         {
@@ -44,7 +44,7 @@ const content = {
             type: "audio",
             content: {
               img: AudioImg,
-              author: "Narodowe Centrum Cyfrowe",
+              author: "Narodowe Archiwum Cyfrowe",
               content: [
                 {
                   title: 'Tytan pracy ' ,
@@ -80,7 +80,7 @@ const content = {
             type: "video",
             content: {
               img: AudioImg,
-              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
               content: [
                 {
                   title: "Nagranie numer 1",

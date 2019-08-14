@@ -11,7 +11,7 @@ const content = {
     headline: `„Rozwój sytuacji na polskim froncie wschodnim i w samej Polsce pozwala spodziewać się niezbyt silnego oporu Polaków na Górnym Śląsku”.`,
     subheadline: `Ocena sytuacji na Górnym Śląsku przygotowana przez Reichswehrę w połowie 1920 roku (cytat za Ryszard Kaczmarek, „Powstania Śląskie”)`,
     bg: Background,
-    bgAuthor: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+    bgAuthor: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
     smallImg: Small,
     menuItems: [
       {
@@ -66,7 +66,7 @@ const content = {
             type: "audio",
             content: {
               img: AudioImg,
-              author: "Narodowe Centrum Cyfrowe",
+              author: "Narodowe Archiwum Cyfrowe",
               content: [
                 {
                   title: 'W Katowicach czuć było podenerwowanie' ,
@@ -95,7 +95,7 @@ const content = {
             type: "video",
             content: {
               img: AudioImg,
-              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
               content: [
                 {
                   title: "Nagranie numer 1",

@@ -16,7 +16,7 @@ const content={
     headline: `„Zwycięstwo osiągniemy za wszelka cenę i nie ma takiego mocarza na świecie, który by mógł nas okuć ponownie w kajdany germańskie”. `,
     subheadline: `Z odezwy Wojciecha Korfantego do rodaków, 3 maja 1921`,
     bg: Background,
-    bgAuthor: 'Uczestnicy III Powstania Śląskiego / Narodowe Centrum Cyfrowe',
+    bgAuthor: 'Uczestnicy III Powstania Śląskiego / Narodowe Archiwum Cyfrowe',
     smallImg: Small,
     menuItems: [
         {
@@ -64,7 +64,7 @@ const content={
             type: "persons",
             content: {
               img: PersonsImg,
-              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
               content: [
                 {
                   name: "Maciej Mielżyński",
@@ -90,7 +90,7 @@ const content={
         type: "audio",
         content: {
           img: AudioImg,
-          author: "Narodowe Centrum Cyfrowe",
+          author: "Narodowe Archiwum Cyfrowe",
           content: [
             {
               title: 'Dywersja Grupy Wawelberga' ,
@@ -187,7 +187,7 @@ const content={
             type: "video",
             content: {
               img: AudioImg,
-              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
               content: [
                 {
                   title: "Nagranie numer 1",

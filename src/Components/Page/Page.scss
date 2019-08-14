@@ -83,13 +83,16 @@
       color: #6a8594;
       user-select: none;
       display: grid;
-      font-size: 100%;
+      font-size: 60%;
       grid-template: 1fr 80px / 1fr;
       div {
         margin-bottom: 0.5rem;
       }
       
       &__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         div {
       cursor: pointer;
       display: inline-block;
@@ -101,6 +104,7 @@
           }
     }
     &__icons {
+        padding-top: 5%;
         position: relative;
         &__label {
           font-family: "poppinsregular", sans-serif;
@@ -110,9 +114,9 @@
             content: "";
             z-index: 1;
             position: absolute;
-            height: 1.2rem;
-            top: -0.2rem;
-            right: calc(100% + -10.5rem);
+            height: 0.8rem;
+            top: 0.8rem;
+            right: calc(100% + -6.5rem);
             width: 50rem;
             background-color: #f25a4b;
           }
@@ -121,9 +125,9 @@
               content: "";
               z-index: 1;
               position: absolute;
-              height: 1.2rem;
-              top: -0.2rem;
-              right: calc(100% + -6.5rem);
+              height: 0.8rem;
+              top: 0.8rem;
+              right: calc(100% + -3.6rem);
               width: 50rem;
               background-color: #f25a4b;
           }
@@ -135,7 +139,7 @@
         }
         .ps__buttons {
             position: absolute;
-            top: 1.5rem;
+            top: 2.5rem;
             left: 0;
           width: 55%;
         }
