@@ -36,6 +36,51 @@ const content = {
             <strong>Zmarł </strong>
         dwa tygodnie przez wybuchem II wojny światowej,    <strong>17 sierpnia 1939</strong>.
         </p>]
+        },
+        {
+          label: "Konflikt z Michałem Grażyńskim",
+            type: "text",
+            content: [<p>
+              Pod koniec <strong>III Powstania Śląskiego</strong> Wojciech Korfanty,
+          znany ze swojej bezkompromisowości, popadł w konflikt z    <strong>Michałem Grażyńskim</strong>, szefem sztabu grupy „Wschód” wojsk
+              powstańczych. Ten spór okazał się brzemienny w skutki dla Ojca
+              Niepodległości.
+          </p>,
+          <p>
+              Korfanty uważał, że cel powstania został osiągnięty – zamanifestowano nim
+              niezadowolenie Ślązaków z podziału Górnego Śląska i ich gotowość do
+              dalszych działań zbrojnych. Grupa oficerów skupiona wokół Grażyńskiego
+              uważała, że rozstrzygnięcia konfliktu z Niemcami trzeba szukać na
+          płaszczyźnie militarnej, a nie poprzez zabiegi dyplomatyczne. Oficerowie    <strong>przeprowadzili pucz</strong>, który miał za zadanie kontynuowanie
+              walki. Bunt został stłumiony, co uraziło dumę Grażyńskiego.
+          </p>,
+          <p>
+              Michał Grażyński był związany z <strong>obozem sanacyjnym</strong>. Po
+          przewrocie majowym w 1926 roku, w wyniku którego <strong>Józef Piłsudski</strong> przejął władzę w Polsce, Grażyński został    <strong>wojewodą śląskim</strong>. Korfanty i Piłsudski wdawali się w
+              częste spory, znajdowali się po dwóch stronach politycznej barykady.
+              Nominacja Grażyńskiego, człowieka, który pałał nienawiścią do Korfantego,
+              była obliczona na uprzykrzenie życia dyktatorowi III Powstania Śląskiego. W
+              swojej gazecie <strong>„Polska Zachodnia”</strong> Grażyński regularnie
+          atakował Korfantego. Wojewoda    <strong>dwukrotnie rozwiązywał Sejm Śląski</strong>, bo w izbie przewagę
+              mieli zwolennicy Wojciecha Korfantego.
+          </p>,
+          <p>
+              Grażyński był też prawdopodobnie pomysłodawcą oskarżenia Korfantego o
+              pobieranie subsydiów od niemieckich potentatów przemysłowych. Część
+              zarzutów została potwierdzona, jednak nie to było najgorsze – Korfanty
+              stracił w oczach części Ślązaków wizerunek trybuna ludowego i pogromcy
+          Niemców.    <strong>W 1930 roku Grażyński ponownie rozwiązał Sejm Śląski</strong>, co
+          pozbawiło Korfantego immunitetu. Dyktator III Powstania Śląskiego trafił do    <strong>twierdzy brzeskiej</strong>.
+          </p>,
+          <p>
+              Korfanty z więzienia wrócił jako człowiek złamany. Wkrótce udał się na
+              emigrację. Powrócił na krótko przed śmiercią. Jego <strong>
+                   pogrzeb stał się ostatnią wielką manifestacją patriotyczną na Śląsku 
+              </strong> przed wybuchem <strong>II wojny światowej</strong>. Wojewoda Grażyński nie
+              wzniósł się ponad swoją urazę i tym razem – sam nie wziął udziału w
+              uroczystościach, a pracownikom urzędu wojewódzkiego zabronił uczestniczyć w
+              pogrzebie pod groźbą wyrzucenia z pracy.
+          </p>]
         }
     ],
     multimediaItems: [

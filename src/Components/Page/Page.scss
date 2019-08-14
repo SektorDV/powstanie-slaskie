@@ -91,7 +91,7 @@
       &__top {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         div {
       cursor: pointer;
       display: inline-block;
