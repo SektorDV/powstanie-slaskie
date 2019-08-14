@@ -6,14 +6,14 @@ const Pagination = () => {
     return (
         <div className="ps__pagination">
             <ul className="pagination__list">
-                <NavLink to={`/powstaniaslaskie/`} exact activeClassName="pagination_active" ><li className="pagination__link"></li></NavLink>
-                <NavLink to={`/powstaniaslaskie/PoWojnie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
-                <NavLink to={`/powstaniaslaskie/Korfanty`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
-                <NavLink to={`/powstaniaslaskie/IPowstanie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
-                <NavLink to={`/powstaniaslaskie/IIPowstanie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
-                <NavLink to={`/powstaniaslaskie/Plebiscyt`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
-                <NavLink to={`/powstaniaslaskie/IIIPowstanie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
-                <NavLink to={`/powstaniaslaskie/Skutki`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/`} exact activeClassName="pagination_active" ><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/PoWojnie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/Korfanty`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/IPowstanie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/IIPowstanie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/Plebiscyt`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/IIIPowstanie`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
+                <NavLink to={`/Skutki`} activeClassName="pagination_active"><li className="pagination__link"></li></NavLink>
             </ul>
         </div>
     )

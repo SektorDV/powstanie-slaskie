@@ -3,10 +3,16 @@ import './Plebiscyt.scss';
 import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/plebiscytbg.png';
 import Small from '../../res/images/small/plebiscytsmall.png';
+<<<<<<< HEAD
 import AudioImg from "../../res/images/bg/plebiscyt_modal_audio.png";
 import VideoImg from "../../res/images/bg/plebiscyt_modal_video.png";
 
 
+=======
+import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+import ReferendumMap from "../../Components/Modal/Map/ReferendumMap/ReferendumMap";
+import Mapbg from "../../res/images/bg/referendummapbg.png";
+>>>>>>> 79075cd72406f7a42d7e4e7c746fa7b2969d1156
 
 
 const content={
@@ -68,8 +74,8 @@ const content={
           },
           {
             type: "map",
-            //layout: <ReferendumMap bg={Mapbg} author='Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe'/>,
-            //img: Mapbg
+            layout: <ReferendumMap bg={Mapbg} author='Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe'/>,
+            img: Mapbg
           },
         {
             type: "audio",

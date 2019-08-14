@@ -35,8 +35,8 @@ const FirstUprisingMap = props => {
                 <div className="ps__modalwindow__map__grid__map">
                     <img src={Map} alt="Mapa trzeciego powstania śląskiego" onLoad={(e) => e.target.style.opacity = 1} />
                 </div>
-            </div>
 
+            </div>
         </div>
     )
 }

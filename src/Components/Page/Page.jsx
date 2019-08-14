@@ -84,7 +84,7 @@ const Page = props => {
         <div className="ps__page__right__menu">
           <div className="ps__page__right__menu__top">
           <div class="menuSelected" style={
-                {top: `calc(${top+menuHeight/2}px - 2.72rem)` , left: left, zIndex: 5, transition:'all 1s ease'}
+                {top: `calc(${top+menuHeight/2}px - 2.66rem)` , left: left, zIndex: 5, transition:'all 1s ease'}
                 }>
 
                   <div className="menuSelected--half" style={{width: '50%', height: '100%', backgroundColor: '#f25a4b'}}>

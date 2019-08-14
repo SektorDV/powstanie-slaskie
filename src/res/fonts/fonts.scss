@@ -29,7 +29,8 @@
 @font-face {
     font-family: 'latoregular';
     src: url('./lato-regular-webfont.woff2') format('woff2'),
-         url('./lato-regular-webfont.woff') format('woff');
+         url('./lato-regular-webfont.woff') format('woff'),
+         url('https://fonts.googleapis.com/css?family=Lato&display=swap&subset=latin-ext') format('truetype');
     font-weight: normal;
     font-style: normal;
 

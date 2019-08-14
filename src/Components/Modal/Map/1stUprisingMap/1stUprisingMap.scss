@@ -51,7 +51,7 @@
         column-gap: 5%;
         grid-template-columns: 10% 1fr;
         grid-template-rows: repeat(1fr);
-        font-family: 'latoregular', sans-serif;
+        font-family: 'Lato', sans-serif;
         * {
             align-self: center;
             font-size: 0.76rem;
@@ -77,7 +77,7 @@
                 content: '';
                 position: absolute;
                 background-color: #dc574b;
-                height: 0.2rem;
+                height: 0.1rem;
                 width: 5rem;
                 left: -5.25rem;
                 top: calc(50% - 0.05rem);

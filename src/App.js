@@ -1,5 +1,5 @@
 //biblioteki
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import "./res/fonts/fonts.scss";
 import Navbar from "./Components/Navbar/Navbar";
@@ -19,42 +19,73 @@ import Skutki from "./Views/Skutki/Skutki";
 import Pagination from "./Components/Pagination/Pagination";
 import Header from "./Components/Header/Header";
 import Modal from "./Components/Modal/Modal";
+import AspectNotification from "./Components/AspectNotification/AspectNotification";
 import { stat } from "fs";
 import { tsPropertySignature } from "@babel/types";
 
-const App = withRouter(({location, ...props}) => {
-  console.log(props);
+const App = withRouter(({ location, ...props }) => {
+  const getSize = () => {
+    return {
+      innerHeight: window.innerHeight,
+      innerWidth: window.innerWidth,
+      outerHeight: window.outerHeight,
+      outerWidth: window.outerWidth
+    };
+  };
+
+  const [windowSize, setWindowSize] = useState(getSize());
+
+  const handleResize = () => {
+    setWindowSize(getSize());
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="App">
-     
-      <Header />
-      <Pagination />
+      {windowSize.innerHeight < windowSize.innerWidth ? (
+        <>
+          <Header />
+          <Pagination />
 
-      <TransitionGroup className="transition-group">
-        <CSSTransition key={location.key} classNames='fade' timeout={{enter: 600, exit: 300}}>
-        <section className="route-section">
-          <Switch location={location}>
-            <Route path="/powstaniaslaskie/" exact component={Intro} />
-            <Route path="/powstaniaslaskie/PoWojnie" exact component={PoWojnie} />
-            <Route path="/powstaniaslaskie/Korfanty" exact component={Korfanty} />
-            <Route path="/powstaniaslaskie/IPowstanie" exact component={IPowstanie} />
-            <Route path="/powstaniaslaskie/IIPowstanie" exact component={IIPowstanie} />
-            <Route path="/powstaniaslaskie/Plebiscyt" exact component={Plebiscyt} />
-            <Route path="/powstaniaslaskie/IIIPowstanie" exact component={IIIPowstanie} />
-            <Route path="/powstaniaslaskie/Skutki" exact component={Skutki} />
-          </Switch>
-          </section>
-        </CSSTransition>
-      </TransitionGroup>
+          <TransitionGroup className="transition-group">
+            <CSSTransition
+              key={location.key}
+              classNames="fade"
+              timeout={{ enter: 600, exit: 300 }}
+            >
+              <section className="route-section">
+                <Switch location={location}>
+                  <Route path="/" exact component={Intro} />
+                  <Route path="/PoWojnie" exact component={PoWojnie} />
+                  <Route path="/Korfanty" exact component={Korfanty} />
+                  <Route path="/IPowstanie" exact component={IPowstanie} />
+                  <Route path="/IIPowstanie" exact component={IIPowstanie} />
+                  <Route path="/Plebiscyt" exact component={Plebiscyt} />
+                  <Route path="/IIIPowstanie" exact component={IIIPowstanie} />
+                  <Route path="/Skutki" exact component={Skutki} />
+                </Switch>
+              </section>
+            </CSSTransition>
+          </TransitionGroup>
 
-          {props.showModal ?<Modal /> : <></>}
+          {props.showModal ? <Modal /> : <></>}
 
-      <Navbar />
+          <Navbar />
+        </>
+      ) : (
+        <AspectNotification />
+      )}
     </div>
   );
 });
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     showModal: state.showModal
   };

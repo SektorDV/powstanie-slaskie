@@ -25,21 +25,20 @@
     &.right-align .ps__page__left__title {
       margin-bottom: 5%;
       width: 90%;
-      margin-right: 20%;
     }
     &__title {
       min-width: 21rem;
       max-width: 80%;
       font-size: 90%;
       &__headline {
-        font-family: "dm_serif_displayregular", serif;
+        font-family: "DM Serif Display", serif;
         h2 {
           font-weight: 300;
           font-size: 1.5rem;
         }
       }
       &__subheadline {
-        font-family: "dm_serif_displayregular", serif;
+        font-family: "DM Serif Display", serif;
         font-size: 0.8rem;
         font-weight: 300;
         p {
@@ -59,7 +58,7 @@
 
     &__photoAuthor {
       font-size: 0.5rem;
-      font-family: "latoregular", sans-serif;
+      font-family: "Lato", sans-serif;
       white-space: nowrap;
       position: absolute;
       bottom: 4rem;
@@ -78,7 +77,7 @@
     &__menu {
       grid-area: 1 / 1 / 2 / 2;
       text-transform: uppercase;
-      font-family: "poppinsregular", sans-serif;
+      font-family: "Poppins", sans-serif;
       font-weight: 700;
       color: #6a8594;
       user-select: none;
@@ -92,7 +91,7 @@
       &__top {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         div {
       cursor: pointer;
       display: inline-block;
@@ -107,7 +106,7 @@
         padding-top: 5%;
         position: relative;
         &__label {
-          font-family: "poppinsregular", sans-serif;
+          font-family: "Poppins", sans-serif;
           font-weight: 700;
           color: #292929;
           &::before {
@@ -115,7 +114,7 @@
             z-index: 1;
             position: absolute;
             height: 0.8rem;
-            top: 0.8rem;
+            top: 0.9rem;
             right: calc(100% + -6.5rem);
             width: 50rem;
             background-color: #f25a4b;
@@ -126,7 +125,7 @@
               z-index: 1;
               position: absolute;
               height: 0.8rem;
-              top: 0.8rem;
+              top: 0.9rem;
               right: calc(100% + -3.6rem);
               width: 50rem;
               background-color: #f25a4b;

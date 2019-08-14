@@ -50,17 +50,17 @@ const content={
                     {
                         name: "terytorium",
                         layout: <Terytorium bg={Terytoriumimg}/>,
-                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe"
+                        bgImgAuthor: "Źr: Franciszek Hawranek (red.), „Encyklopedia Powstań Śląskich”, Opole 1982"
                     },
                     {
                         name: "ludność",
                         layout: <Ludnosc bg={Ludnoscimg}/>,
-                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe"
+                        bgImgAuthor: "Źr: Franciszek Hawranek (red.), „Encyklopedia Powstań Śląskich”, Opole 1982"
                     },
                     {
                         name: "gospodarka",
                         layout: <Gospodarka bg={Gospodarkaimg}/>,
-                        bgImgAuthor: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe"
+                        bgImgAuthor: "Źr: Franciszek Hawranek (red.), „Encyklopedia Powstań Śląskich”, Opole 1982"
 
                     }
             ]

@@ -1,0 +1,68 @@
+.ps__aspectNotification__main {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ps__aspectNotification__container {
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        color: #01638b;
+        font-family: "DM Serif Display", serif;
+        font-size: 5.5rem;
+    }
+    h2 {
+        color: #6a8594;
+        font-family: "DM Serif Display", serif;
+        font-size: 2.5rem;
+        text-align: center;
+        position: relative;
+        &::before {
+            content: '';
+            height: 0.5rem;
+            background-color: #f25a4b;
+            width: calc(50% + -5.5rem);
+            position: absolute;
+            left: 0;
+            top: 1.6rem;
+        }
+
+        &::after {
+            content: '';
+            height: 0.5rem;
+            background-color: #f25a4b;
+            width: calc(50% + -5.5rem);
+            position: absolute;
+            right: 0;
+            top: 1.6rem;
+        }
+    }
+    p {
+        color: #e3f2fa;
+        font-size: 1.8rem;
+        text-align: center;
+        width: 50%;
+        align-self:center;
+        margin-top: 2rem;
+        font-family: "Lato", sans-serif;
+    }
+    svg {
+        max-width: 30%;
+        align-self: center;
+        margin-top: 2rem;
+        fill: #6a8594;
+    }
+
+}
