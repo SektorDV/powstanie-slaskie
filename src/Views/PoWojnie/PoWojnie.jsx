@@ -4,7 +4,7 @@ import Pagination from '../../Components/Pagination/Pagination';
 import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/powojniebg.png';
 import Small from '../../res/images/small/powojniesmall.png';
-import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+import AudioImg from "../../res/images/bg/poWojnie_modal_audio.png";
 import PoWojnieStats from "../../Components/Modal/Statistics/PoWojnie/PoWojnie";
 import PoWojnieImg from "../../res/images/bg/powojniestatisticsbg.png";
 

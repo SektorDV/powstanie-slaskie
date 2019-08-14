@@ -7,7 +7,9 @@ import PersonsImg from "../../res/images/bg/ipowstaniepostacie.png";
 import alfonsImg from "../../res/img/alfons.png";
 import jozefImg from "../../res/img/Józef.png";
 import maksymilianImg from "../../res/img/maksymilian.png";
-import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+import AudioImg from "../../res/images/bg/Ipowstanie_modal_audio.png";
+import VideoImg from "../../res/images/bg/Ipowstanie_modal_video.png";
+
 import Mapbg from '../../res/images/bg/1stuprisingmapbg.png';
 import FirstUprisingMap from '../../Components/Modal/Map/1stUprisingMap/1stUprisingMap';
 
@@ -131,7 +133,7 @@ const content = {
     {
       type: "video",
       content: {
-        img: AudioImg,
+        img: VideoImg,
         author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
         content: [
           {

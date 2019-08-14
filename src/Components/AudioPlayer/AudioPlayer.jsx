@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Scrollbar from "react-scrollbars-custom";
+import Play from '../../res/img/play_button.png';
+import Pause from '../../res/img/pause.png'
+
 
 
 class AudioPlayer extends Component {
@@ -33,7 +36,11 @@ class AudioPlayer extends Component {
             className="audio-player-description-and-play"
             style={{
               backgroundColor:
-                this.props.i == this.props.playingIndex ? "#f25a4b" : null
+                this.props.i == this.props.playingIndex ? "#f25a4b" : null,
+              backgroundImage:
+                this.props.i == this.props.playingIndex ? `url(${Pause})` : `url(${Play})`,
+                backgroundSize: 
+                this.props.i == this.props.playingIndex ? `35%` : `50%`,
             }}
             onClick={() => {
               if (this.props.i == this.props.playingIndex) {
