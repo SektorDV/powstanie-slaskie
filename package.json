@@ -2,7 +2,8 @@
   "name": "powstaniaslaskie",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www2.polskieradio.pl/powstaniaslaskie/",
+  "homepage": "https://powstaniaslaske.polskieradio24.pl",
+  "grid": "autoplace",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "material-icons-react": "^1.0.4",
@@ -34,12 +35,14 @@
       ">0.2%",
       "not dead",
       "not op_mini all",
-      "ie >= 9"
+      "ie >= 9",
+      "last 3 safari versions"
+
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version",
+      "last 3 safari versions",
       "ie >= 9"
     ]
   },

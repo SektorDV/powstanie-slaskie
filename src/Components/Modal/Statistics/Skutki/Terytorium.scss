@@ -15,7 +15,7 @@
         justify-content: flex-start;
         align-items: center;
         color: #e3f2fa;
-        font-family: 'latoregular', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-weight: 300;
         font-size: 1.5rem;
         position: relative;
@@ -63,7 +63,7 @@
         grid-row-start: 3;
         grid-row-end: 4;
         &__top {
-            font-family: 'latoregular', sans-serif;
+            font-family: 'Lato', sans-serif;
             color: #e3f2fa;
             font-size: 1rem;
             font-weight: 500;
@@ -92,7 +92,7 @@
         &__mid {
             display: flex;
             align-items: center;
-            font-family: 'latoregular', sans-serif;
+            font-family: 'Lato', sans-serif;
             color: #e3f2fa;
             margin-bottom: 20px;
             &__line {
@@ -130,7 +130,7 @@
             }
             span {
                 margin-right: 2rem;
-                font-family: 'latoregular', sans-serif;
+                font-family: 'Lato', sans-serif;
                 color: #e3f2fa;
             }
         }
