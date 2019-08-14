@@ -20,6 +20,7 @@
         font-size: 1.5rem;
         position: relative;
         margin-top: -6.8rem;
+        margin-left: -4.25rem;
         pointer-events: none;
         
         &::before {
@@ -62,6 +63,8 @@
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;
+        margin-left: -4.25rem;
+
         &__top {
             font-family: 'Lato', sans-serif;
             color: #e3f2fa;

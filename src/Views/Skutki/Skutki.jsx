@@ -9,7 +9,8 @@ import Ludnoscimg from '../../res/images/bg/populationbg.png';
 import Ludnosc from '../../Components/Modal/Statistics/Skutki/Ludnosc';
 import Gospodarka from '../../Components/Modal/Statistics/Skutki/Gospodarka';
 import Gospodarkaimg from '../../res/images/bg/economybg.png';
-import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+import AudioImg from "../../res/images/bg/skutki_modal_audio.png";
+import VideoImg from "../../res/images/bg/skutki_modal_video.png";
 
 
 const content={
@@ -88,7 +89,7 @@ const content={
         {
             type: "audio",
             content: {
-              img: AudioImg,
+              img: VideoImg,
               author: "Narodowe Archiwum Cyfrowe",
               content: [
                 {
