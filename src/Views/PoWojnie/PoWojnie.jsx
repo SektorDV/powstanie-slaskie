@@ -78,8 +78,7 @@ const content = {
         </p>,
         <p>
             XIX wiek był czasem przebudzenia narodowego Polaków na Śląsku. Była to w
-            dużej mierze reakcja na
-        <strong>germanizację dzieci </strong> 
+            dużej mierze reakcja na <strong>germanizację dzieci </strong> 
             w szkołach, którą wprowadzono w 1819 roku. Działalność takich postaci jak 
         <strong> ks. Józef Lompa, ks. Józef Szafranek czy Emanuel Smołka </strong>
             (wszyscy byli wydawcami pierwszej polskiej gazety na Górnym Śląsku –

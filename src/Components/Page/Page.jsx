@@ -59,7 +59,7 @@ const Page = props => {
         }`}
         style={{
           backgroundImage: `url(${props.content.bg})`,
-          backgroundPositionX: props.content.menuItems[0].label == 'Wojciech Korfanty'? -8 + imgStyle.X + "rem" : -7.1 + imgStyle.X + "rem",
+          backgroundPositionX: props.content.menuItems[0].label == 'Wojciech Korfanty'? 1 + imgStyle.X + "rem" : -7.1 + imgStyle.X + "rem",
           backgroundPositionY: props.content.menuItems[0].label == "Problem śląska po i wojnie światowej"? '-3rem' : null,
 
           backgroundSize: props.content.menuItems[0].label == 'Wojciech Korfanty'? '60rem' : '70rem',
