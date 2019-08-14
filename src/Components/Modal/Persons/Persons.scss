@@ -27,14 +27,15 @@
         }
         &:before {
             content: attr(name);
+            content: attr(name);
             font-family: "DM Serif Display", serif;
             position: absolute;
             bottom: -2.8rem;
-            left: 0;
+            left: -0.8rem;
             color: #c8cfd3;
             opacity: 0.8;
             width: 10rem;
-            text-align: center
+            text-align: end;
         }
         &__bg {
           position: absolute;
