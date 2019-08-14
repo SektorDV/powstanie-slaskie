@@ -4,7 +4,8 @@ import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/plebiscytbg.png';
 import Small from '../../res/images/small/plebiscytsmall.png';
 import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
-
+import ReferendumMap from "../../Components/Modal/Map/ReferendumMap/ReferendumMap";
+import Mapbg from "../../res/images/bg/referendummapbg.png";
 
 
 const content={
@@ -66,8 +67,8 @@ const content={
           },
           {
             type: "map",
-            //layout: <ReferendumMap bg={Mapbg} author='Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe'/>,
-            //img: Mapbg
+            layout: <ReferendumMap bg={Mapbg} author='Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe'/>,
+            img: Mapbg
           },
         {
             type: "audio",
