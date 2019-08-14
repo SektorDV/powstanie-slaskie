@@ -37,7 +37,7 @@ class AudioPlayer extends Component {
             style={{
               backgroundColor:
                 this.props.i == this.props.playingIndex ? "#f25a4b" : null,
-              backgroundImage:
+                backgroundImage:
                 this.props.i == this.props.playingIndex ? `url(${Pause})` : `url(${Play})`,
                 backgroundSize: 
                 this.props.i == this.props.playingIndex ? `35%` : `50%`,
@@ -47,8 +47,6 @@ class AudioPlayer extends Component {
                 this.audioRef.current.pause();
                 this.sendIndex(null);
               } else {
-               
-
                 this.audioRef.current.play();
                 this.sendIndex(this.props.i);
               }
@@ -65,7 +63,7 @@ class AudioPlayer extends Component {
               }
               preload="metadata"
               ref={this.audioRef}
-              src={`//static.prsa.pl/${this.props.content.source}.file`}
+              src={`//static.prsa.pl/${this.props.content.source}.mp3`}
             />
           </div>
           <div className="audio-player-top-right">
