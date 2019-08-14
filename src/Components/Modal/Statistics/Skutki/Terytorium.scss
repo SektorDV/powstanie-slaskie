@@ -19,6 +19,8 @@
         font-weight: 300;
         font-size: 1.5rem;
         position: relative;
+        margin-top: -6.8rem;
+        pointer-events: none;
         
         &::before {
             content: '';
@@ -35,8 +37,8 @@
             position: absolute;
             background-color: #dc574b;
             height: 0.1rem;
-            width: 5rem;
-            left: -6.75rem;
+            width: 6.75rem;
+            left: -8.75rem;
         }
     }
 

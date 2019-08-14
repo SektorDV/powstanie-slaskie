@@ -66,7 +66,7 @@ const content = {
             type: "audio",
             content: {
               img: AudioImg,
-              author: "Powstańcy Śląscy 1919 / Narodowe Centrum Cyfrowe",
+              author: "Narodowe Centrum Cyfrowe",
               content: [
                 {
                   title: 'W Katowicach czuć było podenerwowanie' ,

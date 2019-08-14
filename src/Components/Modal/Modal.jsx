@@ -30,9 +30,7 @@ const Modal = props => {
           icon="clear"
         />
       </div>
-      <div className="ps__modalwindow__bgauthor">
-        {props.imgAuthor}
-      </div>
+     
       {props.type==="persons" ? <Persons content={props.content} /> : null}
       {props.type==="video" ? <Video content={props.content}/> : null}
       {props.type==="data" ? <Statistics content={props.content} tabs={props.modalTabs} /> : null}
@@ -45,7 +43,9 @@ const Modal = props => {
           width: '50%',
           height: '100%'
         }}
-      /> : null}
+      > <div className="ps__modalwindow__bgauthor">
+      Narodowe Centrum Cyfrowe
+    </div></div> : null}
     </div>
   );
 };
