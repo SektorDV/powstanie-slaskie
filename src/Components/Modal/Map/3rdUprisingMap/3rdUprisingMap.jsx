@@ -8,20 +8,20 @@ const ThirdUprisingMap = props => {
             <div className="ps__modalwindow__map__grid">
                 <div className="ps__modalwindow__map__grid__title">
                     <h1>III&nbsp;Powstanie&nbsp;Śląskie</h1>
-                    <h2>2/3.05 - 08/1920</h2>
+                    <h2>2.05 - 5.07/1921</h2>
                 </div>
                 <div className="ps__modalwindow__map__grid__legend">
                     <h1>LEGENDA</h1>
                     <div className="legend__line"></div>
                     <div className="legend__label">Historyczne granice Górnego Śląska</div>
                     <div className="legend__dashed__line"></div>
-                    <div className="legend__label">Obszar objęty powstaniem / 25.08.1920</div>
+                    <div className="legend__label">Maksymalny zasięg powstania</div>
                     <div className="legend__box__small box__black"></div>
                     <div className="legend__label">Miejscowości blokowane przez powstańców</div>
                     <div className="legend__box__small box__blue"></div>
                     <div className="legend__label">Bunty w polskich oddziałach pod koniec powstania</div>
                     <div className="legend__box__plflag"></div>
-                    <div className="legend__label">Dowództwo wojsk polskich</div>
+                    <div className="legend__label">Dowództwo wojsk powstańczych</div>
                     <div className="legend__box__large box__blue"></div>
                     <div className="legend__label">Niemcy</div>
                     <div className="legend__box__large box__red"></div>
