@@ -27,7 +27,7 @@ const FirstUprisingMap = props => {
                     <div className="legend__box__large box__yellow"></div>
                     <div className="legend__label">Miejsce podjęcia decyzji o wybuchu powstania</div>
                     <div className="legend__box__plflag"></div>
-                    <div className="legend__label">Dowództwo wojsk polskich</div>
+                    <div className="legend__label">Dowództwo wojsk powstańczych</div>
                     <div className="legend__box__large box__cyan"></div>
                     <div className="legend__label">Dowództwo niemieckiej straży granicznej Grenzschutz</div>
 

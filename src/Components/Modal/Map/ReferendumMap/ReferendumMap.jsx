@@ -10,7 +10,7 @@ const ReferendumMap = props => {
             <div className="ps__modalwindow__map__grid">
                 <div className="ps__modalwindow__map__grid__title">
                     <h1>Wyniki Plebiscytu</h1>
-                    <h2>2 / 3.05.08 / 1920</h2>
+                    <h2>20.03/1921</h2>
                 </div>
                 <div className="ps__modalwindow__map__grid__legend">
                     <h1>LEGENDA</h1>
