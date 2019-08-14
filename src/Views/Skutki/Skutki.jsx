@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skutki.scss';
 import Page from '../../Components/Page/Page';
-import Background from '../../res/images/bg/skutki.png';
+import Background from '../../res/images/bg/skutki.jpg';
 import Small from '../../res/images/small/skutkismall.png';
 import Terytorium from '../../Components/Modal/Statistics/Skutki/Terytorium';
 import Terytoriumimg from '../../res/images/bg/territorybg.png';

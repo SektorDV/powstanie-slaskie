@@ -1,7 +1,7 @@
 import React from 'react';
 import './IIIPowstanie.scss';
 import Page from '../../Components/Page/Page';
-import Background from '../../res/images/bg/iiipowstanie.png';
+import Background from '../../res/images/bg/iiipowstanie.jpg';
 import Small from '../../res/images/small/iiipowstaniesmall.png';
 import ThirdUprisingMap from '../../Components/Modal/Map/3rdUprisingMap/3rdUprisingMap';
 import PersonsImg from "../../res/images/bg/iiipowstaniepostacie.png";

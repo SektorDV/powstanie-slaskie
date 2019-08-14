@@ -1,7 +1,7 @@
 import React from 'react';
 import './Plebiscyt.scss';
 import Page from '../../Components/Page/Page';
-import Background from '../../res/images/bg/plebiscytbg.png';
+import Background from '../../res/images/bg/plebiscytbg.jpg';
 import Small from '../../res/images/small/plebiscytsmall.png';
 import AudioImg from "../../res/images/bg/plebiscyt_modal_audio.png";
 import VideoImg from "../../res/images/bg/plebiscyt_modal_video.png";

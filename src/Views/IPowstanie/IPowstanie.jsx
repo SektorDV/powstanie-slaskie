@@ -1,7 +1,7 @@
 import React from "react";
 import "./IPowstanie.scss";
 import Page from "../../Components/Page/Page";
-import Background from "../../res/images/bg/ipowstanie.png";
+import Background from "../../res/images/bg/ipowstanie.jpg";
 import Small from "../../res/images/small/ipowstaniesmall.png";
 import PersonsImg from "../../res/images/bg/ipowstaniepostacie.png";
 import alfonsImg from "../../res/img/alfons.png";

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Korfanty.scss';
-import Background from '../../res/images/bg/korfantybg.png';
+import Background from '../../res/images/bg/korfantybg.jpg';
 import Page from '../../Components/Page/Page';
 import Small from '../../res/images/small/korfantysmall.png';
 import AudioImg from "../../res/images/bg/korfanty_modal_audio.png";

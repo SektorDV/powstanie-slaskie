@@ -1,6 +1,6 @@
 import React from "react";
 import "./AspectNotification.scss";
-import Bg from "../../res/images/bg/aspectnotificationbg.png";
+import Bg from "../../res/images/bg/aspectnotificationbg.jpg";
 
 const AspectNotification = () => {
   return (

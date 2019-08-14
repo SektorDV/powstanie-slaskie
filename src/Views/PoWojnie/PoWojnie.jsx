@@ -2,11 +2,11 @@ import React from 'react';
 import './PoWojnie.scss';
 import Pagination from '../../Components/Pagination/Pagination';
 import Page from '../../Components/Page/Page';
-import Background from '../../res/images/bg/powojniebg.png';
+import Background from '../../res/images/bg/powojniebg.jpg';
 import Small from '../../res/images/small/powojniesmall.png';
 import AudioImg from "../../res/images/bg/poWojnie_modal_audio.png";
 import PoWojnieStats from "../../Components/Modal/Statistics/PoWojnie/PoWojnie";
-import PoWojnieImg from "../../res/images/bg/powojniestatisticsbg.png";
+import PoWojnieImg from "../../res/images/bg/powojniestatisticsbg.jpg";
 
 const content = {
     headline: `„Wszystkie dążenia zmierzające do oderwania Górnego Śląska od Rzeszy Niemieckiej stanowią przestępstwo zdrady stanu”.`,

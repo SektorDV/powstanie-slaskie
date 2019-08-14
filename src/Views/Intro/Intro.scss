@@ -1,6 +1,7 @@
 .ps__intro {
     display: flex;
     background-color: #e3f2fa;
+    justify-content: center;
 }
 .intro {
     &__title {
@@ -61,7 +62,7 @@
         background-image: url(../../res/img/soliders_final.png);
         width: 50%;
         background-size: 62rem;
-        height: calc(100vh - 6rem);
+        height: 100vh;
 
         background-position: -7rem 0px;
         background-repeat: no-repeat;

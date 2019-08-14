@@ -1,7 +1,7 @@
 import React from 'react';
 import './IIPowstanie.scss';
 import Page from '../../Components/Page/Page';
-import Background from '../../res/images/bg/iipowstaniebg.png';
+import Background from '../../res/images/bg/iipowstaniebg.jpg';
 import Small from '../../res/images/small/iipowstaniesmall.png';
 import AudioImg from "../../res/images/bg/IIpowstanie_modal_audio.png";
 import VideoImg from "../../res/images/bg/IIpowstanie_modal_video.png";
