@@ -3,7 +3,6 @@ import './Navbar.scss';
 import {BrowserRouter, NavLink } from 'react-router-dom';
 
 const Navbar = ({match}) => {
-console.log(match)
     return(
         <div className="ps__navbar">
             <ul>
