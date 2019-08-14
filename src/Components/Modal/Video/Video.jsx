@@ -6,7 +6,8 @@ const Video = props => {
   const [visible, setVisible] = useState(false);
     return(
         <div className="ps__modalwindow__content">
-        <div className="ps__modalwindow__content__videolist">
+        <div className={props.content[0].content.content.length > 1?"ps__modalwindow__content__videolist more": "ps__modalwindow__content__videolist"}>
+          
           {props.content[0].content.content.map((e, index) => {
             return (
               <div className='ps__modalwindow__content__videocontainer' style={{opacity: visible? '1':'0', transition: 'opacity 1s ease-in'}}>

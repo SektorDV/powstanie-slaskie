@@ -10,6 +10,8 @@ import maciejImg from "../../res/img/Maciej.png";
 import kazimierzImg from "../../res/img/Kazimierz.png";
 import wojciechImg from "../../res/img/Wojciech.png";
 import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+import VideoImg from "../../res/images/bg/IIIpowstanie_modal_video.png";
+
 
 
 const content={
@@ -186,7 +188,7 @@ const content={
         {
             type: "video",
             content: {
-              img: AudioImg,
+              img: VideoImg,
               author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
               content: [
                 {
@@ -194,6 +196,12 @@ const content={
                   text:
                     "- Decyzja o wybuchu III Powstania Śląskiego była skonsultowana z Warszawą. Problem stanowiła kadra dowódcza. Niewielu Ślązaków posiadało stopnie oficerskie. Korfanty ściągnął dowódców z Wielkopolski. Napływały też oddziały ochotników z Polski. Ułatwiano im przedostanie się na Śląsk, organizowano wiece w jednostkach, dawano urlopy. Napływ ochotników był ogromny – to była swoista wojna hybrydowa - mówił Jan Planta, historyk z Muzeum Powstań Śląskich w Świętochłowicach.",
                   source: "6d76316f-148f-494e-9273-7e7bf8908b2d"
+                },
+                {
+                  title: "Nagranie numer 1",
+                  text:
+                    "- W czasie strasznie ciężkiej i krwawej bitwy o Górę św. Anny dowodziłem pociągiem pancernym w akcji na Gogolin. Zbudowaliśmy ten pociąg z niczego, na kopalni MMA pod Wodzisławiem – wspomnienia Adama Ciołkosza, uczestnika III Powstania Śląskiego (RWE) ",
+                  source: "a382c0fd-65d8-4e71-bdcb-c4c6f9f2bd12"
                 },
                 
                 

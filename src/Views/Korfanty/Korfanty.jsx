@@ -3,7 +3,8 @@ import './Korfanty.scss';
 import Background from '../../res/images/bg/korfantybg.png';
 import Page from '../../Components/Page/Page';
 import Small from '../../res/images/small/korfantysmall.png';
-import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+import AudioImg from "../../res/images/bg/korfanty_modal_audio.png";
+import VideoImg from "../../res/images/bg/korfanty_modal_video.png";
 
 
 
@@ -79,7 +80,7 @@ const content = {
           {
             type: "video",
             content: {
-              img: AudioImg,
+              img: VideoImg,
               author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
               content: [
                 {

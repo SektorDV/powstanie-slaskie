@@ -3,7 +3,9 @@ import './IIPowstanie.scss';
 import Page from '../../Components/Page/Page';
 import Background from '../../res/images/bg/iipowstaniebg.png';
 import Small from '../../res/images/small/iipowstaniesmall.png';
-import AudioImg from "../../res/images/bg/ipowstanieaudio.png";
+import AudioImg from "../../res/images/bg/IIpowstanie_modal_audio.png";
+import VideoImg from "../../res/images/bg/IIpowstanie_modal_video.png";
+
 import Mapbg from '../../res/images/bg/2nduprisingmapbg.png';
 import SecondUprisingMap from '../../Components/Modal/Map/2ndUprisingMap/2ndUprisingMap';
 
@@ -94,7 +96,7 @@ const content = {
           {
             type: "video",
             content: {
-              img: AudioImg,
+              img: VideoImg,
               author: "Powstańcy Śląscy 1919 / Narodowe Archiwum Cyfrowe",
               content: [
                 {

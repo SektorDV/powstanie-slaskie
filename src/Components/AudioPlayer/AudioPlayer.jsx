@@ -40,6 +40,8 @@ class AudioPlayer extends Component {
                 this.audioRef.current.pause();
                 this.sendIndex(null);
               } else {
+               
+
                 this.audioRef.current.play();
                 this.sendIndex(this.props.i);
               }
@@ -56,7 +58,7 @@ class AudioPlayer extends Component {
               }
               preload="metadata"
               ref={this.audioRef}
-              src={`//static.prsa.pl/${this.props.content.source}.mp3`}
+              src={`//static.prsa.pl/${this.props.content.source}.file`}
             />
           </div>
           <div className="audio-player-top-right">
